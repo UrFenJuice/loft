@@ -29,8 +29,7 @@ $.gulp.task('default', $.gulp.series(
     'copy:image',
     'css:foundation',
     'sprite:svg',
-    'fonts:build',
-    'sprite'
+    'fonts:build'
   ),
   $.gulp.parallel(
     'watch',

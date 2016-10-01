@@ -1,0 +1,186 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-about_1200 {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -14945px -825px;
+  width: 357px;
+  height: 125px;
+}
+.icon-about_ipad {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15352px -825px;
+  width: 249px;
+  height: 88px;
+}
+.icon-about_iphone {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15237px -1000px;
+  width: 199px;
+  height: 70px;
+}
+.icon-arrow_down {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15784px -1000px;
+  width: 26px;
+  height: 16px;
+}
+.icon-arrow_up {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15708px -1000px;
+  width: 26px;
+  height: 16px;
+}
+.icon-blog_1200 {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15733px -363px;
+  width: 303px;
+  height: 182px;
+}
+.icon-blog_ipad {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -14945px -1000px;
+  width: 242px;
+  height: 166px;
+}
+.icon-git {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -16086px -435px;
+  width: 26px;
+  height: 22px;
+}
+.icon-git_c {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -16086px -507px;
+  width: 26px;
+  height: 22px;
+}
+.icon-git_f {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -16086px -363px;
+  width: 26px;
+  height: 22px;
+}
+.icon-hamburger {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -16080px -610px;
+  width: 40px;
+  height: 35px;
+}
+.icon-hamburger_close {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15954px -825px;
+  width: 36px;
+  height: 36px;
+}
+.icon-in {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15634px -1000px;
+  width: 24px;
+  height: 22px;
+}
+.icon-in_c {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15486px -1000px;
+  width: 24px;
+  height: 22px;
+}
+.icon-in_f {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15560px -1000px;
+  width: 24px;
+  height: 22px;
+}
+.icon-link {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15237px -1120px;
+  width: 20px;
+  height: 19px;
+}
+.icon-login {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15375px -1120px;
+  width: 15px;
+  height: 17px;
+}
+.icon-password {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15307px -1120px;
+  width: 18px;
+  height: 17px;
+}
+.icon-portfolio_1200 {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -14945px 0px;
+  width: 1175px;
+  height: 313px;
+}
+.icon-portfolio_ipad {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -14945px -363px;
+  width: 738px;
+  height: 197px;
+}
+.icon-quot_ipad {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15955px -610px;
+  width: 75px;
+  height: 61px;
+}
+.icon-sprite {
+  background-image: url(./build/assets/img/sprite);
+  background-position: 0px 0px;
+  width: 14895px;
+  height: 14540px;
+}
+.icon-vk {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15955px -721px;
+  width: 31px;
+  height: 17px;
+}
+.icon-vk_c {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -16040px -825px;
+  width: 31px;
+  height: 17px;
+}
+.icon-vk_f {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -16036px -721px;
+  width: 31px;
+  height: 17px;
+}
+.icon-works_1200 {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -14945px -610px;
+  width: 506px;
+  height: 165px;
+}
+.icon-works_ipad {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15501px -610px;
+  width: 404px;
+  height: 133px;
+}
+.icon-works_iphone {
+  background-image: url(./build/assets/img/sprite);
+  background-position: -15651px -825px;
+  width: 253px;
+  height: 83px;
+}
