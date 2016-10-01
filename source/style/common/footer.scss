@@ -43,22 +43,40 @@
 .footer__top-social-item {
 	float: left;
 	margin-right: 27px;
+	position: relative;
+	width: 31px;
+    height: 22px;
 }
 
 .vk, .git, .in {
-	display: block
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 .vk {
 	@extend .icon-vk_f;
+	&:hover {
+		@extend .icon-vk;
+	}
 }
 
 .git {
 	@extend .icon-git_f;
+	&:hover {
+		@extend .icon-git;
+	}
 }
 
 .in {
 	@extend .icon-in_f;
+	&:hover {
+		@extend .icon-in;
+	}
 }
 
 .footer__top-column-text {

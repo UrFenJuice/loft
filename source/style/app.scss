@@ -29,9 +29,15 @@ a {
 	color: #fff;
 }
 
+ul {
+	margin:0;
+}
+
 ul li {
 	list-style: none;
 }
+
+@import 'common/header';
 
 @import 'common/greating';
 
@@ -51,6 +57,6 @@ ul li {
 }
 
 .container {
-	@include clearfix();
+	@extend %clearfix;
 }
 
