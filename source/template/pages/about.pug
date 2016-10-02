@@ -1,0 +1,54 @@
+extends ../_template
+
+block variables
+	- var title = 'About'
+
+block content
+	include ../common/_greating
+
+	.container
+		.container__about
+			.container__about-header
+				h1.container__about-me Обо мне
+				.header__line.header__line-black
+			.container__about-content
+				img(src="/assets/img/whoiam_1200.jpg").container__about-content-image
+				h2.who_i_am Кто я
+				.header__line.header__line-black
+				p.container__about-short-text.
+					Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+				p.container__about-short-text.
+					Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+
+
+		.container__about
+			.container__about-experience
+				h2.can_i_help_you Чем я могу быть вам полезен
+				.header__line.header__line-black
+				p.container__my-experience.
+					Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+				p.container__my-experience-name Frontend
+				input(type="text" value="HTML5" class="dial" data-width="150" data-displayPrevious=true data-min="-100")
+				input(type="text" value="CSS3" class="dial" data-width="150")
+				input(type="text" value="JavaScript & jQuery" class="dial" data-width="150")
+
+				p.container__my-experience-name Backend
+				input(type="text" value="PHP" class="dial" data-width="150")
+				input(type="text" value="mySQL" class="dial" data-width="150")
+				input(type="text" value="Node.js & npm" class="dial" data-width="150")
+				input(type="text" value="Mongo.db" class="dial" data-width="150")
+
+				p.container__my-experience-name WorkFlow
+				input(type="text" value="Git" class="dial" data-width="150")
+				input(type="text" value="Gulp" class="dial" data-width="150")
+				input(type="text" value="Bower" class="dial" data-width="150")
+				
+
+		.map
+			.map_contacts
+				h2.map_contacts-header Контакты
+				.header__line.header__line-black
+				a.skype.fa-skype urfen_juice
+				a.mail wuin69@gmail.com
+				a.mobile_phone +7 900 000 00 00
+				a.addres Новосибирск, ул. Инская, д.14

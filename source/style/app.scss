@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	font: 14px 'Roboto-Regular', sans-serif;
+	font: 16px 'Roboto-Regular', sans-serif;
 	width: 100%;
 	height: 100%;
 	color: #333;
@@ -23,9 +23,12 @@ body {
 h1, h2, h3, h4 {
 	font-family: 'Sansus-Webissimo-Regular', sans-serif;
 	font-weight: normal;
+	text-transform: uppercase;
+	color: #566358;
 }
 
 a {
+	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
 }
@@ -37,6 +40,13 @@ ul {
 ul li {
 	list-style: none;
 }
+
+p {
+	color: #566358;
+	font-size: 16px;
+	margin: 0;
+}
+
 
 @import 'common/header';
 
@@ -54,7 +64,7 @@ ul li {
 .content:after {
   content: '';
   display: block;
-  height: 185px;
+  /*height: 185px;*/
 }
 
 .container {
@@ -73,7 +83,6 @@ ul li {
 }
 
 .left__menu-item-link {
-	font-size: 16px;
 	color: #455a64;
     padding: 15px 20px;
     border-right: 2px solid transparent;
@@ -108,7 +117,6 @@ ul li {
 }
 
 .article__data {
-	font-size: 16px;
 	color: #4e8839;
     margin: 30px 0;
     display: inline-block;
@@ -116,7 +124,6 @@ ul li {
 
 .article__text {
 	margin: 0;
-	font-size: 16px;
 	color: #455a64;
 }
 
@@ -126,4 +133,109 @@ ul li {
 	background-size: cover;
     height: 128px;
     margin-top: 20px;
+}
+
+/*About*/
+.container__about {
+	width: 50%;
+	float: left;
+	&:nth-child(1){
+		background: #ebefe2;
+	}
+}
+.traingle > polygon:nth-child(1) {
+	fill:#ebefe2;
+}
+
+.container__about-header {
+	@extend .icon-about_1200;
+	float: left;
+}
+
+.container__about-content {
+	float: right;
+	max-width: 480px;
+}
+
+.container__about-content-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.container__about-me {
+	font-size: 63px;
+	text-transform: uppercase;
+	color: #373e42;
+	font-weight: bold;
+	text-align: center;
+}
+
+.header__line-black {
+	background: #373e42;
+}
+
+.who_i_am {
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #566358;
+	text-align: center;
+}
+
+.container__about-short-text {
+    padding: 0 20px;
+}
+
+.container__about-experience {
+	padding: 0 40px;
+}
+
+.can_i_help_you {
+	text-align: center;
+	font-size: 35px;
+	color: #566358;
+    width: 270px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.container__my-experience-name {
+	font-family: Roboto-Medium;
+	font-size: 28px;
+}
+.container__about-experience input[type="text"] {
+	margin-right: 40px;
+}
+
+.map {
+	background: url(/assets/img/map.jpg) 0 0 no-repeat;
+	width: 100%;
+    background-size: cover;
+    height: 1000px;
+    display: inline-block;
+    position: relative;
+}
+
+.map_contacts {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 380px;
+	height: 310px;
+	background: #fff;
+	opacity: 0.85;
+	border-radius: 6px;
+}
+
+.map_contacts-header {
+	font-size: 35px;
+	text-align: center;
+}
+
+.map_contacts a {
+	color: #455a64;
+    width: 100%;
+    display: inline-block;
 }
