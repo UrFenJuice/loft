@@ -145,34 +145,39 @@ $(function () {
   $body.on("click", 'div.search > a', showPopup);
   $body.on("click", 'li.header__content-nav-item > a', showPopup);
   $body.on("click", 'li.main__menu-item > a', showPopup);
-  $body.on("click", '.close', closePopup);
+  /*$body.on("click", '.close', closePopup);*/
   function showPopup() {
     var $this = $(this);
     count++;
     $this.next().toggle(100, function () {
       if (count & 1) {
-        $this.parent().css({"z-index": "20", "background": "#fff"});
+        
         $this.css({"color": "#231f20"});
         $("#bg_layer").show("fast");
-        $this.addClass("cat_ar");
+        if($this.hasClass('main__menu-item-link')) {
+          $this.parent().css({"z-index": "20", "background": "#fff"});
+          $this.addClass("cat_ar");
+        }
       } else {
-        $this.parent().css({"z-index": "20", "background": "#e11c18"});
+        
         $this.css({"color": "#fff"});
         $("#bg_layer").hide("fast");
-        $this.removeClass("cat_ar");
+        if($this.hasClass('main__menu-item-link')) {
+          $this.parent().css({"z-index": "20", "background": "#e11c18"});
+          $this.removeClass("cat_ar");
+        }
       }
-      console.log(count);
       $this.toggle(true);
     });
     return false;
     //});
     //count = 0;
   }
-  function closePopup() {
+/*  function closePopup() {
     var $this = $(this);
     $this.parent().hide("fast");
     $("#bg_layer").toggle();
-  }
+  }*/
   // var check = $(".check_email");
   $('.forgot').submit(function () {
     var check_my_email = validator.isEmail(check.val());
