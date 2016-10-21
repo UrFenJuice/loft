@@ -140,13 +140,13 @@ $(function () {
       $this.toggle(true);
     })
   });*/
+  var count;
+  count = 0;
   $body.on("click", 'div.search > a', showPopup);
   $body.on("click", 'li.header__content-nav-item > a', showPopup);
   $body.on("click", 'li.main__menu-item > a', showPopup);
   $body.on("click", '.close', closePopup);
   function showPopup() {
-    var count;
-    count = 0;
     var $this = $(this);
     count++;
     $this.next().toggle(100, function () {
@@ -161,16 +161,17 @@ $(function () {
         $("#bg_layer").hide("fast");
         $this.removeClass("cat_ar");
       }
+      console.log(count);
       $this.toggle(true);
     });
     return false;
     //});
-    count = 0;
+    //count = 0;
   }
   function closePopup() {
     var $this = $(this);
     $this.parent().hide("fast");
-    $("#bg_layer").hide("fast");
+    $("#bg_layer").toggle();
   }
   // var check = $(".check_email");
   $('.forgot').submit(function () {

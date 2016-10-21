@@ -266,4 +266,28 @@ a.show__more {
 
 .main__section-grey {
   background: #f2f2f2;
-  min-width: 1170px; }
+  min-width: 1170px; 
+  position: relative;
+  &:after {
+    content: "";
+    background: #f2f2f2;
+    display: block;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    right: -200%;
+    top: 0;
+    overflow-x: hidden;
+  }
+  &:before {
+    content: "";
+    background: #f2f2f2;
+    display: block;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    left: -200%;
+    top: 0;
+    overflow-x: hidden;
+  }
+}
