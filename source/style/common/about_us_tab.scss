@@ -1,0 +1,47 @@
+/* About us tab
+-----------------------------------------------------------------------------*/
+.about__us-tab > div,
+.about__us-tab > input {
+  display: none; }
+
+.about__us-tab label {
+  line-height: 28px;
+  border-bottom: 1px dashed #000;
+  cursor: pointer;
+  position: relative;
+  bottom: 1px;
+  font-size: 15px;
+  color: #231f20;
+  margin-right: 28px; }
+
+.about__us-tab label:after {
+  display: none; }
+
+.about__us-tab input[type="radio"]:checked + label {
+  padding: 8px 19px 9px;
+  background: #274555;
+  color: #fff;
+  border-radius: 19px; }
+
+.about__us-tab input[type="radio"]:checked + label:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #274555;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  display: block;
+  margin: 0 -8px; }
+
+.about__us-tab > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.about__us-tab > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.about__us-tab > input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+  display: block;
+  margin-top: 32px; }
+
+.main__news-item-pic {
+  margin-bottom: 7px;
+}

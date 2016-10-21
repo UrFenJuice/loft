@@ -1,0 +1,25 @@
+extends ../_template
+block variables
+	- var title = 'Cart'
+block content
+	main.content
+		.container
+			.bx-breadcrumb
+				#bx_breadcrumb_0.bx-breadcrumb-item(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+					a(href='/', title='Главная страница', itemprop='url')
+						span(itemprop='title') Главная страница
+				.bx-breadcrumb-item
+					i.fa.fa-angle-right
+					span Заказ успешно оформлен!
+				div(style='clear:both')
+			h1#pagetitle.bx-title
+				| Заказ успешно оформлен!
+			.bx-content.bx-success
+				img(src="assets/img/icons/success.png", align="left")
+				div
+					|Заказ успешно оформлен!
+					br
+					|Информацию о доставке и оплате доступна по 
+					a(href="") ссылке
+
+		include ../common/_slider

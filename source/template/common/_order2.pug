@@ -1,0 +1,143 @@
+.bx-content
+	// BASKET ITEMS BLOCK
+	#bx-soa-basket.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+		.bx-soa-section-title-container
+			h2.bx-soa-section-title
+				span.bx-soa-section-title-count
+				| Товары в заказе
+			.text-right
+				a.bx-soa-editstep(href='javascript:void(0)') изменить
+		.bx-soa-section-content.container-fluid
+			.bx-soa-table-fade
+				div(style='overflow-x: auto; overflow-y: hidden;')
+					.bx-soa-item-table
+						.bx-soa-item-tr.bx-soa-basket-info.bx-soa-item-tr-first
+							.bx-soa-item-td(style='min-width: 300px;')
+								.bx-soa-item-block
+									.bx-soa-item-img-block
+										a(href='#')
+											.bx-soa-item-imgcontainer(style='background-image: url(assets/img/items/item.jpg);')
+									.bx-soa-item-content
+										.bx-soa-item-title
+											a(href='#') Масло моторное Castrol GTX Magnatec SAE 5w40
+										.bx-scu-container
+											.bx-soa-item-td-title(style='text-align: left;') Цвет
+											.bx-soa-item-td-text(style='text-align: left;') Вязкость 5w40, объем 4л, артикул 34KD0FG
+							.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+								.bx-soa-item-td-title Количество
+								.bx-soa-item-td-text
+									span 5 шт
+							.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+								.bx-soa-item-td-title Сумма
+								.bx-soa-item-td-text
+									strong.bx-price.all 1 950 руб.
+						.bx-soa-item-tr.bx-soa-basket-info
+							.bx-soa-item-td(style='min-width: 300px;')
+								.bx-soa-item-block
+									.bx-soa-item-img-block
+										a(href='#')
+											.bx-soa-item-imgcontainer(style='background-image: url(assets/img/items/item2.jpg);')
+									.bx-soa-item-content
+										.bx-soa-item-title
+											a(href='#') Масло моторное Castrol GTX Magnatec SAE 5w40
+										.bx-scu-container
+											.bx-soa-item-td-title(style='text-align: left;') Цвет
+											.bx-soa-item-td-text(style='text-align: left;') Вязкость 5w40, объем 4л, артикул 34KD0FG
+							.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+								.bx-soa-item-td-title Количество
+								.bx-soa-item-td-text
+									span 1 шт
+							.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+								.bx-soa-item-td-title Сумма
+								.bx-soa-item-td-text
+									strong.bx-price.all 799 руб.
+		.bx-soa-summary
+			table.bx-soa-summary-table
+				tbody
+					tr
+						td К оплате:
+						td#allSum_wVAT_FORMATED 2 749 р.
+					tr
+						td Возможная скидка:
+						td#allSum_FORMATED 2 749 р.
+					tr
+						td Возможная цена со скидкой:
+						td#allSum_FORMATED 2 749 р.
+	// DELIVARY BLOCK
+	#bx-soa-delivery.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+		.bx-soa-section-title-container
+			h2.bx-soa-section-title
+				span.bx-soa-section-title-count
+				| Доставка
+			.text-right
+				span на данный момент наша компания осуществляет только один способ доставки
+		.bx-soa-section-content
+			.alert.alert-danger(style='display: none;')
+			.bx-soa-pp-company-selected
+				strong Самовывоз
+				p Вы можете забрать товар из пункта выдачи (выбор пункта выдачи идет на следующем шаге)
+			.bx-soa-pp-price 
+			div(style='clear: both;')
+	// PICKUP BLOCK
+	#bx-soa-pickup.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+		.bx-soa-section-title-container
+			h2.bx-soa-section-title
+				span.bx-soa-section-title-count
+				| Пункты выдачи
+			.text-right
+				a.bx-soa-editstep(href='') изменить
+		.bx-soa-section-content.container-fluid
+			.bx_soa_pickup
+					.bx-soa-pickup-list.main
+						#store-1.bx-soa-pickup-list-item.bx-selected
+							.bx-soa-pickup-l-item-detail
+								img.bx-soa-pickup-l-item-img(src='assets/img/items/delivary.jpg')
+								.bx-soa-pickup-l-item-desc
+									.address г. Тверь,  ул. Паши Савельевой, 41
+									.work-time Часы приема 10.00 - 19.00 будни. Приемная по заказам находится сразу около входа. Телефон +7(4822) 56-41-22
+	// PAY SYSTEMS BLOCK
+	#bx-soa-paysystem.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+		.bx-soa-section-title-container
+			h2.bx-soa-section-title.col-sm-9
+				span.bx-soa-section-title-count
+				| Оплата
+			.text-right
+				span на данный момент наша компания осуществляет только один способ оплаты
+		.bx-soa-section-content
+			.alert.alert-danger(style='display: none;')
+			.bx-soa-pp-company-selected
+				strong Наличный расчет
+				p Вы сможете произвести оплату наличными или банковской картой при получении заказа в пункте самовывоза
+			.bx-soa-pp-price 
+			div(style='clear: both;')
+	// BUYER PROPS BLOCK
+	#bx-soa-properties.bx-soa-section.bx-active.bx-selected(data-visited='true')
+		.bx-soa-section-title-container
+			h2.bx-soa-section-title
+				span.bx-soa-section-title-count
+				| Покупатель
+			.text-right
+				a.bx-soa-editstep(href='') изменить
+		.bx-soa-section-content.container-fluid
+			.alert.alert-danger(style='display: none;')
+			.div
+				.bx-soa-customer
+					.form-group.bx-soa-customer-field(data-property-id-row='1')
+						span.bx-authform-starrequired *
+						.soa-property-container
+							input#soa-property-1.form-control.bx-soa-customer-input.bx-ios-fix(type='text', size='40', name='ORDER_PROP_1', autocomplete='name', placeholder='Ф.И.О.')
+					.form-group.bx-soa-customer-field(data-property-id-row='2')
+						span.bx-authform-starrequired *
+						.soa-property-container
+							input#soa-property-2.form-control.bx-soa-customer-input.bx-ios-fix(type='text', size='40', name='ORDER_PROP_2', autocomplete='email', placeholder='E-Mail')
+					.form-group.bx-soa-customer-field(data-property-id-row='3')
+						span.bx-authform-starrequired *
+						.soa-property-container
+							input#soa-property-3.form-control.bx-soa-customer-input.bx-ios-fix(type='text', size='30', name='ORDER_PROP_3', autocomplete='tel', placeholder='Телефон')
+					.form-group.bx-soa-customer-field
+						label.bx-soa-customer-label(for='orderDescription')
+						textarea#orderDescription.form-control.bx-soa-customer-textarea.bx-ios-fix(cols='4', name='ORDER_DESCRIPTION', placeholder="Комментарии к заказу")
+
+	.bx_ordercart_order_pay_center
+		a.checkout(href='javascript:void(0)', onclick='checkOut();') Оформить заказ
+

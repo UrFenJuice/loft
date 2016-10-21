@@ -1,0 +1,25 @@
+extends ../_template
+block variables
+	- var title = 'Cart'
+block content
+	main.content
+		.container
+			.bx-breadcrumb
+				#bx_breadcrumb_0.bx-breadcrumb-item(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+					a(href='/', title='Главная страница', itemprop='url')
+						span(itemprop='title') Главная страница
+				.bx-breadcrumb-item
+					i.fa.fa-angle-right
+					span Корзина
+				div(style='clear:both')
+			h1#pagetitle.bx-title
+				| Корзина
+			.bx-content.bx-success
+				img(src="assets/img/icons/empty_cart.png", align="left")
+				div
+					|Ваша корзина пуста!
+					br
+					|Начните покупки в 
+					a(href="") Каталоге товаров
+
+		include ../common/_slider

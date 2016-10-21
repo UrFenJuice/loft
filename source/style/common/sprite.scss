@@ -16,165 +16,219 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-about_1200 {
+.icon-arrowPagination_l {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -675px;
-  width: 357px;
-  height: 125px;
+  background-position: -584px 0px;
+  width: 6px;
+  height: 9px;
 }
-.icon-about_ipad {
+.icon-arrowPagination_l_b {
   background-image: url(/assets/img/sprite.png);
-  background-position: -910px -510px;
-  width: 249px;
-  height: 88px;
+  background-position: -416px -468px;
+  width: 6px;
+  height: 9px;
 }
-.icon-about_iphone {
+.icon-arrowPagination_r {
   background-image: url(/assets/img/sprite.png);
-  background-position: -610px -675px;
-  width: 199px;
-  height: 70px;
+  background-position: -528px -468px;
+  width: 6px;
+  height: 9px;
+}
+.icon-arrowPagination_r_b {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -472px -468px;
+  width: 6px;
+  height: 9px;
 }
 .icon-arrow_down {
   background-image: url(/assets/img/sprite.png);
-  background-position: -1041px -427px;
-  width: 26px;
+  background-position: 0px -534px;
+  width: 9px;
+  height: 5px;
+}
+.icon-arrow_l {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -300px -468px;
+  width: 10px;
+  height: 16px;
+}
+.icon-arrow_l_b {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -240px -468px;
+  width: 10px;
+  height: 16px;
+}
+.icon-arrow_l_gr {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -60px -468px;
+  width: 10px;
+  height: 16px;
+}
+.icon-arrow_r {
+  background-image: url(/assets/img/sprite.png);
+  background-position: 0px -468px;
+  width: 10px;
+  height: 16px;
+}
+.icon-arrow_r_b {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -180px -468px;
+  width: 10px;
+  height: 16px;
+}
+.icon-arrow_r_gr {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -120px -468px;
+  width: 10px;
   height: 16px;
 }
 .icon-arrow_up {
   background-image: url(/assets/img/sprite.png);
-  background-position: -1134px -410px;
-  width: 26px;
-  height: 16px;
+  background-position: -59px -534px;
+  width: 9px;
+  height: 5px;
 }
-.icon-blog_1200 {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -738px -313px;
-  width: 303px;
-  height: 182px;
-}
-.icon-blog_ipad {
-  background-image: url(/assets/img/sprite.png);
-  background-position: 0px -800px;
-  width: 242px;
-  height: 166px;
-}
-.icon-git {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1116px -348px;
-  width: 26px;
-  height: 22px;
-}
-.icon-git_c {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1077px -374px;
-  width: 26px;
-  height: 22px;
-}
-.icon-git_f {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1142px -348px;
-  width: 26px;
-  height: 22px;
-}
-.icon-hamburger {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1116px -313px;
-  width: 40px;
-  height: 35px;
-}
-.icon-hamburger_close {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1041px -374px;
-  width: 36px;
-  height: 36px;
-}
-.icon-in {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1127px -374px;
-  width: 24px;
-  height: 22px;
-}
-.icon-in_c {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1103px -374px;
-  width: 24px;
-  height: 22px;
-}
-.icon-in_f {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1151px -374px;
-  width: 24px;
-  height: 22px;
-}
-.icon-link {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1041px -443px;
-  width: 20px;
-  height: 19px;
-}
-.icon-login {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1156px -330px;
-  width: 15px;
-  height: 17px;
-}
-.icon-password {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -1156px -313px;
-  width: 18px;
-  height: 17px;
-}
-.icon-portfolio_1200 {
+.icon-article {
   background-image: url(/assets/img/sprite.png);
   background-position: 0px 0px;
-  width: 1175px;
-  height: 313px;
+  width: 242px;
+  height: 155px;
 }
-.icon-portfolio_ipad {
+.icon-article1 {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -313px;
-  width: 738px;
-  height: 197px;
+  background-position: -292px 0px;
+  width: 242px;
+  height: 155px;
 }
-.icon-quot_ipad {
+.icon-available {
   background-image: url(/assets/img/sprite.png);
-  background-position: -1041px -313px;
-  width: 75px;
-  height: 61px;
+  background-position: -393px -402px;
+  width: 12px;
+  height: 11px;
 }
-.icon-vk {
+.icon-available_grey {
   background-image: url(/assets/img/sprite.png);
-  background-position: -1072px -410px;
-  width: 31px;
-  height: 17px;
+  background-position: -328px -402px;
+  width: 15px;
+  height: 13px;
 }
-.icon-vk_c {
+.icon-basket {
   background-image: url(/assets/img/sprite.png);
-  background-position: -1103px -410px;
-  width: 31px;
-  height: 17px;
+  background-position: 0px -328px;
+  width: 32px;
+  height: 24px;
 }
-.icon-vk_f {
+.icon-basket_black {
   background-image: url(/assets/img/sprite.png);
-  background-position: -1041px -410px;
-  width: 31px;
-  height: 17px;
+  background-position: -304px -328px;
+  width: 24px;
+  height: 19px;
 }
-.icon-works_1200 {
+.icon-basket_white {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -510px;
-  width: 506px;
-  height: 165px;
+  background-position: -230px -328px;
+  width: 24px;
+  height: 19px;
 }
-.icon-works_ipad {
+.icon-close {
   background-image: url(/assets/img/sprite.png);
-  background-position: -506px -510px;
-  width: 404px;
-  height: 133px;
+  background-position: -377px -205px;
+  width: 28px;
+  height: 28px;
 }
-.icon-works_iphone {
+.icon-close_red {
   background-image: url(/assets/img/sprite.png);
-  background-position: -357px -675px;
-  width: 253px;
-  height: 83px;
+  background-position: -455px -205px;
+  width: 28px;
+  height: 28px;
+}
+.icon-close_tr {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -275px -205px;
+  width: 52px;
+  height: 52px;
+}
+.icon-header_line_ar_down {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -512px -402px;
+  width: 7px;
+  height: 11px;
+}
+.icon-header_line_ar_up {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -455px -402px;
+  width: 7px;
+  height: 11px;
+}
+.icon-item_of_month {
+  background-image: url(/assets/img/sprite.png);
+  background-position: 0px -205px;
+  width: 225px;
+  height: 73px;
+}
+.icon-list-c {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -378px -328px;
+  width: 20px;
+  height: 16px;
+}
+.icon-list {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -448px -328px;
+  width: 20px;
+  height: 16px;
+}
+.icon-loop {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -198px -402px;
+  width: 16px;
+  height: 16px;
+}
+.icon-loop_b {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -132px -402px;
+  width: 16px;
+  height: 16px;
+}
+.icon-ok {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -264px -402px;
+  width: 14px;
+  height: 14px;
+}
+.icon-our_help {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -82px -328px;
+  width: 24px;
+  height: 24px;
+}
+.icon-personal {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -156px -328px;
+  width: 24px;
+  height: 24px;
+}
+.icon-right_arrow {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -360px -468px;
+  width: 6px;
+  height: 10px;
+}
+.icon-tale-c {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -518px -328px;
+  width: 16px;
+  height: 16px;
+}
+.icon-tale {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -66px -402px;
+  width: 16px;
+  height: 16px;
+}
+.icon-warning {
+  background-image: url(/assets/img/sprite.png);
+  background-position: 0px -402px;
+  width: 16px;
+  height: 16px;
 }

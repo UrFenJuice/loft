@@ -1,20 +1,132 @@
 header.header
-	.header__left-section
-		ul.header__top-social
-			li.header__top-social-item
-				a(href="#").header__top-social-item-link.vk_c vk
-			li.header__top-social-item
-				a(href="#").header__top-social-item-link.git_c git
-			li.header__top-social-item
-				a(href="#").header__top-social-item-link.in_c in
-	.header__right-section
-		a(href="#").header_menu menu
-	.avatar
-	.header__section
-		h1.header__big Блог
-		.header__line
-		p.header__short-paragraph Статьи, которые я написал
-	.traingle_box
-		svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
-			polygon(points="0,0   0,86   500.8,86   500.8,75.5")
-			polygon(points="1000,0   1000,86   500,86   500,75.5")
+                .container
+                    .header__content-top
+                        .logo
+                            a.logo__pic(href='#')
+                                img.logo__pic-img(src='assets/img/logo2.png', alt='')
+                        .header__content-info
+                            span.header__content-phone +7(4822) 56-41-22
+                            span.header__content-calltime Прием звонков будни с 9.00 до 19.00
+                        .header__content-nav
+                            ul.header__content-nav-menu
+                                li.header__content-nav-item
+                                    a.header__content-nav-link
+                                        span.header__content-nav-icon
+                                            img(src='assets/img/icons/our_help.png', alt='')
+                                        span.header__content-nav-name Нужна помощь
+                                    .header__content-nav-form
+                                        include ./_form_popup
+                                li.header__content-nav-item
+                                    a.header__content-nav-link
+                                        span.header__content-nav-icon
+                                            img(src='assets/img/icons/personal.png', alt='')
+                                        span.header__content-nav-name Личный кабинет
+                                    .header__content-nav-form
+                                        include ./_form_popup_auth
+                                li.header__content-nav-item.small-basket
+                                    a.header__content-nav-link
+                                        span.header__content-nav-icon
+                                            img(src='assets/img/icons/basket.png', alt='')
+                                            sup.basket 2
+                                        span.header__content-nav-name Моя корзина
+                                    .header__content-nav-form
+                                        include ./_form_popup_basket
+                .header__content-bottom
+                    .container
+                        .header__content-bottom-sec
+                            .menu
+                                ul.main__menu
+                                    li.main__menu-item.active
+                                        a.main__menu-item-link.cat(href='javascript:void(0);') Каталог
+                                        .main__menu-second-level
+                                            ul.main__menu-second
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/1.png', alt='')
+                                                    a(href='') Автомасла
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/2.png', alt='')
+                                                    a(href='') Автоаксессуары
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/3.png', alt='')
+                                                    a(href='') Автозапчасти
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/4.png', alt='')
+                                                    a(href='') Автохимия, автокосметика
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/6.png', alt='')
+                                                    a(href='') Антикоры, шпатлевки
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/7.png', alt='')
+                                                    a(href='') Краски, грунты аэрозольные
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/8.png', alt='')
+                                                    a(href='') Охлаждающие жидкости
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/9.png', alt='')
+                                                    a(href='') Растворители
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/10.png', alt='')
+                                                    a(href='') Смазки
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/11.png', alt='')
+                                                    a(href='') Спецжидкости
+                                                li.main__menu-item-sec
+                                                    img(src='assets/img/icons/menu/12.png', alt='')
+                                                    a(href='') Фильтры
+                                    li.main__menu-item
+                                        a.main__menu-item-link(href='') О компании
+                                    li.main__menu-item
+                                        a.main__menu-item-link(href='') Скидки
+                                    li.main__menu-item
+                                        a.main__menu-item-link(href='') Новости
+                                    li.main__menu-item
+                                        a.main__menu-item-link(href='') Доставка и оплата
+                                    li.main__menu-item
+                                        a.main__menu-item-link(href='') Гарантия и возврат
+                                    li.main__menu-item
+                                        a.main__menu-item-link(href='') Контакты
+                            .search
+                                a.search__icon(href='#')
+                                    img.search__icon-img(src='assets/img/icons/loop.png', alt='')
+                                #search.bx-searchtitle
+                                    form(action='')
+                                        .bx-input-group
+                                            input#title-search-input.bx-form-control(type='text')
+                                            span.bx-input-group-btn
+                                                button.btn.btn-default(type='submit')
+                                                    img(src='assets/img/icons/loop_b.png', alt='')
+                                    .title-search-result
+                                        .bx_searche
+                                            .bx_item_block
+                                                .bx_img_element
+                                                    .bx_image(style="background-image: url('http://clients.wizard-c.ru/upload/resize_cache/iblock/b97/75_75_1/b9756ff7aa3c0c28e617d1e4259fc3ce.jpg')")
+                                                .bx_item_element
+                                                    a(href='')
+                                                        b Штаны
+                                                        |  Жизнь в Абстракции
+                                                    strong 1200 р.
+                                                div(style='clear:both;')
+                                            .bx_item_block.others_result
+                                                .bx_img_element
+                                                    .bx_image(style="background-image: url('http://clients.wizard-c.ru/upload/resize_cache/iblock/b97/75_75_1/b9756ff7aa3c0c28e617d1e4259fc3ce.jpg')")
+                                                .bx_item_element
+                                                    a(href='')
+                                                        b Штаны
+                                                    strong 1200 р.
+                                                div(style='clear:both;')
+                                            .bx_item_block.others_result
+                                                .bx_img_element
+                                                .bx_item_element
+                                                    a(href='#') Остальные
+                                                div(style='clear:both;')
+
+                                            .bx_item_block(style='min-height:0')
+                                                .bx_img_element
+                                                .bx_item_element
+                                                    hr
+                                            .bx_item_block.all_result
+                                                .bx_img_element
+                                                .bx_item_element
+                                                    span.all_result_title
+                                                        a(href='') Все результаты
+                                                div(style='clear:both;')

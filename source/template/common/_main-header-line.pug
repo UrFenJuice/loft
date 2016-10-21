@@ -1,0 +1,13 @@
+.main-header-line
+	.sort
+		.sorttext Сортировать по:
+		a.sortbutton.current.asc(href='javascript:void(0);', rel='nofollow', onclick="saveSort('name','desc','/catalog/apparaty_i_prisposobleniya/index.php?sort=name&order=desc');")
+			| наименованию
+			span
+		a.sortbutton(href='javascript:void(0);', rel='nofollow', onclick="saveSort('price','asc','/catalog/apparaty_i_prisposobleniya/index.php?sort=price&order=asc');") цене
+	.panel-right
+		.blocks
+			button#TALE.btn.btn-default.active(title='Плитка')
+				i.b-ico.tale
+			button#LIST.btn.btn-default(title='Список')
+				i.b-ico.list

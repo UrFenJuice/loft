@@ -1,0 +1,19 @@
+extends ../_template
+block variables
+	- var title = 'Cart'
+block content
+	main.content
+		.container
+			.bx-breadcrumb
+				#bx_breadcrumb_0.bx-breadcrumb-item(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+					a(href='/', title='Главная страница', itemprop='url')
+						span(itemprop='title') Главная страница
+				.bx-breadcrumb-item
+					i.fa.fa-angle-right
+					span Оформление заказа
+				div(style='clear:both')
+			h1#pagetitle.bx-title
+				| Оформление заказа
+			include ../common/_order
+
+		include ../common/_slider

@@ -1,0 +1,76 @@
+/* Slider
+-----------------------------------------------------------------------------*/
+#owl-slider-main {
+  min-width: 1170px; 
+  margin-bottom: -5px;
+}
+/* uncss:ignore */
+#owl-slider-main .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
+/* uncss:ignore */
+#owl-slider-main .owl-controls {
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  top: -50px;
+  right: 0;
+  left: 0; }
+/* uncss:ignore */
+#owl-slider-main .owl-controls .owl-page.active span,
+#owl-slider-main .owl-controls.clickable .owl-page:hover span {
+  padding: 0px;
+  border: 2.5px solid #fff; }
+
+/* uncss:ignore */
+#owl-slider-main .owl-controls .owl-page span {
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: 0px 7px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0px;
+  opacity: 1;
+  border: 2.5px solid; }
+/* uncss:ignore */
+#owl-slider-main .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  background-position: 50% 50%; }
+/* uncss:ignore */
+.item__description {
+  position: relative;
+  top: 53px;
+  padding-bottom: 15px;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #85878b 0%, rgba(133, 135, 139, 0) 45%, rgba(133, 135, 139, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #85878b 0%, rgba(133, 135, 139, 0) 45%, rgba(133, 135, 139, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85878b', endColorstr='#0085878b',GradientType=1 ); }
+  .item__description:before, .item__description:after {
+    content: "";
+    display: table; }
+  .item__description:after {
+    clear: both; }
+/* uncss:ignore */
+.item__description-name,
+.item__description-text {
+  font-weight: bold;
+  color: #fff;
+  float: left;
+  width: 50%;
+  margin-right: 50%;
+  padding: 17px 0 3px;
+  line-height: 0.8; }
+/* uncss:ignore */
+.item__description-name {
+  font-size: 48px; 
+text-transform: uppercase;}
+/* uncss:ignore */
+.item__description-text {
+  font-size: 32px; }
