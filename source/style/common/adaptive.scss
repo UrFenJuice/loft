@@ -23,7 +23,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	flex-flow: row wrap;
-    justify-content: center;
+	justify-content: center;
 	&:nth-child(2) {
 		justify-content: space-between;
 	}
@@ -48,24 +48,18 @@
 		text-align: inherit;
 	}
 }
-.header__catalog_menu-item{
-	@include breakpoint(1200px) {
-		//float: left;
-	}
-	//position: relative;
-}
 .header__catalog_menu {
 	&.active {
 		position: absolute;
-	    top: 50px;
-	    z-index: 999;
-	    background: #fff;
-	    padding: 20px;
+		top: 50px;
+		z-index: 999;
+		background: #fff;
+		padding: 20px;
 		display: block;
-	    .header__catalog_menu-item {
-	    	padding-bottom: 5px;
-	    }
-	    @include breakpoint(1200px) {
+		.header__catalog_menu-item {
+			padding-bottom: 5px;
+		}
+		@include breakpoint(1200px) {
 			position: inherit;
 			padding: 0;
 			top: 0;
@@ -97,7 +91,7 @@
 .header__info-menu__main-item {
 	@include breakpoint(320px) {
 		padding-right: 5px;
-	    text-align: center;
+		text-align: center;
 	}
 	@include breakpoint(600px) {
 		padding-right: 29px;
@@ -107,12 +101,12 @@
 	}
 }
 .adapt__menu {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-family: Proxima Nova Semibold;
-    line-height: 0;
-    margin-bottom: 24px;
-    margin-left: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: Proxima Nova Semibold;
+	line-height: 0;
+	margin-bottom: 24px;
+	margin-left: 20px;
 	@include breakpoint(320px) {
 		display: block;
 	}
@@ -186,8 +180,8 @@
 		}
 	}
 	@include breakpoint(1200px) {
-	    width: 560px;
-	    & img {
+		width: 560px;
+		& img {
 			width: 560px;
 		}
 	}
@@ -235,12 +229,12 @@
 	}
 	.footer__menu_block {
 		@include breakpoint(320px) {
-		    margin-left: auto;
-	        text-align: center;
+			margin-left: auto;
+			text-align: center;
 		}
 		@include breakpoint(480px) {
-		    margin-left: 25px;
-	        text-align: inherit;
+			margin-left: 25px;
+			text-align: inherit;
 		}
 		@include breakpoint(940px) {
 			margin-left: 30px;
@@ -280,7 +274,7 @@
 }
 .footer__sn {
 	@include breakpoint(320px) {
-	    justify-content: center;
+		justify-content: center;
 	}
 	@include breakpoint(750px) {
 		justify-content: inherit;
@@ -289,9 +283,9 @@
 .copyright,
 .wizard {
 	@include breakpoint(320px) {
-	    text-align: center;
-	    display: block;
-	    float: none;
+		text-align: center;
+		display: block;
+		float: none;
 	}
 	@include breakpoint(750px) {
 		display: inline-block;
@@ -302,5 +296,4 @@
 		float: right;
 	}
 }
-
 /*!adaptive*/

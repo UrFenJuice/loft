@@ -1,13 +1,13 @@
 .catalog__main_page-item {
 	text-align: center;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 .catalog__main_page-item__img {
 	position: relative;
 	width: 195px;
 	height: 245px;
-    display: block;
-    margin: auto!important;
+	display: block;
+	margin: auto!important;
 }
 .catalog__main_page-item__img img {
 	@extend .center;
@@ -30,24 +30,24 @@
 	font-family: $second-font;
 }
 .catalog__main_page-item__price-old {
-    display: inline-block;
-    font-size: 16px;
+	display: inline-block;
+	font-size: 16px;
 	color: $gray;
 	text-decoration: line-through;
 	margin-left: 9px;
 }
 .catalog__main_page .owl-nav.owl-nav.owl-nav {
 	display: block;
-    margin-top: 43px;
-    margin-bottom: 37px;
+	margin-top: 43px;
+	margin-bottom: 37px;
 	div {
 		font-size: 0;
 		border-radius: 0;
-    	background-repeat: no-repeat;
-    	background-color: $primary-color;
-    	position: relative;
-    	border: 9px solid $primary-color;
-    	margin: 5px 16px;
+		background-repeat: no-repeat;
+		background-color: $primary-color;
+		position: relative;
+		border: 9px solid $primary-color;
+		margin: 5px 16px;
 		padding: 8px;
 	}
 	.owl-next {
@@ -58,8 +58,8 @@
 			position: absolute;
 			border-bottom: 1px solid $new_line;
 			width: 265px;
-		    left: 25px;
-    		top: 8px;
+			left: 25px;
+			top: 8px;
 		}
 	}
 	.owl-prev {
@@ -71,8 +71,8 @@
 			position: absolute;
 			border-bottom: 1px solid $new_line;
 			width: 265px;
-		    left: 25px;
-    		top: 8px;
+			left: 25px;
+			top: 8px;
 		}
 	}
 }
@@ -84,17 +84,17 @@
 	margin-bottom: 90px;
 }
 .stickers {
-    position: absolute;
-    top: 26px;
-    z-index: 999;
-    left: 10px;
+	position: absolute;
+	top: 26px;
+	z-index: 999;
+	left: 10px;
 }
 .sticker {
 	font-size: 16px;
 	color: $white;
 	text-transform: uppercase;
 	padding: 3px 14px 2px;
-    display: flex;
+	display: flex;
 }
 .sticker_sale {
 	background: $sale_item;
@@ -152,7 +152,7 @@
 }
 .catalog__main_page .owl-item {
 	width: 270px!important;
-    -webkit-box-flex: 1;
-    flex: 1 0 270px;
-    margin-left: 30px;
+	-webkit-box-flex: 1;
+	flex: 1 0 270px;
+	margin-left: 30px;
 }

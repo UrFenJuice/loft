@@ -1,7 +1,7 @@
 .tabs__controls {
 	display: flex;
-    justify-content: center;
-    padding: 86px 0 64px;
+	justify-content: center;
+	padding: 86px 0 64px;
 }
 .tabs__controls-item {
 	transition: top 1s ease-out 0.2s;
@@ -18,8 +18,8 @@
 		background: $primary_color;
 		display: block;
 		position: absolute;
-	    top: 50%;
-    	right: -24px;
+		top: 50%;
+		right: -24px;
 	}
 	&:nth-last-child(1){
 		margin-right: 0;

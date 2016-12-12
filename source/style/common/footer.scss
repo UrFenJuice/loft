@@ -16,13 +16,13 @@
 	color: $white;
 	font-size: 15px;
 	padding-bottom: 25px;
-    line-height: 1.7;
+	line-height: 1.7;
 }
 .footer__phone {
 	font-size: 18px;
 	font-family: $second-font;
 	letter-spacing: 0.45px;
-    padding-bottom: 3px;
+	padding-bottom: 3px;
 }
 .footer__email {
 	font-size: 15px;
@@ -51,9 +51,9 @@
 }
 .footer__menu_block {
 	color: $white;
-    -webkit-box-flex: 1;
-    flex: 1 1 200px;
-    margin-left: 49px;
+	-webkit-box-flex: 1;
+	flex: 1 1 200px;
+	margin-left: 49px;
 	a {
 		color: $white;
 		font-size: 15px;
@@ -102,13 +102,13 @@
 	background-color: $second-color;
 	color: $gray;
 	font-size: 15px;
-    padding: 22px 0px 25px;
-    .wizard {
-    	a {
-    		color: $gray;
-    		font-family: $second-font;
-    		text-transform: uppercase;
-    	}
-    }
+	padding: 22px 0px 25px;
+	.wizard {
+		a {
+			color: $gray;
+			font-family: $second-font;
+			text-transform: uppercase;
+		}
+	}
 }
 /*!FOOTER*/

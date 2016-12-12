@@ -1,5 +1,5 @@
 .brands {
-    margin: 92px 0;
+	margin: 92px 0;
 }
 .brands .owl-nav.owl-nav.owl-nav {
 	margin-top: 36px;
@@ -7,11 +7,11 @@
 	div {
 		font-size: 0;
 		border-radius: 0;
-    	background-repeat: no-repeat;
-    	background-color: $primary-color;
-    	position: relative;
-    	border: 9px solid $primary-color;
-    	margin: 5px 15px;
+		background-repeat: no-repeat;
+		background-color: $primary-color;
+		position: relative;
+		border: 9px solid $primary-color;
+		margin: 5px 15px;
 		padding: 8px;
 	}
 	.owl-next {
@@ -22,8 +22,8 @@
 			position: absolute;
 			border-bottom: 1px solid $new_line;
 			width: 265px;
-		    left: 25px;
-    		top: 8px;
+			left: 25px;
+			top: 8px;
 		}
 	}
 	.owl-prev {
@@ -35,30 +35,17 @@
 			position: absolute;
 			border-bottom: 1px solid $new_line;
 			width: 265px;
-		    left: 25px;
-    		top: 8px;
+			left: 25px;
+			top: 8px;
 		}
 	}
 }
 .brands .owl-stage {
 	display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.brand__item img {
-
+	align-items: center;
+	justify-content: center;
 }
 .brands .owl-item img {
 	width: auto!important;
-    margin: 0 auto;
+	margin: 0 auto;
 }
-// .brand__item {
-// 	position: relative;
-// 	width: 191px;
-// 	height: 75px;
-// 	img {
-// 		max-width: 191px;
-// 		max-height: 75px;
-// 		@extend .center;
-// 	}
-// }
