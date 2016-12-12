@@ -1,35 +1,49 @@
 block variables
+- var top_items = ["О компании", "Новости", "Карта лояльности", "Помощь покупателю", "Контакты"]
+- var items = ["Бренды", "Женское", "Мужское", "Детское", "Обувь", "Сумки", "Распродажа"]
+- var customer = ["Оплата", "Доставка", "Обмен и возврат", "Условия продажи", "Обратная связь", "FAQ"]
+- var login = ["Войти", "Зарегистироваться"]
+- var svg = "assets/img/sprite.svg" 
+- var sn = ["facebook", "vk", "instagram"]
+- var sup = "<sup class='sale'>до - 30%</sup>"
 
+mixin use(name)
+  svg.my_svg(role="img")(id=name)
+    use(xlink:href=svg+"#"+name)
+      
+
+    
 doctype html
 html
     head
         meta(charset='utf-8')
         //if lt IE 9
             script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')
-        title альянс
+        title vip
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
         meta(name='keywords', content='')
         meta(name='description', content='')
         link(rel='stylesheet' href='assets/css/normalize.css')
         link(href='assets/css/app.css', rel='stylesheet', media='all')
-        link(href='assets/css/owl.carousel.css', rel='stylesheet', media='all')
-        link(href='assets/css/owl.theme.css', rel='stylesheet', media='all')
+        link(href='assets/css/owl.carousel.min.css', rel='stylesheet', media='all')
+        link(href='assets/css/owl.theme.default.min.css', rel='stylesheet', media='all')
         link(href='assets/css/font-awesome.min.css', rel='stylesheet', media='all')
-        script(src='assets/js/jquery.min.js')
+        //script(src='assets/js/jquery.min.js')
+        //object(type="image/svg+xml", data="assets/img/sprite.svg")#none
         
         
     body
-        #bg_layer
-        .wrapper
-            include common/_header
-            // .header
-            block content
+        include common/_header
+        // .header
+        block content
+
             
             // .content
         // .wrapper
         include common/_footer
-        script(src='assets/js/masonry.pkgd.min.js')
-        script(src='assets/js/owl.carousel.js')
-        script(src='assets/js/validator.min.js')
-
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+        //script(src='assets/js/masonry.pkgd.min.js')
+        script(src='assets/js/owl.carousel.min.js')
         script(src='assets/js/app.js')
         // .footer

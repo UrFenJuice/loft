@@ -1,60 +1,63 @@
 footer.footer
-            .footer__top
-                .container
-                    .short__info
-                        h3 Интернет-магазин "automag №1"
-                        p
-                            | Продажа запчастей и автохимии для иномарок и машин отчественного производства. Работаем с оптовыми и розничными покупателями.
-                        span.phone +7(4822) 56-41-22  /  +7(4822) 65-51-12
-                        address
-                            | Тверь, ул. П. Савельевой, д. 41  (посмотреть на карте)
-                            br
-                            | Тверь, Волоколамское шоссе, д. 39А  (посмотреть на карте)
-                    .footer__top-menu-l
-                        h3 Каталог товаров
-                        ul.footer__top-menu-left
-                            li
-                                a(href='') Автомасла
-                            li
-                                a(href='') Автоаксессуары
-                            li
-                                a(href='') Автозапчасти
-                            li
-                                a(href='') Автохимия, автокосметика
-                            li
-                                a(href='') Аккумуляторы
-                            li
-                                a(href='') Антикоры, шпатлевки
-                            li
-                                a(href='') Краски, грунты аэрозольные
-                            li
-                                a(href='') Охлаждающие жидкости
-                            li
-                                a(href='') Растворител
-                            li
-                                a(href='') Смазки
-                            li
-                                a(href='') Спецжидкости
-                            li
-                                a(href='') Фильтры
-                    .footer__top-menu-r
-                        h3 информация
-                        ul.footer__top-menu-right
-                            li
-                                a(href='') О компании
-                            li
-                                a(href='') Скидки
-                            li
-                                a(href='') Новости
-                            li
-                                a(href='') Доставка и оплата
-                            li
-                                a(href='') Гарантия и возврат
-                            li
-                                a(href='') Контакты
-            .footer__bottom
-                .container
-                    span.copyright Все права защищены © 2014 - 2016
-                    span.wizard
-                        | Дизайн и разработка сайта 
-                        a(href='http://wizard-c.ru/', target='_blank') WIZARD-C
+	.footer__top
+		.container
+			.footer__top-left-block
+				.footer__logo
+					a(href="/").footer__logo-hr
+						img(src="/assets/img/logo_bw.png")
+				p.footer__info
+					| Разнообразие брендов, качество изделий, уровень сервиса, постоянно проводимые акции для
+					br
+					| покупателей и индивидуальный подход к каждому
+					br 
+					| клиенту – визитная карточка магазина 
+					br
+					| «Важная Персона».
+				.footer__phone +7 (4822) 35-98-17 / +7 (4822) 58-52-92
+				a(href="mailto:tvervip@yandex.ru").footer__email tvervip@yandex.ru
+				ul.footer__sn
+					each icon in sn
+						li.footer__sn-icon: a(href="#"): i(aria-hidden="true").fa(class='fa-'+icon)
+
+			.footer__top-right-block
+				.footer__subscribe
+					.bx-subscribe-form
+						.bx-block-title подписаться на новости
+						#sender-subscribe.bx-subscribe
+							form(role='form', method='post', action='/index.php', onsubmit="BX('bx_subscribe_btn_sljzMT').disabled=true;").my_subscribe
+								.bx-input-group
+									input.bx-form-control(type='email', name='SENDER_SUBSCRIBE_EMAIL', value='', title='Введите ваш e-mail', placeholder='Введите ваш e-mail')
+								.bx_subscribe_submit_container
+									button#bx_subscribe_btn_sljzMT.sender-btn.btn-subscribe
+										span отправить
+				.footer__menu
+					.footer__menu_block
+						h3 информация
+						ul
+							each item in top_items
+								li: a(href="#")= item
+					.footer__menu_block
+						h3 каталог
+						ul
+							each item in items
+								li: a(href="#")= item
+					.footer__menu_block
+						h3 покупателю
+						ul
+							each item in customer
+								li: a(href="#")= item
+					.footer__menu_block
+						h3 мой аккаунт
+						ul
+							each item in login
+								li: a(href="#")= item
+
+
+
+	.footer__bottom
+		.container
+			span.copyright ООО «Важная персона». Все права защищены
+			span.wizard
+				| Разработка сайта 
+				a(href="http://wizard-c.ru/", target="_blank")
+					| wizard-c

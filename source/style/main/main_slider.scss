@@ -1,0 +1,114 @@
+/*SLIDER*/
+.commercial__block {
+	display: flex;
+}
+// #owl-slider-main {
+// 	width: 74.6vw;
+// 	margin-right: 0.7vw;
+// }
+.owl-slider-main-item {
+	position: relative;
+}
+.owl-slider-block {
+	position: absolute;
+	top: 5vw;
+	left: 12%;
+	width: 400px;
+}
+.owl-slider-name {
+	font-family: Georgia;
+	font-size: 48px;
+	color: $second-color;
+    padding-bottom: 10px;
+}
+.owl-slider-info {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 36px;
+	color: $primary-color;
+	padding-bottom: 15px;
+}
+.owl-slider-detail-info {
+	font-size: 18px;
+	color: $second-color;
+	padding-bottom: 20px;
+}
+.owl-slider-button {
+	color: $primary-color;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: $second-font;
+	border:3px solid $primary-color;
+	width: 158px;
+	height: 38px;
+	display: block;
+	text-align: center;
+	line-height: 1.7;
+}
+.owl-slider__pager {
+	position: absolute;
+	display: flex;
+	left: 12%;
+	bottom: 10%;
+}
+.owl-dot {
+	margin-right: 19px;
+	width: 24px;
+	height: 24px;
+	position: relative;
+}
+.owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: $white;
+    border-radius: 12px;
+	border: 6px solid transparent;
+	display: block;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.owl-dot.active span {
+	background: $primary-color;
+	border-color: $white;
+	width: 24px;
+    height: 24px;
+}
+.commercial__block-banner {
+	background: url('/assets/img/banner.jpg') 0 0 no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner {
+	/* width: 350px; */
+	width: 18.2vw;
+	height: 160px;
+	font-family: Georgia;
+	text-transform: uppercase;
+	font-size: 60px;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    line-height: 2.42;
+	@extend .center;
+	top: 30%;
+}
+.banner_to_catalog {
+	font-size: 18px;
+	font-family: $second-font;
+	color: $white;
+	position: absolute;
+	bottom: -22px;
+	left: 0;
+    right: 0;
+	margin: auto;
+	display: block;
+	background: $primary-color;
+	width: 155px;
+	height: 45px;
+	text-align: center;
+	line-height: 2.42;
+}
+/*!SLIDER*/
