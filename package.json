@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "font-awesome": "^4.6.3",
+    "jquery.formstyler": "^1.7.5-repackage",
     "normalize.css": "^4.1.1",
-    "owl.carousel": "^2.2.0",
-    "validator": "^6.0.0"
+    "owl.carousel": "^2.2.0"
   }
 }

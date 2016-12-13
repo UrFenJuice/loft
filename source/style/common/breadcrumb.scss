@@ -1,0 +1,24 @@
+.bx-breadcrumb__container {
+	background-color: #f4f4f4;
+}
+.bx-breadcrumb{
+	color: $gray;
+}
+.bx-breadcrumb .bx-breadcrumb-item{
+	float:left;
+	margin:15.5px 0;
+	white-space:nowrap;
+	line-height:13px;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.bx-breadcrumb .bx-breadcrumb-item span{
+	font-size:14px;
+}
+.bx-breadcrumb .bx-breadcrumb-item a{
+	border-bottom:0;
+	color: $gray;
+}
+.bx-breadcrumb .slash {
+	margin-right:10px;
+}

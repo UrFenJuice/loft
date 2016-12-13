@@ -1,6 +1,6 @@
 .middle_block {
 	margin-top: 100px;
-	background: #f4f4f4 url('/assets/img/middle.jpg') 49.4vw 100% no-repeat;
+	background: #f4f4f4 url('/assets/img/middle2.jpg') 49.4vw 100% no-repeat;
 	h2 {
 		padding: 76px 0 63px;
 	}
@@ -10,13 +10,7 @@
 }
 .middle_block__container-item {
 	background: $white;
-	width: 375px;
 	height: 310px;
-	margin-right: 45px;
-	&:nth-child(2) {
-		margin-right: 0;
-		width: 400px;
-	}
 	padding: 30px;
 	margin-bottom: 95px;
 }
@@ -38,7 +32,6 @@
 .middle_block__container-description {
 	font-size: 16px;
 	display: inline-block;
-	padding-bottom: 31px;
 	line-height: 1.5;
 }
 .primary__button {

@@ -36,11 +36,13 @@
 }
 .footer__sn {
 	padding-top: 29px;
-	padding-bottom: 83px;
 }
 .footer__sn-icon {
 	padding-right: 19px;
 	font-size: 19px;
+	&:nth-last-child(1) {
+		padding-right: 0px;
+	}
 }
 .footer__sn,
 .footer__menu {
@@ -78,7 +80,7 @@
 	padding-bottom: 18px;
 }
 .bx-subscribe-form {
-	padding: 74px 0 50px 50px;
+	padding: 45px 0 50px 50px;
 }
 .my_subscribe {
 	display: flex;
@@ -95,7 +97,6 @@
 	text-transform: uppercase;
 	font-family: $second-font;
 	font-size: 18px;
-	width: 164px;
 	height: 44px;
 }
 .footer__bottom {

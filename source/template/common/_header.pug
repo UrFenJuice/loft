@@ -30,12 +30,19 @@ header.header
 						| basket
 						sup.header__user-nav__item-basket 5
 	.container
-		.adapt__menu: a(href="#") меню
+		.adapt__menu: a(href="#") 
+			.icon-bars
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			| меню
 		ul.header__catalog_menu
 			each item in items
 				li.header__catalog_menu-item: a(href="#").header__catalog_menu-item-link= item
 					- if(item == 'Распродажа')
 						sup.sale до - 30%
+			a(href="#").close_menu: +use('close')
+
 		.header__catalog_search
 			#search.bx-searchtitle
 				form(action='/catalog/')
@@ -44,44 +51,47 @@ header.header
 						span.bx-input-group-btn
 							button.btn.btn-default(type='submit', name='s')
 								i.fa.fa-search
-			//- .title-search-result(style='display: block; position: absolute; top: 30px; left: 0px; width: 1170px;')
-			//- 	.bx_searche
-			//- 		.bx_item_block.others_result
-			//- 			.bx_img_element
-			//- 				.bx_image(style="background-image: url('/assets/img/search/search_1.jpg')")
-			//- 			.bx_item_element
-			//- 				a(href='#')
-			//- 					b DKNY
-			//- 					| Кожаное портмоне на молнии с прострочкой
-			//- 			.bx_item_price
-			//- 				| 25 000 Р
-			//- 			div(style='clear:both;')
-			//- 		.bx_item_block
-			//- 			.bx_img_element
-			//- 				.bx_image(style="background-image: url('/assets/img/search/search_2.jpg')")
-			//- 			.bx_item_element
-			//- 				a(href='#')
-			//- 					b DKNY
-			//- 					|  Сумка Gansevoort на цепочке
-			//- 			.bx_item_price
-			//- 				| 25 000 Р
-			//- 			div(style='clear:both;')
-			//- 		.bx_item_block
-			//- 			.bx_img_element
-			//- 				.bx_image(style="background-image: url('/assets/img/search/search_3.jpg')")
-			//- 			.bx_item_element
-			//- 				a(href='#')
-			//- 					b DKNY
-			//- 					|  Платье
-			//- 			.bx_item_price
-			//- 				| 25 000 Р
-			//- 			div(style='clear:both;')
-			//- 		.bx_item_block(style='min-height:0')
-			//- 			.bx_img_element
-			//- 			.bx_item_element
-			//- 		.bx_item_block.all_result
-			//- 			.bx_img_element
-			//- 			.bx_item_element
-			//- 				span.all_result_title
-			//- 					a(href='#').primary__button Все результаты
-			//- 			div(style='clear:both;')
+								| Найти по каталогу
+							a(href="#").close
+								+use("close")
+			.title-search-result(style='position: absolute; top: 30px; left: 0px;width: 100%;')
+				.bx_searche
+					.bx_item_block.others_result
+						.bx_img_element
+							.bx_image(style="background-image: url('/assets/img/search/search_1.jpg')")
+						.bx_item_element
+							a(href='#')
+								b DKNY
+								| Кожаное портмоне на молнии с прострочкой
+						.bx_item_price
+							| 25 000 Р
+						div(style='clear:both;')
+					.bx_item_block
+						.bx_img_element
+							.bx_image(style="background-image: url('/assets/img/search/search_2.jpg')")
+						.bx_item_element
+							a(href='#')
+								b DKNY
+								|  Сумка Gansevoort на цепочке
+						.bx_item_price
+							| 25 000 Р
+						div(style='clear:both;')
+					.bx_item_block
+						.bx_img_element
+							.bx_image(style="background-image: url('/assets/img/search/search_3.jpg')")
+						.bx_item_element
+							a(href='#')
+								b DKNY
+								|  Платье
+						.bx_item_price
+							| 25 000 Р
+						div(style='clear:both;')
+					.bx_item_block(style='min-height:0')
+						.bx_img_element
+						.bx_item_element
+					.bx_item_block.all_result
+						.bx_img_element
+						.bx_item_element
+							span.all_result_title
+								a(href='#').primary__button Все результаты
+						div(style='clear:both;')

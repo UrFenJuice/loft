@@ -19,6 +19,62 @@
 		width: 1170px;
 	}
 }
+h1 {
+	@include breakpoint(320px) {
+		font-size: 35px;
+	}
+	@include breakpoint(750px) {
+		font-size: 37px;
+	}
+	@include breakpoint(940px) {
+		font-size: 39px;
+	}
+	@include breakpoint(1200px) {
+		font-size: 41px;
+	}
+}
+h2 {
+	@include breakpoint(320px) {
+		font-size: 34px;
+	}
+	@include breakpoint(750px) {
+		font-size: 36px;
+	}
+	@include breakpoint(940px) {
+		font-size: 38px;
+	}
+	@include breakpoint(1200px) {
+		font-size: 40px;
+	}
+}
+h3 {
+	@include breakpoint(320px) {
+		font-size: 15px;
+	}
+	@include breakpoint(750px) {
+		font-size: 16px;
+	}
+	@include breakpoint(940px) {
+		font-size: 17px;
+	}
+	@include breakpoint(1200px) {
+		font-size: 18px;
+	}
+}
+h4 {
+	@include breakpoint(320px) {
+		font-size: 13px;
+	}
+	@include breakpoint(750px) {
+		font-size: 14px;
+	}
+	@include breakpoint(940px) {
+		font-size: 15px;
+	}
+	@include breakpoint(1200px) {
+		font-size: 16px;
+	}
+}
 .header .container {
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -26,6 +82,44 @@
 	justify-content: center;
 	&:nth-child(2) {
 		justify-content: space-between;
+	}
+	@include breakpoint(1170px) {
+		&:nth-child(1) {
+			&:before {
+				content: "";
+				position: absolute;
+				border-bottom: 1px solid #ab885e;
+				width: 100%;
+				bottom: -1px;
+				left: -100%;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				border-bottom: 1px solid #ab885e;
+				width: 100%;
+				bottom: -1px;
+				right: -100%;
+			}
+		}
+	}
+}
+.line {
+	@include breakpoint(1170px) {
+		&:after,
+		&:before {
+			content:'';
+			display: block;
+			border-bottom: 1px solid $new_line;
+			position: absolute;
+			width: 100%;
+		}
+		&:after {
+			left: -100%;
+		}
+		&:before {
+			right: -100%;
+		}
 	}
 }
 .header__logo {
@@ -50,12 +144,24 @@
 }
 .header__catalog_menu {
 	&.active {
-		position: absolute;
-		top: 50px;
+		// position: absolute;
+		// top: 50px;
+		// z-index: 999;
+		// background: #fff;
+		// padding: 20px;
+		// display: block;
+		position: fixed;
+		top: 0;
 		z-index: 999;
-		background: #fff;
-		padding: 20px;
-		display: block;
+		background: rgba(255, 255, 255, 0.94);
+		padding: 30vh 0;
+		display: inline-block;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		text-align: center;
+		overflow: scroll;
 		.header__catalog_menu-item {
 			padding-bottom: 5px;
 		}
@@ -71,6 +177,11 @@
 	@include breakpoint(940px) {
 		display: flex;
 		flex-basis: 74%;
+	}
+}
+.close_menu {
+	@include breakpoint(940px) {
+		display: none;
 	}
 }
 .header__info-menu__main {
@@ -100,6 +211,22 @@
 		}
 	}
 }
+.header__info-block__phone {
+	@include breakpoint(320px) {
+		font-size: 17px;
+	}
+	@include breakpoint(480px) {
+		font-size: 20px;
+	}
+}
+.header__info-block__info {
+	@include breakpoint(320px) {
+		font-size: 13px;
+	}
+	@include breakpoint(480px) {
+		font-size: 14px;
+	}
+}
 .adapt__menu {
 	font-size: 18px;
 	text-transform: uppercase;
@@ -107,6 +234,24 @@
 	line-height: 0;
 	margin-bottom: 24px;
 	margin-left: 20px;
+	.icon-bars {
+		display: inline-block;
+	    position: relative;
+    	top: 1px;
+	}
+	.icon-bar {
+		background: $primary-color;
+		width: 22px;
+		height: 3px;
+		display: block;
+		line-height: normal;
+		border-radius: 0;
+		margin-top: 2px;
+		margin-right: 4px;
+	}
+	a {
+		color: $primary-color;
+	}
 	@include breakpoint(320px) {
 		display: block;
 	}
@@ -169,12 +314,12 @@
 		&:nth-child(1) {
 			margin-right: auto;
 		}
-		& img {
-			width: auto;
-		}
 	}
 	@include breakpoint(940px) {
 		width: 470px;
+		&:nth-child(1) {
+			margin-right: 50px;
+		}
 		& img {
 			width: 470px;
 		}
@@ -189,15 +334,27 @@
 .middle_block__container-item {
 	@include breakpoint(320px) {
 		width: 100%;
+		margin-right: 0;
 		&:nth-child(2) {
 			width: 100%;
+			margin-right: 0;
 		}
 	}
 	@include breakpoint(750px) {
 		width: 375px;
+		margin-right: 45px;
 		&:nth-child(2) {
 			width: 400px;
+			margin-right: 0;
 		}
+	}
+}
+.middle_block__container-description {
+	@include breakpoint(320px) {
+		padding-bottom: 15px;
+	}
+	@include breakpoint(480px) {
+		padding-bottom: 25px;
 	}
 }
 .bx-form-control {
@@ -231,6 +388,7 @@
 		@include breakpoint(320px) {
 			margin-left: auto;
 			text-align: center;
+		    padding-bottom: 20px;
 		}
 		@include breakpoint(480px) {
 			margin-left: 25px;
@@ -275,9 +433,19 @@
 .footer__sn {
 	@include breakpoint(320px) {
 		justify-content: center;
+	    padding-bottom: 0px;
 	}
 	@include breakpoint(750px) {
 		justify-content: inherit;
+	    padding-bottom: 83px;
+	}
+}
+.bx-subscribe .sender-btn.btn-subscribe {
+	@include breakpoint(320px) {
+		width: 125px;
+	}
+	@include breakpoint(480px) {
+		width: 164px;
 	}
 }
 .copyright,
@@ -295,5 +463,77 @@
 	@include breakpoint(750px) {
 		float: right;
 	}
+}
+.tabs__item_news-item {
+	@include breakpoint(320px) {
+		width: 100%;
+	}
+	@include breakpoint(560px) {
+		width: 560px;
+	}
+}
+.owl-slider-name {
+	@include breakpoint(320px) {
+		font-size: 32px;
+	}
+	@include breakpoint(750px) {
+		font-size: 48px;
+	}
+}
+.owl-slider-block {
+	@include breakpoint(320px) {
+		position: absolute;
+		top: 2vw;
+		width: 100%;
+	}
+	@include breakpoint(480px) {
+		position: absolute;
+		top: 5vw;
+		left: 12%;
+		width: 400px;
+	}
+}
+.owl-slider-info {
+	@include breakpoint(320px) {
+		display: none;
+	}
+	@include breakpoint(750px) {
+		display: block;
+	}
+}
+.owl-slider-detail-info {
+	@include breakpoint(320px) {
+		display: none;
+	}
+	@include breakpoint(940px) {
+		display: block;
+	}
+}
+.brands .owl-nav.owl-nav.owl-nav,
+.catalog__main_page .owl-nav.owl-nav.owl-nav {
+	@include breakpoint(320px) {
+		.owl-next {
+			&:after {
+				width: 20vw;
+			}
+		}
+		.owl-prev {
+			&:before {
+				width: 20vw;
+			}
+		}
+	}
+	@include breakpoint(750px) {
+		.owl-next {
+			&:after {
+				width: 265px;
+			}
+		}
+		.owl-prev {
+			&:before {
+				width: 265px;
+			}
+		}
+	}	
 }
 /*!adaptive*/
