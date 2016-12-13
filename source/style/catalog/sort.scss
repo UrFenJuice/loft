@@ -1,0 +1,27 @@
+.catalog__sort {
+	display: flex;
+	justify-content: flex-start;
+}
+.catalog__sort-item {
+	font-size: 16px;
+	margin-right: 35px;
+}
+.jq-checkbox.checkbox_styler {
+	width: 18px;
+	height: 18px;
+	border-radius: 0;
+	border: 1px solid $new_line;
+	top: -1px;
+    vertical-align: middle;
+    background: $white;
+    box-shadow: none;
+    outline: none;
+    &.checked .jq-checkbox__div {
+    	@extend .icon-ok; 
+		box-shadow: none;
+		outline: none;
+		background-color: transparent;
+		border-radius: 0;
+		margin: 3px 0 0 1px;
+    }
+}

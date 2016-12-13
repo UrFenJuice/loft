@@ -118,5 +118,10 @@ jQuery(function($){
             $('#search.active .bx-input-group').width($('.container').width());
         });
         /*!SEARCH*/
+        /*CHECKBOX*/
+        setTimeout(function() {
+          $('input.checkbox_styler').styler();
+        }, 100)
+        /*!CHECKBOX*/
     });
 })
