@@ -123,5 +123,10 @@ jQuery(function($){
           $('input.checkbox_styler').styler();
         }, 100)
         /*!CHECKBOX*/
+        /*FILTER SCROLLBAR*/
+        jQuery(document).ready(function(){
+            jQuery('.bx_filter_block').scrollbar();
+        });
+        /*!FILTER SCROLLBAR*/
     });
 })
