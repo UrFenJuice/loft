@@ -1,10 +1,15 @@
+/*SORT*/
 .catalog__sort {
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 }
 .catalog__sort-item {
 	font-size: 16px;
 	margin-right: 35px;
+	&:nth-child(3) {
+	    flex-basis: 170px;
+	}
 }
 .jq-checkbox.checkbox_styler {
 	width: 18px;
@@ -25,3 +30,10 @@
 		margin: 3px 0 0 1px;
     }
 }
+.catalog__sort-item select {
+	width: 250px;
+	height: 40px;
+	padding: 0 15px;
+	border: 1px solid #e7e7e7;
+}
+/*!SORT*/

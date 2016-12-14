@@ -97,6 +97,10 @@ main {
 
 @import 'common/slider';
 
+@import 'common/adaptive';
+
+@import 'common/breadcrumb';
+
 @import 'main/main_slider';
 
 @import 'main/main_catalog';
@@ -104,10 +108,6 @@ main {
 @import 'main/main_middle_block';
 
 @import 'main/main_news';
-
-@import 'common/adaptive';
-
-@import 'common/breadcrumb';
 
 @import 'catalog/left_bar_menu';
 

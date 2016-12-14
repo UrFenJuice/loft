@@ -1,3 +1,4 @@
+/*CATALOG ITEMS*/
 .catalog__main_page-all {
 	display: flex;
 	justify-content: space-around;
@@ -5,7 +6,37 @@
 	margin: 0;
 	flex-flow: row wrap;
 	.catalog__main_page-item {
-		width: 270px;
+		max-width: 270px;
 		margin-bottom: 55px;
+		flex: 1 1 270px;
+		transition: flex 0.4s ease;
+		&:hover {
+			flex: 0.000000001 0.00000001 270px;
+			box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
+			margin-bottom: -7px;
+			.catalog__main_page-item__block_hide {
+				display: block;
+				transition: block 0.4s ease;
+			}
+			z-index: 1000;
+			background-color: $white;
+		}
 	}
 }
+.catalog__main_page-item__block_hide {
+	display: none;
+	#eye {
+		width: 24px;
+		height: 24px;
+		fill: $gray;
+		stroke: $gray;
+	}
+	a {
+		color: $gray;
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+	}
+}
+/*!CATALOG ITEMS*/

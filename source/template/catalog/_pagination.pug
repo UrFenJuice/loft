@@ -1,14 +1,4 @@
 .bx_pagination_bottom
-	.bx_pagination_section_two
-		.bx_pg_section.bx_pg_show_col
-			span.bx_wsnw
-				span.bx_pg_text Выводить по:
-				.bx_pagination_select_container
-					select
-						option(value='9', selected='selected') 9
-						option(value='18') 18
-						option(value='36') 36
-						option(value='72') 72
 	.bx_pagination_section_one
 		.bx_pg_section.pg_pagination_num
 			.bx_pagination_page
@@ -19,17 +9,21 @@
 					li
 						a(href='#', title='Страница 2') 2
 					li
-						a(href='#', title='Страница 3') 3
-					li
-						a(href='#', title='Страница 4') 4
+						a(href='#0', title='Страница 4') ...
 					li
 						a(href='#', title='Страница 5') 5
 					li
-						a(href='#0', title='Страница 17') ...
-					li
-						a(href='#0', title='Страница 30') 30
-					li
-						a(href='#0', title='Страница 31') 31
-					li
+						a(href='#0', title='Страница 6') 6
 						a(href='#', title='Следующая страница')
 							i.right_ar
+	.bx_pagination_section_two
+		.bx_pg_section.bx_pg_show_col
+			span.bx_wsnw
+				span.bx_pg_text Выводить по:
+				.bx_pagination_select_container
+					select
+						option(value='9', selected='selected') 9
+						option(value='18') 18
+						option(value='36') 36
+						option(value='72') 72
+	
