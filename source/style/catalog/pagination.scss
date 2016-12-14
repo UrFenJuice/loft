@@ -40,10 +40,29 @@
 }
 .left_ar {
 	display: inline-block; 
-	//@extend .icon-left;
+	@extend .icon-left;
 }
 .right_ar {
 	display: inline-block; 
-	//@extend .icon-right;
+	@extend .icon-right;
+}
+a > .left_ar {
+	@extend .icon-left_c;
+}
+a > .right_ar {
+	@extend .icon-right_c;
+}
+.bx_wsnw {
+	display: flex;
+    align-items: center;
+}
+.bx_pagination_select_container select {
+	width: 70px;
+	height: 35px;
+	border: 1px solid $new_line;	
+    padding: 0 15px;
+}
+.bx_pg_text {
+	margin-right: 15px;
 }
 /*!PAGINATION*/

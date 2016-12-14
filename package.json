@@ -30,6 +30,7 @@
   "dependencies": {
     "font-awesome": "^4.6.3",
     "jquery.formstyler": "^1.7.5-repackage",
+    "jquery.scrollbar": "^0.2.11",
     "normalize.css": "^4.1.1",
     "owl.carousel": "^2.2.0"
   }
