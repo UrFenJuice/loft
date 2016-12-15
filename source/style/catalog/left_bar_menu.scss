@@ -2,9 +2,16 @@
 .left_bar-h {
 	font-family: $second-font;
 	text-transform: uppercase;
+    margin-bottom: 13px;
 }
-.left_bar ul li a{
-	font-size: 16px;
-	text-transform: uppercase;
+.left_bar ul {
+	margin-bottom: 34px;
+	li {
+		padding-bottom: 6px;
+		a{
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
 }
 /*!LEFT BAR MENU*/

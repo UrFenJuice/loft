@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 100;
 }
 .bx-title {
-	margin: 69px 0;
+	margin: 75px 0 57px;
 }
 button, hr, input {
 	outline: none;
@@ -83,9 +83,10 @@ main {
 .left_bar {
 	width: 22%;
 	float: left;
+	margin-right: 4%
 }
 .catalog__content {
-	width: 78%;
+	width: 74%;
 	float: left;
 }
 

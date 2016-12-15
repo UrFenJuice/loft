@@ -120,7 +120,7 @@ jQuery(function($){
         /*!SEARCH*/
         /*CHECKBOX*/
         setTimeout(function() {
-          $('input.checkbox_styler').styler();
+          $('input.checkbox_styler, select').styler();
         }, 100)
         /*!CHECKBOX*/
         /*FILTER SCROLLBAR*/
