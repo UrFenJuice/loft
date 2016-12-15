@@ -80,14 +80,17 @@ main {
 	padding: 76px 0 64px;
 }
 
+.flex__container {
+	display: flex;
+	align-content: space-between;
+}
 .left_bar {
-	width: 22%;
-	float: left;
-	margin-right: 4%
+	flex: 1 0 250px;
+	width: 250px;
+	margin-right: 20px;
 }
 .catalog__content {
-	width: 74%;
-	float: left;
+	flex: 1 1 900px;
 }
 
 @import 'common/sprite';

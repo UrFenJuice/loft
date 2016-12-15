@@ -101,9 +101,11 @@ jQuery(function($){
         $('#title-search-input').on('blur', function(e){
             e.preventDefault();
             $('#search').removeClass('active');
-            if($('.container').width() > 480){
+            if($('.container').width() < 1200){
+                $(this).width(230);
+            } else if($('.container').width() < 940) {
                 $(this).width(260);
-            } else {
+            } else if($('.container').width() < 480) {
                 $(this).width(160);
             }
             $('.title-search-result').hide('fast');

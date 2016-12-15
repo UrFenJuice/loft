@@ -88,7 +88,7 @@ h4 {
 			&:before {
 				content: "";
 				position: absolute;
-				border-bottom: 1px solid #ab885e;
+				border-bottom: 1px solid $new-line;
 				width: 100%;
 				bottom: -1px;
 				left: -100%;
@@ -96,7 +96,7 @@ h4 {
 			&:after {
 				content: "";
 				position: absolute;
-				border-bottom: 1px solid #ab885e;
+				border-bottom: 1px solid $new-line;
 				width: 100%;
 				bottom: -1px;
 				right: -100%;
@@ -188,13 +188,13 @@ h4 {
 	@include breakpoint(320px) {
 		display: block;
 	}
-	@include breakpoint(480px) {
+	@include breakpoint(570px) {
 		display: inline-block;
 		margin-bottom: 24px;
 	}
 }
 .header__info-menu__main-item {
-	@include breakpoint(480px) {
+	@include breakpoint(570px) {
 		float: left;
 		position: relative;
 	}
@@ -204,7 +204,7 @@ h4 {
 		padding-right: 5px;
 		text-align: center;
 	}
-	@include breakpoint(600px) {
+	@include breakpoint(640px) {
 		padding-right: 29px;
 		&:nth-last-child(1) {
 			padding-right: 0;
@@ -535,5 +535,64 @@ h4 {
 			}
 		}
 	}	
+}
+.middle_block {
+	@include breakpoint(320px) {
+		background: #f4f4f4;
+	}
+	@include breakpoint(480px) {
+		background: #f4f4f4 url('/assets/img/middle2.jpg') 49.4vw 100% no-repeat;
+	}
+}
+.catalog__main_page-all {
+	@include breakpoint(320px) {
+		justify-content: space-between;
+		align-items: space-between;
+	}
+	@include breakpoint(1200px) {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+.catalog__main_page-all .catalog__main_page-item {
+	@include breakpoint(320px) {
+		margin: 0 auto 55px auto;
+		&:nth-child(3n) {
+			margin-right: auto;
+		}
+	}
+	@include breakpoint(1200px) {
+		margin: 0 45px 55px 0;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+}
+.catalog__sort {
+	@include breakpoint(320px) {
+		justify-content: space-between;
+	}
+	@include breakpoint(1200px) {
+		justify-content: flex-start;
+	}
+}
+.catalog__sort-item {
+	@include breakpoint(1200px) {
+		margin-right: 4%;
+		&:nth-child(3) {
+		    flex: 2 0px;
+		}
+		&:nth-last-child(1) {
+			margin-right: 0;
+		}
+	}
+}
+.left_bar {
+	@include breakpoint(320px) {
+		display: none;
+	}
+	@include breakpoint(480px) {
+		display: block;
+	}
 }
 /*!adaptive*/

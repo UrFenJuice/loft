@@ -4,6 +4,7 @@
 	color: #231f20; 
 	display: flex;
 	justify-content: space-between;
+	flex-flow: row wrap;
 }
 
 .bx_pagination_page {
@@ -33,6 +34,7 @@
 	display: inline-block;
 	margin: 0 0px 35px 0px;
 	padding: 7px 15px; 
+	float: left;
 }
 .bx_pagination_bottom .bx_pagination_page li.bx_active {
 	background: $primary-color;

@@ -1,19 +1,15 @@
 /*CATALOG ITEMS*/
 .catalog__main_page-all {
 	display: flex;
-	justify-content: space-around;
 	padding: 0;
 	margin: 0;
 	flex-flow: row wrap;
 	.catalog__main_page-item {
 		max-width: 270px;
-		margin-bottom: 55px;
 		flex: 1 1 270px;
-		transition: flex 0.4s ease;
 		&:hover {
-			flex: 0.000000001 0.00000001 270px;
 			box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
-			margin-bottom: -7px;
+			margin-bottom: -150px;
 			.catalog__main_page-item__block_hide {
 				display: block;
 				transition: block 0.4s ease;
@@ -25,6 +21,7 @@
 }
 .catalog__main_page-item__block_hide {
 	display: none;
+	padding-top: 12px;
 	#eye {
 		width: 24px;
 		height: 24px;
@@ -37,6 +34,7 @@
 		align-content: center;
 		align-items: center;
 		justify-content: center;
+		padding: 7px 0 7px;
 	}
 }
 /*!CATALOG ITEMS*/

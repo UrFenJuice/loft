@@ -1,20 +1,14 @@
 /*SORT*/
 .catalog__sort {
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-    padding-top: 4px
+    flex-flow: row wrap;
+    padding-top: 4px;
+    padding-bottom: 35px;
 }
 .catalog__sort-item {
 	font-size: 16px;
-	margin-right: 4%;
     z-index: 1000;
-	&:nth-child(3) {
-	    flex: 2 0px;
-	}
-	&:nth-last-child(1) {
-		margin-right: 0;
-	}
 }
 .jq-checkbox.checkbox_styler {
 	width: 18px;
