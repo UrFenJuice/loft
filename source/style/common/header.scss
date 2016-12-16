@@ -150,7 +150,6 @@
 }
 #title-search-input:focus {
 	position: relative;
-	//right: 0;
 }
 #close {
 	width: 17px;
@@ -160,9 +159,6 @@
     stroke: #d14a46;
     padding-top: 3px;
 }
-// .bx-input-group {
-// 	width: 100%;
-// }
 #search.active {
 	& .fa-search{
 	    padding-right: 5px;

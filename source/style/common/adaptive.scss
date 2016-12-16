@@ -261,7 +261,10 @@ h4 {
 }
 .catalog__main_page .owl-stage-outer {
 	@include breakpoint(320px) {
-		margin-left: 0
+		margin-left: 0;
+	}
+	@include breakpoint(1200px) {
+		margin-left: -60px;
 	}
 }
 .catalog__main_page .owl-item {
@@ -300,6 +303,29 @@ h4 {
 	}
 }
 .tabs__item_news-item {
+	.tabs__item_news-item_date,
+	.tabs__item_news-item_name,
+	.tabs__item_news-item_description {
+		@include breakpoint(320px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@include breakpoint(750px) {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	.primary__button {
+		@include breakpoint(320px) {
+			position: relative;
+			left: 30px;
+		}
+		@include breakpoint(750px) {
+			position: inherit;
+		}
+	}
+}
+.tabs__item_news-item {
 	@include breakpoint(320px) {
 		margin: 0 auto 89px auto;
 		&:nth-child(1) {
@@ -315,17 +341,25 @@ h4 {
 			margin-right: auto;
 		}
 	}
+	@include breakpoint(750px) {
+		& img {
+			width: 750px;
+		}
+	}
 	@include breakpoint(940px) {
-		width: 470px;
+		width: 460px;
 		&:nth-child(1) {
-			margin-right: 50px;
+			margin-right: 20px;
 		}
 		& img {
-			width: 470px;
+			width: 460px;
 		}
 	}
 	@include breakpoint(1200px) {
 		width: 560px;
+		&:nth-child(1) {
+			margin-right: 50px;
+		}
 		& img {
 			width: 560px;
 		}
@@ -468,7 +502,7 @@ h4 {
 	@include breakpoint(320px) {
 		width: 100%;
 	}
-	@include breakpoint(560px) {
+	@include breakpoint(940px) {
 		width: 560px;
 	}
 }
@@ -590,9 +624,22 @@ h4 {
 .left_bar {
 	@include breakpoint(320px) {
 		display: none;
+		margin-right: 0px;
 	}
 	@include breakpoint(480px) {
 		display: block;
+		margin-right: 20px;
+	}
+}
+.owl-slider-button {
+	@include breakpoint(320px) {
+		font-size: 15px;
+		width: 137px;
+		height: 31px;
+	}
+	@include breakpoint(480px) {
+		width: 158px;
+		height: 38px;
 	}
 }
 /*!adaptive*/
