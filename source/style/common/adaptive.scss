@@ -262,9 +262,11 @@ h4 {
 .catalog__main_page .owl-stage-outer {
 	@include breakpoint(320px) {
 		margin-left: 0;
+		margin-right: 0px;
 	}
 	@include breakpoint(1200px) {
 		margin-left: -60px;
+		margin-right: -60px;
 	}
 }
 .catalog__main_page .owl-item {

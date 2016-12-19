@@ -12,7 +12,7 @@ jQuery(function($){
             itemElement:'li',
             stageElement:'ul',
             dotsClass:'owl-slider__pager',
-        })/*.data('owl-slider-main')*/;
+        });
         var owl_cat = $(".catalog__main_page").owlCarousel({
             nav:true,
             dots: false,
