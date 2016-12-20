@@ -130,5 +130,58 @@ jQuery(function($){
             jQuery('.bx_filter_block').scrollbar();
         });
         /*!FILTER SCROLLBAR*/
+        /*DETAIL_PAGE*/
+        var next = $('.catalog__detail_next'),
+            prev = $('.catalog__detail_prev'),
+            contentImg = $('.catalog__detail_img'),
+            slides = $('.catalog__detail_slider');
+        prev.on('click', function(e){
+            e.preventDefault();
+
+            var this_slide = slides.find('.active'),
+                countElement = $('.catalog__detail_item').length,
+                curentElement = $('li.catalog__detail_item.active').index();
+                
+                if(countElement > curentElement){
+                    this_slide
+                        .removeClass('active')
+                        .next('.catalog__detail_item')
+                        .addClass('active');
+                }
+                
+
+                contentImg.attr('src', slides.find('.active').find('img').attr('src'));
+        });
+        next.on('click', function(e){
+            e.preventDefault();
+
+            var this_slide = slides.find('.active'),
+                countElement = $('.catalog__detail_item').length,
+                curentElement = $('li.catalog__detail_item.active').index();
+
+                if(curentElement > 1){
+                    this_slide
+                        .removeClass('active')
+                        .prev('.catalog__detail_item')
+                        .addClass('active');
+                }
+
+                contentImg.attr('src', slides.find('.active').find('img').attr('src')); 
+        });
+        $('.catalog__detail_link').on('click', function(e){
+            e.preventDefault();
+
+            var item = $(this).closest('.catalog__detail_item'),
+                contentItem = $('.catalog__detail_image'),
+                itemPosition = item.data('class');
+
+                contentItem
+                    .add(item)
+                    .addClass('active')
+                    .siblings()
+                    .removeClass('active');
+                contentImg.attr('src', $(this).find('img').attr('src'));
+        });
+        /*!DERTAIL_PAGE*/
     });
 })

@@ -11,11 +11,11 @@
 }
 .catalog__detail_left-bar {
 	flex: 1 1 625px;
-	width: 625px;
+
 }
 .catalog__detail_right-bar {
 	flex: 1 1 545px;
-	width: 545px;
+
 }
 
 .catalog__detail_name {
@@ -56,7 +56,6 @@
 }
 .catalog__detail_options {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 .catalog__detail_option {
@@ -85,7 +84,6 @@
 }
 .asd_fav_button {
 	cursor: pointer;
-	margin-left: 27px;
 	.add_to_fav {
 		border-bottom: 1px dashed #000;
 	    margin-left: 11px;
@@ -163,7 +161,8 @@
 }
 .catalog__detail_left-bar {
 	display: flex;
-	img {
+	img,
+	.catalog__detail_image {
 		margin: 0 auto;
 	}
 }

@@ -644,4 +644,29 @@ h4 {
 		height: 38px;
 	}
 }
+.catalog__detail_options,
+.catalog__detail {
+	@include breakpoint(320px) {
+		flex-flow: column nowrap;
+	}
+	@include breakpoint(940px) {
+		flex-flow: row nowrap;
+	}
+}
+.asd_fav_button {
+	@include breakpoint(320px) {
+		margin-left: 10px;
+	}
+	@include breakpoint(940px) {
+		margin-left: 27px;
+	}
+}
+.catalog__detail_img {
+	@include breakpoint(320px) {
+		max-width: 243px;
+	}
+	@include breakpoint(480px) {
+		max-width: 100%;
+	}
+}
 /*!adaptive*/
