@@ -676,4 +676,26 @@ h4 {
 		max-width: 100%;
 	}
 }
+.faq__form {
+	@include breakpoint(320px) {
+		justify-content: center;
+	}
+	@include breakpoint(640px) {
+		justify-content: space-around;
+	}
+	@include breakpoint(940px) {
+		justify-content: space-between;
+	}
+}
+.faq__form_item {
+	@include breakpoint(1200px) {
+		margin-right: 45px;
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+		.inputtext {
+			width: 360px;
+		}
+	}
+}
 /*!adaptive*/

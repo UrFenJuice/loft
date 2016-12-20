@@ -16,6 +16,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-accordeon_down {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -283px -60px;
+  width: 11px;
+  height: 7px;
+}
+.icon-accordeon_up {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -283px -178px;
+  width: 11px;
+  height: 7px;
+}
 .icon-angle-arrow {
   background-image: url(/assets/img/sprite.png);
   background-position: -68px -110px;
@@ -24,7 +36,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-down {
   background-image: url(/assets/img/sprite.png);
-  background-position: -134px -110px;
+  background-position: 0px -178px;
   width: 16px;
   height: 9px;
 }
@@ -42,13 +54,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-left {
   background-image: url(/assets/img/sprite.png);
-  background-position: -283px -121px;
+  background-position: -283px -117px;
   width: 7px;
   height: 11px;
 }
 .icon-left_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -283px -60px;
+  background-position: -57px -237px;
   width: 7px;
   height: 11px;
 }
@@ -84,7 +96,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-up {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -178px;
+  background-position: -134px -110px;
   width: 16px;
   height: 9px;
 }

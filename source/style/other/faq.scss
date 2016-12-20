@@ -1,0 +1,105 @@
+.faq {
+	font-family: $second-font;
+	text-transform: uppercase;
+}
+.accordeon {
+	padding-bottom: 44px;
+}
+.accordeon__inner {
+	display: none;
+	font-size: 16px;
+	color: $second-color;
+	padding: 24px 30px 35px;
+	background-color: #f4f4f4;
+	font-family: Proxima Nova Regular;
+	margin-top: 40px;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		border-color: transparent transparent #f4f4f4 transparent;
+		border-style: solid;
+		border-width: 0px 0px 28px 21px;
+		height: 0px;
+		width: 0px;
+		transform: rotate(14deg);
+		top: 46px;
+		transition: 0.1s;
+		left: 14px;
+	}
+}
+.accordeon__list {
+    list-style-position: inside;
+    font-size: 16px;
+	font-family: $second-font;
+}
+.accordeon__item {
+	position: relative;
+	padding-bottom: 34px;
+	&:hover .accordeon__trigger,
+	&.active .accordeon__trigger {
+		color: $primary-color;
+	}
+	&:hover,
+	&.active {
+		color: $primary-color;
+	}
+	&.active {
+		padding-bottom: 42px;
+	}
+}
+
+.accordeon__item .accordeon__trigger:after {
+	content: '';
+    display: inline-block;
+	@extend .icon-accordeon_down;
+    margin-left: 10px;
+}
+.accordeon__item:hover .accordeon__trigger:after,
+.accordeon__item.active .accordeon__trigger:after,
+.accordeon__item.active .accordeon__trigger:after {
+	@extend .icon-accordeon_up;
+}
+.faq__form {
+	display: flex;
+	flex-flow: row wrap;
+	.primary__button {
+		border: none;
+		cursor: pointer;
+		margin-top: 35px;
+	    width: 164px;
+    	height: 44px;
+    	font-size: 18px;
+	}
+}
+.faq__form_item {
+	flex: 1 1 360px;
+	font-size: 16px;
+	.inputtext {
+	    width: 100%;
+		border: 1px solid $new_line;
+		padding: 8px;
+		margin-top: 6px;
+	}
+}
+.faq__form_Bigitem {
+	margin-top: 28px;
+	font-size: 16px;
+	flex: 1 0 100%;
+	.inputtextarea {
+		width: 100%;
+		height: 150px;
+		margin-top: 6px;
+		border: 1px solid $new_line;
+	}
+}
+.form-required.starrequired {
+	color: red;
+}
+.search-page.catalog__search.catalog__search_faq {
+	margin: 29px 0 63px 0;
+}
+.faq__text {
+	font-size: 16px;
+	padding: 13px 0 38px;
+}

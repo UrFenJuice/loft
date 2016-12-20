@@ -126,6 +126,10 @@
 		top: 18px;
 	}
 }
+.fa_search_new {
+	@extend .icon-loop;
+	display: inline-block;
+}
 .bx-form-control {
 	border-top: none;
 	border-left: none;
