@@ -644,7 +644,14 @@ h4 {
 		height: 38px;
 	}
 }
-.catalog__detail_options,
+.catalog__detail_options{
+	@include breakpoint(320px) {
+		flex-flow: column nowrap;
+	}
+	@include breakpoint(480px) {
+		flex-flow: row nowrap;
+	}
+}
 .catalog__detail {
 	@include breakpoint(320px) {
 		flex-flow: column nowrap;

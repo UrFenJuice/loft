@@ -18,19 +18,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-angle-arrow {
   background-image: url(/assets/img/sprite.png);
-  background-position: -63px -110px;
+  background-position: -68px -110px;
   width: 16px;
   height: 16px;
 }
 .icon-down {
   background-image: url(/assets/img/sprite.png);
-  background-position: -220px 0px;
+  background-position: -134px -110px;
   width: 16px;
   height: 9px;
 }
 .icon-handle {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -110px;
+  background-position: -220px 0px;
   width: 13px;
   height: 23px;
 }
@@ -42,19 +42,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-left {
   background-image: url(/assets/img/sprite.png);
-  background-position: -220px -119px;
+  background-position: -283px -121px;
   width: 7px;
   height: 11px;
 }
 .icon-left_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -114px -183px;
+  background-position: -283px -60px;
   width: 7px;
   height: 11px;
 }
+.icon-loop {
+  background-image: url(/assets/img/sprite.png);
+  background-position: 0px -110px;
+  width: 18px;
+  height: 18px;
+}
 .icon-ok {
   background-image: url(/assets/img/sprite.png);
-  background-position: -220px -59px;
+  background-position: -283px 0px;
   width: 14px;
   height: 10px;
 }
@@ -66,19 +72,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-right {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -183px;
+  background-position: -220px -73px;
   width: 7px;
   height: 11px;
 }
 .icon-right_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -57px -183px;
+  background-position: 0px -237px;
   width: 7px;
   height: 11px;
 }
 .icon-up {
   background-image: url(/assets/img/sprite.png);
-  background-position: -129px -110px;
+  background-position: 0px -178px;
   width: 16px;
   height: 9px;
 }

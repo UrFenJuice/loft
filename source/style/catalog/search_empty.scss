@@ -1,0 +1,25 @@
+.catalog__search {
+	margin: 74px 0 45px 0 ;
+}
+.catalog__search input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 16px;
+}
+.catalog__search input[type="submit"] {
+	@extend .icon-loop;
+	font-size: 0;
+	border: 0;
+	background-color: transparent;
+	position: relative;
+    top: -7px;
+    right: 18px;
+}
+.catalog__search_empty-text {
+	font-size: 16px;
+	a {
+		text-decoration: underline;
+	}
+}
