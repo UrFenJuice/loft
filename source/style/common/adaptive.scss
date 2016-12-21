@@ -75,6 +75,7 @@ h4 {
 		font-size: 16px;
 	}
 }
+/*HEADER_ADAPT*/
 .header .container {
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -101,24 +102,6 @@ h4 {
 				bottom: -1px;
 				right: -100%;
 			}
-		}
-	}
-}
-.line {
-	@include breakpoint(1170px) {
-		&:after,
-		&:before {
-			content:'';
-			display: block;
-			border-bottom: 1px solid $new_line;
-			position: absolute;
-			width: 100%;
-		}
-		&:after {
-			left: -100%;
-		}
-		&:before {
-			right: -100%;
 		}
 	}
 }
@@ -177,11 +160,6 @@ h4 {
 	@include breakpoint(940px) {
 		display: flex;
 		flex-basis: 74%;
-	}
-}
-.close_menu {
-	@include breakpoint(940px) {
-		display: none;
 	}
 }
 .header__info-menu__main {
@@ -259,6 +237,31 @@ h4 {
 		display: none;
 	}	
 }
+.close_menu {
+	@include breakpoint(940px) {
+		display: none;
+	}
+}
+/*!HEADER_ADAPT*/
+.line {
+	@include breakpoint(1170px) {
+		&:after,
+		&:before {
+			content:'';
+			display: block;
+			border-bottom: 1px solid $new_line;
+			position: absolute;
+			width: 100%;
+		}
+		&:after {
+			left: -100%;
+		}
+		&:before {
+			right: -100%;
+		}
+	}
+}
+/*CATALOG_SLIDER_ADAPT*/
 .catalog__main_page .owl-stage-outer {
 	@include breakpoint(320px) {
 		margin-left: 0;
@@ -277,6 +280,7 @@ h4 {
 		margin: auto;
 	}
 }
+/*!CATALOG_SLIDER_ADAPT*/
 #owl-slider-main {
 	@include breakpoint(320px) {
 		width: 100vw;
@@ -696,6 +700,42 @@ h4 {
 		.inputtext {
 			width: 360px;
 		}
+	}
+}
+.contacts {
+	@include breakpoint(320px) {
+		flex-direction: column;
+	}
+	@include breakpoint(1200px) {
+		flex-direction: row;
+	}
+}
+.contacts__block {
+	@include breakpoint(320px) {
+		&:nth-child(2) {
+			width: 100%;
+		}
+	}
+	@include breakpoint(1200px) {
+		&:nth-child(2) {
+			width: 640px;
+		}
+	}
+}
+.contacts__block_address {
+	@include breakpoint(320px) {
+		display: flex;
+		flex-direction: column;
+	}
+	@include breakpoint(940px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+	@include breakpoint(1200px) {
+		display: flex;
+		flex-direction: column;
 	}
 }
 /*!adaptive*/

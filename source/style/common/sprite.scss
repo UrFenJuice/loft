@@ -18,31 +18,37 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-accordeon_down {
   background-image: url(/assets/img/sprite.png);
-  background-position: -283px -60px;
+  background-position: -301px -117px;
   width: 11px;
   height: 7px;
 }
 .icon-accordeon_up {
   background-image: url(/assets/img/sprite.png);
-  background-position: -283px -178px;
+  background-position: -301px -60px;
   width: 11px;
   height: 7px;
 }
 .icon-angle-arrow {
   background-image: url(/assets/img/sprite.png);
-  background-position: -68px -110px;
+  background-position: -63px -196px;
   width: 16px;
   height: 16px;
 }
+.icon-clock {
+  background-image: url(/assets/img/sprite.png);
+  background-position: 0px -110px;
+  width: 36px;
+  height: 36px;
+}
 .icon-down {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -178px;
+  background-position: -129px -196px;
   width: 16px;
   height: 9px;
 }
 .icon-handle {
   background-image: url(/assets/img/sprite.png);
-  background-position: -220px 0px;
+  background-position: 0px -196px;
   width: 13px;
   height: 23px;
 }
@@ -54,25 +60,31 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-left {
   background-image: url(/assets/img/sprite.png);
-  background-position: -283px -117px;
+  background-position: -301px -174px;
   width: 7px;
   height: 11px;
 }
 .icon-left_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -57px -237px;
+  background-position: -114px -269px;
   width: 7px;
   height: 11px;
 }
 .icon-loop {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -110px;
+  background-position: -220px -81px;
   width: 18px;
   height: 18px;
 }
+.icon-map-marker {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -86px -110px;
+  width: 28px;
+  height: 36px;
+}
 .icon-ok {
   background-image: url(/assets/img/sprite.png);
-  background-position: -283px 0px;
+  background-position: -301px 0px;
   width: 14px;
   height: 10px;
 }
@@ -82,21 +94,27 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 60px;
   height: 60px;
 }
+.icon-phone {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -220px 0px;
+  width: 31px;
+  height: 31px;
+}
 .icon-right {
   background-image: url(/assets/img/sprite.png);
-  background-position: -220px -73px;
+  background-position: 0px -269px;
   width: 7px;
   height: 11px;
 }
 .icon-right_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -237px;
+  background-position: -57px -269px;
   width: 7px;
   height: 11px;
 }
 .icon-up {
   background-image: url(/assets/img/sprite.png);
-  background-position: -134px -110px;
+  background-position: -195px -196px;
   width: 16px;
   height: 9px;
 }

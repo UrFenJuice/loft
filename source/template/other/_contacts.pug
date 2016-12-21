@@ -1,0 +1,44 @@
+h3.faq.contacts__head Наши магазины
+
+select(data-smart-positioning="false").contacts__select
+	option(value='1') г. Тверь, ул. 1-я Суворова, д. 1 
+	option(value='2', selected='selected') г. Тверь, Волоколамский проспект, д. 12
+	option(value='3') г. Тверь, ул. Новоторжская, д. 5  
+	option(value='4') г. Тверь, ул. Вагжанова, д. 2а
+
+.contacts
+	.contacts__block
+		p.contacts__block_name Торговый дом «Важная персона»
+		p.contacts__block_description Мужская, женская и детская одежда от мировых брендов 
+		.contacts__block_address
+			.contacts__block_address-item
+				i.contacts__block_map
+				.contacts__block_info
+					p
+						| АДРЕС
+					p
+						| г.Тверь, Волоколамский проспект, д.12
+			.contacts__block_address-item
+				i.contacts__block_phone
+				.contacts__block_info
+					p
+						| ТЕЛЕФОН
+					p
+						| +7 (4822) 58-52-92 
+			.contacts__block_address-item
+				i.contacts__block_clock
+				.contacts__block_info
+					p
+						| ГРАФИК РАБОТЫ
+					p
+						| Понедельник-суббота с 11:00-20:00
+					p
+						| Воскресенье с 11:00-19:00
+
+	.contacts__block
+		.my_map
+			include _map
+h3.faq свяжитесь с нами
+
+include _form.pug
+//CONTACTS

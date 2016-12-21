@@ -1,0 +1,24 @@
+p.faq__text
+	| Если у Вас есть вопросы, пожалуйста, заполните форму ниже или напишите нам на почту tvervip@yandex.ru. Мы адресуем Ваш вопрос специалисту, который при необходимости свяжется с Вами напрямую или направит ответ по электронной почте. Если вдруг по каким-то причинам Вам не ответили в течение 
+	br
+	| 24 часов, позвоните, пожалуйста, по телефону +7 (4822) 35-98-17 в центральный офис ООО «Важная персона», и Вам обязательно помогут. Спасибо!
+
+.faq__block_form
+	form(name='SIMPLE_FORM_3', action='/', method='POST', enctype='multipart/form-data').faq__form
+		.faq__form_item
+			| Имя
+			span.form-required.starrequired *
+			input.inputtext(type='text', name='form_text_29', value='', size='0')
+		.faq__form_item
+			| E-mail
+			span.form-required.starrequired *
+			input.inputtext(type='text', name='form_email_30', value='', size='0')
+		.faq__form_item
+			| Телефон					
+			input.inputtext(type='text', name='form_text_31', value='', size='0')
+		.faq__form_Bigitem
+			| Ваш вопрос
+			span.form-required.starrequired *
+			textarea.inputtextarea(name='form_textarea_32', cols='30', rows='5')
+		input(type='submit', name='web_form_submit', value='Отправить').primary__button
+//FORM
