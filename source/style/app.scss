@@ -91,7 +91,46 @@ main {
 .catalog__content {
 	flex: 1 1 900px;
 }
-
+.error__page_head {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 265px;
+	color: $new-line;
+	height: 250px;
+    margin-top: 96px;
+	span {
+		font-size: 48px;
+		font-family: $second-font;
+		position: relative;
+		top: 116px;
+		text-transform: uppercase;
+	}
+	.error__page_title {
+		background: $white;
+		font-family: Georgia;
+		color: $second-color;
+		position: relative;
+		top: -29%;
+	    padding: 16px 58px;
+	}
+}
+.error__page_info {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 69px;
+    line-height: 1.6;
+}
+.error__page .primary__button {
+    margin: 0 auto;
+    display: block;
+    width: 260px;
+    font-size: 18px;
+    margin-top: 33px;
+    height: 44px;
+    line-height: 2.4;
+}
 @import 'common/sprite';
 
 @import 'common/header';

@@ -738,4 +738,12 @@ h4 {
 		flex-direction: column;
 	}
 }
+.error__page_title {
+	@include breakpoint(320px) {
+		font-size: 25px;
+	}
+	@include breakpoint(640px) {
+		font-size: 41px;
+	}
+}
 /*!adaptive*/
