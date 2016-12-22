@@ -84,3 +84,27 @@
 	    align-items: center;
 	}
 }
+.checkPassword {
+	display: none;
+}
+.show_pass label {
+	@extend .icon-show_pass;
+	cursor: pointer;
+    display: inline-block;
+}
+.bx-authform-input-container {
+	position: relative;
+}
+.show_pass {
+	position: absolute;
+	top: 50%;
+	right: 35px;
+	margin-top: -13.5px;
+	input[type=checkbox]:checked + label {
+	    @extend .icon-hide_pass;
+	}
+}
+.fg_pss {
+	margin-left: 30px;
+	border-bottom: 1px dashed;
+}

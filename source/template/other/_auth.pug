@@ -24,7 +24,10 @@
 				.bx-authform-label-container Пароль
 					span.bx-authform-starrequired *
 				.bx-authform-input-container
-					input(type='password', name='USER_PASSWORD', maxlength='255', autocomplete='off')
+					input(type='password', name='USER_PASSWORD', maxlength='255', autocomplete='off')#password
+					.show_pass
+						input.checkPassword#check(type='checkbox')
+						label(for="check")
 			.bx-authform-formgroup-container
 				.checkbox
 					label.bx-filter-param-label
@@ -32,10 +35,9 @@
 						span.bx-filter-param-text Запомнить меня на этом компьютере
 			.bx-authform-formgroup-container
 				input.btn.btn-primary.primary__button(type='submit', name='Login', value='Войти')
-		noindex
-			.bx-authform-link-container
-				a(href='/login/?forgot_password=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252F', rel='nofollow')
+				a(href='/login/?forgot_password=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252F', rel='nofollow').fg_pss
 					| Забыли пароль?
+				
 
 	.bx-authform
 		h3.bx-title Регистрация
@@ -70,13 +72,19 @@
 						| Пароль (не менее 6-ти символов)
 						span.bx-authform-starrequired *
 					.bx-authform-input-container
-						input(type='password', name='USER_PASSWORD', maxlength='255', value='', autocomplete='off')
+						input(type='password', name='USER_PASSWORD', maxlength='255', value='', autocomplete='off')#password
+						.show_pass
+							input.checkPassword#check1(type='checkbox')
+							label(for="check1")
 				.bx-authform-formgroup-container
 					.bx-authform-label-container
 						| Подтверждение пароля
 						span.bx-authform-starrequired *
 					.bx-authform-input-container
-						input(type='password', name='USER_CONFIRM_PASSWORD', maxlength='255', value='', autocomplete='off')
+						input(type='password', name='USER_CONFIRM_PASSWORD', maxlength='255', value='', autocomplete='off')#password
+						.show_pass
+							input.checkPassword#check2(type='checkbox')
+							label(for="check2")
 				.bx-authform-formgroup-container
 					.checkbox
 						label.bx-filter-param-label

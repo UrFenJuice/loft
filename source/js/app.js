@@ -207,5 +207,16 @@ jQuery(function($){
             }
         });
         /*!FAQ*/
+        /*AUTH*/
+        $(".checkPassword").on("change", function(){
+            var x = $(this).parentsUntil(".bx-authform-formgroup-container").find("#password");
+           if(this.checked) {
+              x.attr("type", "text");
+            } else {
+              x.attr("type", "password");
+            }
+          });
+        /*!AUTH*/
     });
 })
+

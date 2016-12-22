@@ -18,19 +18,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-accordeon_down {
   background-image: url(/assets/img/sprite.png);
-  background-position: -259px -281px;
+  background-position: -266px -281px;
   width: 11px;
   height: 7px;
 }
 .icon-accordeon_up {
   background-image: url(/assets/img/sprite.png);
-  background-position: -198px -281px;
+  background-position: -383px -256px;
   width: 11px;
   height: 7px;
 }
 .icon-angle-arrow {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -281px;
+  background-position: -68px -281px;
   width: 16px;
   height: 16px;
 }
@@ -42,7 +42,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-down {
   background-image: url(/assets/img/sprite.png);
-  background-position: -66px -281px;
+  background-position: -134px -281px;
   width: 16px;
   height: 9px;
 }
@@ -60,31 +60,37 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-handle {
   background-image: url(/assets/img/sprite.png);
-  background-position: -305px -154px;
+  background-position: -383px 0px;
   width: 13px;
   height: 23px;
 }
 .icon-hanger {
   background-image: url(/assets/img/sprite.png);
-  background-position: -110px 0px;
+  background-position: 0px 0px;
   width: 60px;
   height: 60px;
 }
+.icon-hide_pass {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -305px -86px;
+  width: 27px;
+  height: 23px;
+}
 .icon-left {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -243px;
+  background-position: -383px -195px;
   width: 7px;
   height: 11px;
 }
 .icon-left_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -60px;
+  background-position: -446px 0px;
   width: 7px;
   height: 11px;
 }
 .icon-loop {
   background-image: url(/assets/img/sprite.png);
-  background-position: -305px -86px;
+  background-position: 0px -281px;
   width: 18px;
   height: 18px;
 }
@@ -96,19 +102,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-ok {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px 0px;
+  background-position: 0px -349px;
   width: 14px;
   height: 10px;
 }
 .icon-okl {
   background-image: url(/assets/img/sprite.png);
-  background-position: -85px -196px;
+  background-position: -220px 0px;
   width: 35px;
   height: 35px;
 }
 .icon-percent {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -110px 0px;
   width: 60px;
   height: 60px;
 }
@@ -120,25 +126,31 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-right {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -121px;
+  background-position: -383px -73px;
   width: 7px;
   height: 11px;
 }
 .icon-right_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -182px;
+  background-position: -383px -134px;
   width: 7px;
   height: 11px;
 }
+.icon-show_pass {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -305px -159px;
+  width: 27px;
+  height: 23px;
+}
 .icon-tw {
   background-image: url(/assets/img/sprite.png);
-  background-position: -220px 0px;
+  background-position: -85px -196px;
   width: 35px;
   height: 35px;
 }
 .icon-up {
   background-image: url(/assets/img/sprite.png);
-  background-position: -132px -281px;
+  background-position: -200px -281px;
   width: 16px;
   height: 9px;
 }
