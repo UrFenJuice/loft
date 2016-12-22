@@ -275,9 +275,11 @@ h4 {
 .catalog__main_page .owl-item {
 	@include breakpoint(320px) {
 		width: auto!important;
+	    padding: 0 36px 0 12px;
 		margin-left: 0;	}
 	@include breakpoint(940px) {
 		margin: auto;
+		padding: 0;
 	}
 }
 /*!CATALOG_SLIDER_ADAPT*/
@@ -740,10 +742,36 @@ h4 {
 }
 .error__page_title {
 	@include breakpoint(320px) {
-		font-size: 25px;
+		font-size: 20px;
+	    top: -185px;
 	}
 	@include breakpoint(640px) {
 		font-size: 41px;
+		top: -264px;
+	}
+}
+.error__page_head {
+	@include breakpoint(320px) {
+		font-size: 180px;
+	}
+	@include breakpoint(640px) {
+		font-size: 265px;
+	}
+}
+.catalog__search input[type="text"]  {
+	@include breakpoint(320px) {
+		width: 65%;
+	}
+	@include breakpoint(480px) {
+		width: 45%;
+	}
+}
+.container .contacts__select .jq-selectbox__select {
+	@include breakpoint(320px) {
+		width: 100vw;
+	}
+	@include breakpoint(480px) {
+		width: 100%;
 	}
 }
 /*!adaptive*/
