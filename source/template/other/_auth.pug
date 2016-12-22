@@ -1,0 +1,91 @@
+.my_registartion
+	.bx-authform
+		h3.bx-title Авторизация
+		.bx-authform-social
+			p Войти через
+			ul
+				li
+					a#bx_socserv_icon_Vk.vk.bx-authform-social-icon(href='javascript:void(0)')
+				li
+					a#bx_socserv_icon_Tw.tw.bx-authform-social-icon(href='javascript:void(0)')
+				li
+					a#bx_socserv_icon_Ok.ok.bx-authform-social-icon(href='javascript:void(0)')
+				li
+					a#bx_socserv_icon_Fb.fb.bx-authform-social-icon(href='javascript:void(0)')
+				li
+					a#bx_socserv_icon_G.g.bx-authform-social-icon(href='javascript:void(0)')
+		form(name='form_auth', method='post', target='_top', action='/login/?login=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252F')
+			.bx-authform-formgroup-container
+				.bx-authform-label-container E-mail
+					span.bx-authform-starrequired *
+				.bx-authform-input-container
+					input(type='text', name='USER_LOGIN', maxlength='255', value='')
+			.bx-authform-formgroup-container
+				.bx-authform-label-container Пароль
+					span.bx-authform-starrequired *
+				.bx-authform-input-container
+					input(type='password', name='USER_PASSWORD', maxlength='255', autocomplete='off')
+			.bx-authform-formgroup-container
+				.checkbox
+					label.bx-filter-param-label
+						input#USER_REMEMBER.checkbox_styler(type='checkbox', name='USER_REMEMBER', value='Y')
+						span.bx-filter-param-text Запомнить меня на этом компьютере
+			.bx-authform-formgroup-container
+				input.btn.btn-primary.primary__button(type='submit', name='Login', value='Войти')
+		noindex
+			.bx-authform-link-container
+				a(href='/login/?forgot_password=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252F', rel='nofollow')
+					| Забыли пароль?
+
+	.bx-authform
+		h3.bx-title Регистрация
+		noindex
+			form(method='post', action='/login/?register=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252Flogin%252F%253Fbackurl%253D%25252F', name='bform')
+				input(type='hidden', name='backurl', value='/login/?backurl=%2Flogin%2F%3Fbackurl%3D%252Flogin%252F%253Fbackurl%253D%25252F')
+				input(type='hidden', name='AUTH_FORM', value='Y')
+				input(type='hidden', name='TYPE', value='REGISTRATION')
+				.bx-authform-formgroup-container
+					.bx-authform-label-container Имя
+						span.bx-authform-starrequired *
+					.bx-authform-input-container
+						input(type='text', name='USER_NAME', maxlength='255', value='')
+				.bx-authform-formgroup-container
+					.bx-authform-label-container Фамилия
+					.bx-authform-input-container
+						input(type='text', name='USER_LAST_NAME', maxlength='255', value='')
+				.bx-authform-formgroup-container
+					.bx-authform-label-container
+						| E-Mail
+						span.bx-authform-starrequired *
+					.bx-authform-input-container
+						input(type='text', name='USER_EMAIL', maxlength='255', value='')
+				.bx-authform-formgroup-container
+					.bx-authform-label-container
+						| Телефон
+						span.bx-authform-starrequired *
+					.bx-authform-input-container
+						input(type='text', name='USER_LOGIN', maxlength='255', value='')
+				.bx-authform-formgroup-container
+					.bx-authform-label-container
+						| Пароль (не менее 6-ти символов)
+						span.bx-authform-starrequired *
+					.bx-authform-input-container
+						input(type='password', name='USER_PASSWORD', maxlength='255', value='', autocomplete='off')
+				.bx-authform-formgroup-container
+					.bx-authform-label-container
+						| Подтверждение пароля
+						span.bx-authform-starrequired *
+					.bx-authform-input-container
+						input(type='password', name='USER_CONFIRM_PASSWORD', maxlength='255', value='', autocomplete='off')
+				.bx-authform-formgroup-container
+					.checkbox
+						label.bx-filter-param-label
+							input#USER_REMEMBER.checkbox_styler(type='checkbox')
+							span.bx-filter-param-text Нажимая кнопку "Зарегистрироваться", я даю согласие на обработку моих персональных данных
+				.bx-authform-formgroup-container
+					.checkbox
+						label.bx-filter-param-label
+							input#USER_REMEMBER.checkbox_styler(type='checkbox')
+							span.bx-filter-param-text Подписаться на новости
+				.bx-authform-formgroup-container
+					input.btn.btn-primary.primary__button.primary__button_registration(type='submit', name='Register', value='зарегистироваться')

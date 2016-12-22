@@ -774,4 +774,12 @@ h4 {
 		width: 100%;
 	}
 }
+.my_registartion .bx-authform{
+	@include breakpoint(320px) {
+		margin: auto;
+	}
+	@include breakpoint(940px) {
+		margin: inherit;
+	}
+}
 /*!adaptive*/
