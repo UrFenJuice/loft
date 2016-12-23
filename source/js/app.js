@@ -299,6 +299,7 @@ jQuery(function($){
         $('.block__close').on('click', function(){
             $("#block").hide('fast');
         });
+        $("input[name='USER_PHONE']").inputmask("+7 (999) 999-9999");
         /*!AUTH*/
     });
 })
