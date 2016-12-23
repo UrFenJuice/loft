@@ -14,17 +14,17 @@
 					a#bx_socserv_icon_Fb.fb.bx-authform-social-icon(href='javascript:void(0)')
 				li
 					a#bx_socserv_icon_G.g.bx-authform-social-icon(href='javascript:void(0)')
-		form(name='form_auth', method='post', target='_top', action='/login/?login=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252F')
+		form(name='form_auth', method='post', target='_top', action='')#form_auth
 			.bx-authform-formgroup-container
 				.bx-authform-label-container E-mail
 					span.bx-authform-starrequired *
 				.bx-authform-input-container
-					input(type='text', name='USER_LOGIN', maxlength='255', value='')
+					input(type='text', name='USER_LOGIN', maxlength='255', value='', required)#USER_LOGIN
 			.bx-authform-formgroup-container
 				.bx-authform-label-container Пароль
 					span.bx-authform-starrequired *
 				.bx-authform-input-container
-					input(type='password', name='USER_PASSWORD', maxlength='255', autocomplete='off')#password
+					input(type='password', name='USER_PASSWORD', maxlength='255', autocomplete='off', required)#password
 					.show_pass
 						input.checkPassword#check(type='checkbox')
 						label(for="check")
@@ -42,7 +42,7 @@
 	.bx-authform
 		h3.bx-title Регистрация
 		noindex
-			form(method='post', action='/login/?register=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252Flogin%252F%253Fbackurl%253D%25252F', name='bform')
+			form(method='post', action='/login/?register=yes&backurl=%2Flogin%2F%3Fbackurl%3D%252Flogin%252F%253Fbackurl%253D%25252F', name='bform')#form_registr
 				input(type='hidden', name='backurl', value='/login/?backurl=%2Flogin%2F%3Fbackurl%3D%252Flogin%252F%253Fbackurl%253D%25252F')
 				input(type='hidden', name='AUTH_FORM', value='Y')
 				input(type='hidden', name='TYPE', value='REGISTRATION')

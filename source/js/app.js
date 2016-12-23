@@ -216,7 +216,79 @@ jQuery(function($){
               x.attr("type", "password");
             }
           });
+        $().ready(function() {
+            $("#form_auth").validate({
+                rules: {
+                    USER_LOGIN: {
+                        required: true,
+                        minlength: 6
+                    },
+                    USER_PASSWORD: {
+                        required: true,
+                        minlength: 6
+                    }
+                },
+                messages: {
+                    USER_LOGIN: {
+                        required: "Поле не заполнено",
+                        minlength: "Ваш e-mail должен состоять не менее чем из 6-х символов"
+                    },
+                    USER_PASSWORD: {
+                        required: "Поле не заполнено",
+                        minlength: "Ваш пароль должен состоять не менее чем из 6-х символов"
+                    }
+                }
+            });
+            $("#form_registr").validate({
+                rules: {
+                    USER_NAME: {
+                        required: true,
+                        minlength: 6
+                    },
+                    USER_EMAIL: {
+                        required: true,
+                        minlength: 6
+                    },
+                    USER_PHONE: {
+                        required: true,
+                        minlength: 10
+                    },
+                    USER_PASSWORD: {
+                        required: true,
+                        minlength: 6
+                    },
+                    USER_CONFIRM_PASSWORD: {
+                        required: true,
+                        minlength: 6,
+                        equalTo: "input[name='USER_PASSWORD']"
+                    }
+                },
+                messages: {
+                    USER_NAME: {
+                        required: "Поле не заполнено",
+                        minlength: ""
+                    },
+                    USER_EMAIL: {
+                        required: "Поле не заполнено",
+                        minlength: ""
+                    },
+                    USER_PHONE: {
+                        required: "Поле не заполнено",
+                        minlength: ""
+                    },
+                    USER_PASSWORD: {
+                        required: "Поле не заполнено",
+                        minlength: ""
+                    },
+                    USER_CONFIRM_PASSWORD: {
+                        required: "Поле не заполнено",
+                        minlength: "",
+                        equalTo: "Пароли не совпадают"
+                    }
+                }
+            });
+        });
         /*!AUTH*/
+
     });
 })
-
