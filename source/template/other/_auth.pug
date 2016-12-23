@@ -72,7 +72,7 @@
 						| Пароль (не менее 6-ти символов)
 						span.bx-authform-starrequired *
 					.bx-authform-input-container
-						input(type='password', name='USER_PASSWORD', maxlength='255', value='', autocomplete='off')#password
+						input(type='password', name='USER_PASSWORD_REG', maxlength='255', value='', autocomplete='off')#password
 						.show_pass
 							input.checkPassword#check1(type='checkbox')
 							label(for="check1")
@@ -88,7 +88,7 @@
 				.bx-authform-formgroup-container
 					.checkbox
 						label.bx-filter-param-label
-							input#USER_REMEMBER.checkbox_styler(type='checkbox')
+							input#USER_REMEMBER.checkbox_styler(type='checkbox', name='USER_REMEMBER')
 							span.bx-filter-param-text Нажимая кнопку "Зарегистрироваться", я даю согласие на обработку моих персональных данных
 				.bx-authform-formgroup-container
 					.checkbox
@@ -97,3 +97,9 @@
 							span.bx-filter-param-text Подписаться на новости
 				.bx-authform-formgroup-container
 					input.btn.btn-primary.primary__button.primary__button_registration(type='submit', name='Register', value='зарегистироваться')
+#block(style="display:none;")
+	a(href="javascript:void(0);").block__close
+		+use('close')
+	h3 внимание!
+	p 
+		| Для регистрации на сайте, пожалуйста, поставьте галку напротив поля  «Нажимая кнопку «Зарегистроваться», я даю согласие на обработку моих персональных данных»

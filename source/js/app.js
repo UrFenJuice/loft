@@ -253,15 +253,16 @@ jQuery(function($){
                         required: true,
                         minlength: 10
                     },
-                    USER_PASSWORD: {
+                    USER_PASSWORD_REG: {
                         required: true,
                         minlength: 6
                     },
                     USER_CONFIRM_PASSWORD: {
                         required: true,
                         minlength: 6,
-                        equalTo: "input[name='USER_PASSWORD']"
-                    }
+                        equalTo: "input[name='USER_PASSWORD_REG']"
+                    },
+                    USER_REMEMBER: "required"
                 },
                 messages: {
                     USER_NAME: {
@@ -276,7 +277,7 @@ jQuery(function($){
                         required: "Поле не заполнено",
                         minlength: ""
                     },
-                    USER_PASSWORD: {
+                    USER_PASSWORD_REG: {
                         required: "Поле не заполнено",
                         minlength: ""
                     },
@@ -284,11 +285,20 @@ jQuery(function($){
                         required: "Поле не заполнено",
                         minlength: "",
                         equalTo: "Пароли не совпадают"
+                    },
+                    USER_REMEMBER: {
+                        required: function() {
+                            if($('#form_registr input.valid').length >= 6)
+                                $("#block").show('fast');
+                        }
                     }
+                        
                 }
             });
         });
+        $('.block__close').on('click', function(){
+            $("#block").hide('fast');
+        });
         /*!AUTH*/
-
     });
 })
