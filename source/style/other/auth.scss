@@ -66,6 +66,10 @@
 	cursor: pointer;
     height: 44px;
     width: 118px;
+    color: #ffffff;
+    background: #ab885e;
+    font-family: Proxima Nova Semibold;
+    text-transform: uppercase;
     &.primary__button_registration{
     	width: 250px;
     }
@@ -120,8 +124,18 @@
 	display: block;
 	right: 0;
 }
-#block {
+#bg__lay {
 	position: fixed;
+    z-index: 15;
+    width: 100vw;
+    height: 200%;
+    top: -50%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    display: none;
+}
+#block {
+	position: absolute;
     top: 50%;
     left: 50vw;
     margin-top: -100px;
@@ -150,5 +164,16 @@
 		    fill: $gray;
     		stroke: $gray;
 		}
+	}
+}
+.bx-authform__forgot_pass {
+	.bx-authform-content-container {
+	    padding-bottom: 36px;
+	}
+	.bx-authform-formgroup-container {
+		margin-bottom: 43px;
+	}
+	&.bx-authform input[type="submit"] {
+		width: 143px;
 	}
 }

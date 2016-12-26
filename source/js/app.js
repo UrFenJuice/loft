@@ -289,15 +289,15 @@ jQuery(function($){
                     USER_REMEMBER: {
                         required: function() {
                             if($('#form_registr input.valid').length >= 6)
-                                $("#block").show('fast');
+                                $("#bg__lay").show('fast');
                         }
                     }
                         
                 }
             });
         });
-        $('.block__close').on('click', function(){
-            $("#block").hide('fast');
+        $('#bg__lay, .block__close').on('click', function(){
+            $("#bg__lay").hide('fast');
         });
         $("input[name='USER_PHONE']").inputmask("+7 (999) 999-9999");
         /*!AUTH*/
