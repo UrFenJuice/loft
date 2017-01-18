@@ -57,6 +57,14 @@ h1, h2, h3, h4, h5 {
 }
 .bx-title {
 	margin: 75px 0 57px;
+	@include breakpoint(320px) {
+		text-align: center;
+		padding: 0 15px;
+	}
+	@include breakpoint(640px) {
+		text-align: inherit;
+		padding: 0;
+	}
 }
 button, hr, input {
 	outline: none;
@@ -71,6 +79,23 @@ button, hr, input {
 	display: none;
 }
 
+.owl-item {
+	color: transparent;
+	&.active {
+		color: inherit;
+	}
+}
+
+.owl-item {
+	a {
+		color: transparent;
+	}
+	&.active {
+		a {
+			color: inherit;
+		}
+	}
+}
 
 /* Middle*/
 main {
@@ -169,3 +194,13 @@ main {
 @import 'other/contacts';
 
 @import 'other/auth';
+
+@import 'common/adaptive_menu';
+
+@import 'other/basket';
+
+@import 'other/brands';
+
+@import 'other/news';
+
+@import 'other/personal_page';

@@ -2,7 +2,8 @@ header.header
 	.container
 		.header__logo
 			a(href="/").header__logo-hr
-				img(src="/assets/img/logo.png")
+				img(src="/assets/img/logo.png").header__logo_hide-xs
+				img(src="/assets/img/logo_min.png").header__logo_hide-xl
 		.header__info
 			.header__info-block
 				.header__info-block__phone +7 (4822) 35-98-17 
@@ -29,19 +30,35 @@ header.header
 						+use("shopping-cart")
 						| basket
 						sup.header__user-nav__item-basket 5
-	.container
-		.adapt__menu: a(href="#") 
-			.icon-bars
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			| меню
+		.line.header__line
+		.adapt__menu 
+			include ../common/_adaptive_menu
+			//a(href="javascript:void(0);").adapt__menu_icon
+				.icon-bars
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+			a(href="javascript:void(0);").adapt__search
+				i.fa.fa_search_new
 		ul.header__catalog_menu
 			each item in items
 				li.header__catalog_menu-item: a(href="#").header__catalog_menu-item-link= item
 					- if(item == 'Распродажа')
 						sup.sale до - 30%
-			a(href="#").close_menu: +use('close')
+		//.header__shadow.js-header-shadow
+			.header__nav.header__nav_state_opened.js-nav-body
+				.header__menu.header__nav_close
+					.header__catalog_menu_wrap
+						.header__nav-top.js-nav-top
+							a.header__link.header__link_type_noauth(href='/login/?backurl=/catalog/search/')
+								span Личный кабинет
+						ul.header__catalog_menu
+							each item in items
+								li.header__catalog_menu-item: a(href="#").header__catalog_menu-item-link= item
+									- if(item == 'Распродажа')
+										sup.sale до - 30%
+							li.header__catalog_menu-item.header__item_type_phone: a(href="tel:74822587586").header__catalog_menu-item-link
+								| +7 4822 587 586
 
 		.header__catalog_search
 			#search.bx-searchtitle
@@ -52,7 +69,7 @@ header.header
 							button.btn.btn-default(type='submit', name='s')
 								i.fa.fa_search_new
 								| Найти по каталогу
-							a(href="#").close
+							a(href="javascript:void(0);").close
 								+use("close")
 			.title-search-result(style='position: absolute; top: 30px; left: 0px;width: 100%;')
 				.bx_searche

@@ -1,0 +1,179 @@
+.bx-content
+	form#basket_form(method='post', action='/personal/cart/', name='basket_form')
+		#basket_form_container
+			.bx_ordercart
+				.bx_sort_container
+					a#basket_toolbar_button.current.primary__button(href='javascript:void(0)', onclick='showBasketItemsList()')
+						| В корзине
+						#normal_count.flat
+							| (3)
+					a#basket_toolbar_button.current(href='javascript:void(0)', onclick='showBasketItemsList()')
+						| Избранное
+						#normal_count.flat
+							| (2)
+				#basket_items_list
+					.bx_ordercart_order_table_container
+						table#basket_items
+							thead
+								tr
+									td.margin
+									td#col_NAME.item(colspan='2')
+										| Товары
+									td#col_PRICE.price
+										| Цена за шт.
+									td#col_QUANTITY.custom
+										| Количество
+									td#col_SUM.custom
+										| Сумма
+									td.custom
+									td.margin
+							tbody
+								tr#21
+									td.margin
+									td.itemphoto
+										.bx_ordercart_photo_container
+											span.stickers
+												span.sticker.sticker_sale sale
+											a(href='#')
+												.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_1.jpg')")
+									td.item
+										h2.bx_ordercart_itemtitle
+											a(href='#') Valentino
+										.bx_ordercart_iteminfo
+											p.bx_ordercart_item__description
+												| Мини-платье с кружевным лифом и коротким рукавом
+											p.bx_ordercart_item__props
+												| Цвет: розовый   |   Размер: 42
+									td.price
+										#current_price_21.current_price 1 079 Р
+										#old_price_21.old_price 1 199 Р
+									td.custom
+										span Количество:
+										.centered
+											table.counter(cellspacing='0', cellpadding='0')
+												tbody
+													tr
+														td
+															input#QUANTITY_INPUT_21(type='text', size='3', name='QUANTITY_INPUT_21', maxlength='18', min='0', max='100', step='1', value='2', onchange="updateQuantity('QUANTITY_INPUT_21','21', 1,false)")
+														td#basket_quantity_control
+															.basket_quantity_control
+																a.plus(href='javascript:void(0);', onclick="setQuantity(21, 1, 'up', false);")
+																	| +
+																a.minus(href='javascript:void(0);', onclick="setQuantity(21, 1, 'down', false);")
+																	| -
+									td.custom
+										span Сумма:
+										#sum_21 2 158 Р
+									td.control
+										a(href='#')
+											+use("like")
+											span
+												| В избранное
+										a(href='#')
+											+use("close")
+											span
+												| Удалить
+									td.margin
+								tr#23
+									td.margin
+									td.itemphoto
+										.bx_ordercart_photo_container
+											span.stickers
+												span.sticker.sticker_new новинка
+											a(href='#')
+												.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_2.jpg')")
+									td.item
+										h2.bx_ordercart_itemtitle
+											a(href='#') DKNY
+										.bx_ordercart_iteminfo
+											p.bx_ordercart_item__description
+												| Сумка Gansevoort на цепочке
+											p.bx_ordercart_item__props
+												| Цвет: зеленый
+									td.price
+										#current_price_23.current_price 1 259 Р
+										#old_price_23.old_price 1 399 Р
+									td.custom
+										span Количество:
+										.centered
+											table.counter(cellspacing='0', cellpadding='0')
+												tbody
+													tr
+														td
+															input#QUANTITY_INPUT_23(type='text', size='3', name='QUANTITY_INPUT_23', maxlength='18', min='0', max='100', step='1', value='1', onchange="updateQuantity('QUANTITY_INPUT_23','23', 1,false)")
+														td#basket_quantity_control
+															.basket_quantity_control
+																a.plus(href='javascript:void(0);', onclick="setQuantity(23, 1, 'up', false);")
+																	| +
+																a.minus(href='javascript:void(0);', onclick="setQuantity(23, 1, 'down', false);")
+																	| -
+									td.custom
+										span Сумма:
+										#sum_23 1 259 Р
+									td.control
+										a(href='#')
+											+use("like")
+											span
+												| В избранное
+										a(href='#')
+											+use("close")
+											span
+												| Удалить
+									td.margin
+								tr#24
+									td.margin
+									td.itemphoto
+										.bx_ordercart_photo_container
+											a(href='#')
+												.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_3.jpg')")
+									td.item
+										h2.bx_ordercart_itemtitle
+											a(href='#') burberry
+										.bx_ordercart_iteminfo
+											p.bx_ordercart_item__description
+												| Стеганая куртка с отделкой из натуральной кожи
+											p.bx_ordercart_item__props
+												| Цвет: темно-синий   |   Размер: 50
+									td.price
+										#current_price_24.current_price 2 630 Р
+										#old_price_24.old_price
+									td.custom
+										span Количество:
+										.centered
+											table.counter(cellspacing='0', cellpadding='0')
+												tbody
+													tr
+														td
+															input#QUANTITY_INPUT_24(type='text', size='3', name='QUANTITY_INPUT_24', maxlength='18', min='0', max='100', step='0', value='1', onchange="updateQuantity('QUANTITY_INPUT_24', '24', 0, false)")
+														td#basket_quantity_control
+															.basket_quantity_control
+																a.plus(href='javascript:void(0);', onclick="setQuantity(24, 1, 'up', false);")
+																	| +
+																a.minus(href='javascript:void(0);', onclick="setQuantity(24, 1, 'down', false);")
+																	| -
+									td.custom
+										span Сумма:
+										#sum_24 2 630 Р
+									td.control
+										a(href='#')
+											+use("like")
+											span
+												| В избранное
+										a(href='#')
+											+use("close")
+											span
+												| Удалить
+									td.margin
+					.bx_ordercart_order_pay
+						.bx_ordercart_order_pay_right
+							table.bx_ordercart_order_sum
+								tbody
+									tr
+										td.fwb Итого:
+										td#allSum_FORMATED.fwb 6 047 Р
+									tr
+										td.custom_t1
+										td#PRICE_WITHOUT_DISCOUNT.custom_t2(style='text-decoration:line-through; color:#828282;') 6 427 Р
+						.bx_ordercart_order_pay_center
+							a.checkout.primary__button(href='javascript:void(0)', onclick='checkOut();') Оформить заказ
+.line

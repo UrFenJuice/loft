@@ -1,0 +1,15 @@
+.bx-content
+	form#basket_form(method='post', action='/personal/cart/', name='basket_form')
+		#basket_form_container
+			.bx_ordercart
+				.bx_sort_container
+					a#basket_toolbar_button.current(href='javascript:void(0)', onclick='showBasketItemsList()')
+						| В корзине
+						#normal_count.flat
+							| (3)
+					a#basket_toolbar_button.current.primary__button(href='javascript:void(0)', onclick='showBasketItemsList()')
+						| Избранное
+						#normal_count.flat
+							| (0)
+				#basket_items_list
+					span.empty_items Список пуст

@@ -3,8 +3,13 @@
 	font-size: 15px;
 	color: #231f20; 
 	display: flex;
-	justify-content: space-between;
 	flex-flow: row wrap;
+	@include breakpoint(320px) {
+		justify-content: center;
+	}
+	@include breakpoint(640px) {
+		justify-content: space-between;
+	}
 }
 
 .bx_pagination_page {

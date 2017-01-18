@@ -1,0 +1,79 @@
+.bx-auth-profile
+	form(method='post', name='form1', action='/test.php', enctype='multipart/form-data')
+		.profile-link.profile-user-div-link.active
+			a(title='Регистрационная информация', href='javascript:void(0)', onclick="SectionClick('reg')") персональные данные
+		#user_div_reg.profile-block-shown
+			.profile__input-block
+				span.profile__input-name
+					| Фамилия
+				input(type='text', name='LAST_NAME', maxlength='50', value='Шуин')
+			.profile__input-block
+				span.profile__input-name
+					| Имя
+				input(type='text', name='NAME', maxlength='50', value='Юрий')
+			.profile__input-block
+				span.profile__input-name
+					| Отчество
+				input(type='text', name='SECOND_NAME', maxlength='50', value='')
+			.profile__input-block
+				input(type='radio', name='PERSONAL_GENDER', value='M').gender
+				span
+					|  Мужской
+				input(type='radio', name='PERSONAL_GENDER', value='F').gender
+				span
+					|  Женский
+
+			.profile__input-block
+				span.profile__input-name
+					| Дата рождения
+				input#PERSONAL_BIRTHDAY(type='date', name='PERSONAL_BIRTHDAY', value='')
+			.profile__input-block
+				span.profile__input-name
+					| Мобильный
+				input(type='text', name='PERSONAL_MOBILE', maxlength='255', value='')
+			.profile__input-block
+				span.profile__input-name
+					| E-Mail
+				input(type='text', name='EMAIL', maxlength='50', value='web@wizard-c.ru', disabled)
+			.profile__save
+				input(type='submit', name='save', value='Сохранить').primary__button
+		.profile-link.profile-user-div-link.active
+			a(title='Показать / Скрыть', href='javascript:void(0)', onclick="SectionClick('personal')") карта лояльности
+		#user_div_personal.profile-block-shown
+			.profile__input-block
+				span.profile__input-name
+					| Номер карты лояльности*
+				input.bx-auth-input(type='text', name='sms', maxlength='50', value='', autocomplete='off', placeholder="ХХХ-ХХХ-ХХХХ")
+			.profile__sms_info
+				p Карта лояльности - это уникальная возможность сделать ваш шоппинг еще приятнее!
+				p Что такое карта лояльности, как ее получить, как копить и использовать баллы на карте - всё это и многое другое Вы узнаете по ссылке
+			.profile__save
+				input(type='submit', name='save', value='Выслать смс').primary__button
+		.profile-link.profile-user-div-link.active
+			a(title='Показать / Скрыть', href='javascript:void(0)', onclick="SectionClick('personal')") мои подписки
+		#user_div_personal.profile-block-shown
+			.profile__input-block
+				input(type='checkbox', name='PERSONAL_GENDER', value='M').gender
+				span
+					|  Новинки
+				input(type='checkbox', name='PERSONAL_GENDER', value='F').gender
+				span
+					|  События «Важная Персона»
+				input(type='checkbox', name='PERSONAL_GENDER', value='F').gender
+				span
+					|  Акции «Важная персона» 
+			.profile__save
+				input(type='submit', name='save', value='Сохранить').primary__button
+		.profile-link.profile-user-div-link.active
+			a(title='Показать / Скрыть', href='javascript:void(0)', onclick="SectionClick('personal')") сменить пароль
+		#user_div_personal.profile-block-shown
+			.profile__input-block
+				span.profile__input-name
+					| Новый пароль
+				input.bx-auth-input(type='password', name='NEW_PASSWORD', maxlength='50', value='', autocomplete='off')
+			.profile__input-block
+				span.profile__input-name
+					| Подтверждение нового пароля
+				input(type='password', name='NEW_PASSWORD_CONFIRM', maxlength='50', value='', autocomplete='off')
+			.profile__save
+				input(type='submit', name='save', value='Сохранить').primary__button

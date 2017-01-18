@@ -1,0 +1,87 @@
+.profile-link {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: $second-font;
+	margin-bottom: 20px;
+	padding-top: 45px;
+}
+
+.bx-auth-profile .active.profile-link:after {
+	content: "";
+	position: relative;
+	display: inline-block;
+	@extend .icon-up;
+	margin-left: 12px;
+	margin-bottom: 1px;
+}
+.bx-auth-profile .profile-link:after {
+	content: "";
+	position: relative;
+	display: inline-block;
+	@extend .icon-down;
+	margin-left: 12px;
+	margin-bottom: 1px;
+}
+.profile-block-hidden {
+	display: none;
+}
+.profile-block-shown {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+}
+.profile__input-block {
+	width: 360px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	margin-right: 45px;
+	&:nth-child(3) {
+		margin-right: 0;
+	}
+	&:nth-child(7) {
+		margin-right: 0;
+	}
+	&:nth-child(4) {
+		width: 100%;
+		flex-direction: row;
+	}
+	& input[type="text"] {
+		width: 100%;
+		border: 1px solid #e7e7e7;
+		padding: 10px 25px;
+		font-size: 16px;
+	}
+	& input[type="password"] {
+		width: 100%;
+		border: 1px solid #e7e7e7;
+		padding: 10px 25px;
+		font-size: 16px;
+	}
+	& input[type="date"] {
+		width: 100%;
+		border: 1px solid #e7e7e7;
+		padding: 8px 25px;
+		font-size: 16px;
+	}
+	& span {
+		margin-right: 30px;
+	}
+}
+.profile__input-name {
+	font-size: 16px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.bx-auth-profile .jq-radio.checked .jq-radio__div {
+	margin: 2px 0 0 2px;
+}
+.profile__save {
+	width: 100%;
+	padding-bottom: 50px;
+	border-bottom: 1px solid $new-line;
+	& .primary__button {
+		border: none;
+	}
+}

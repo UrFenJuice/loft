@@ -1,0 +1,129 @@
+/*BRANDS*/
+.brands__container .alphabet__list {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid $new_line;
+	border-bottom: 1px solid $new_line;
+    height: 49px;
+    align-items: center;
+}
+.brands__container .alphabet__item {
+	a {
+		font-size: 16px;
+		font-family: $second_font;
+		text-transform: uppercase;
+		&:hover {
+			color: $primary_color;
+		}
+	}
+	@include breakpoint(320px) {
+		&:nth-child(1) {
+			display: none;
+		}
+	}
+	@include breakpoint(360px) {
+		&:nth-child(1) {
+			display: list-item;
+		}
+	}
+	@include breakpoint(940px) {
+		&:nth-child(1) {
+			flex: 0 0 150px;
+		}
+		&:nth-last-child(1) {
+			margin-left: 20px;
+		}
+		&:nth-child(2) {
+			margin-right: 20px;
+		}
+	}
+}
+.brands__group {
+	display: flex;
+	justify-content: flex-start;
+    border-bottom: 1px solid $new_line;
+    padding: 50px 0 40px 0;
+    &:nth-last-child(1) {
+    	border-bottom: none;
+    }
+    @include breakpoint(320px) {
+    	align-items: flex-start;
+	}
+    @include breakpoint(750px) {
+    	align-items: center;
+	}
+}
+.brands__group-title {
+	@include breakpoint(940px) {
+		width: 175px;
+		flex: 0 0 175px;
+	}
+	align-content: center;
+	& span {
+		background: $primary_color;
+		color: #fff;
+		font-size: 18px;
+		font-family: $second_font;
+		width: 53px;
+		height: 43px;
+		display: block;
+		line-height: 43px;
+	    text-align: center;
+	    @include breakpoint(320px) {
+	    	margin: 0 15px;
+	    }
+	}
+}
+.brands__container .brands__list {
+	font-size: 16px;
+    & a {
+    	color: #231f20;
+    }
+        width: 100%;
+    @include breakpoint(320px) {
+    	column-count: 1;
+    }
+    @include breakpoint(480px) {
+    	column-count: 2;
+    }
+    @include breakpoint(750px) {
+    	column-count: 3;
+    }
+    @include breakpoint(940px) {
+    	column-count: 4;
+		& li {
+	    	width: 17vw;
+	    }
+    }
+}
+/*BRANDS DETAIL*/
+.brands__detail {
+	@include breakpoint(320px) {
+    	padding: 0 15px;
+    }
+    @include breakpoint(750px) {
+    	padding: 0;
+    }
+}
+.brands__detail_image {
+	width: 240px;
+	height: 120px;
+	position: relative;
+    float: left;
+	& img {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		max-width: 240px;
+		max-height: 120px;
+	}
+}
+.brands__detail_text {
+	font-size: 16px;
+	& p {
+	    margin-bottom: 27px;
+	}
+}

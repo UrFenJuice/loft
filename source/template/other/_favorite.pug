@@ -1,0 +1,90 @@
+.bx-content
+	form#basket_form(method='post', action='/personal/cart/', name='basket_form')
+		#basket_form_container
+			.bx_ordercart
+				.bx_sort_container
+					a#basket_toolbar_button.current(href='javascript:void(0)', onclick='showBasketItemsList()')
+						| В корзине
+						#normal_count.flat
+							| (3)
+					a#basket_toolbar_button.current.primary__button(href='javascript:void(0)', onclick='showBasketItemsList()')
+						| Избранное
+						#normal_count.flat
+							| (2)
+				#basket_items_list
+					.bx_ordercart_order_table_container
+						table#basket_items
+							thead
+								tr
+									td.margin
+									td#col_NAME.item(colspan='2')
+										| Товары
+									td#col_PRICE.price
+										| Цена за шт.
+									td#col_SUM.custom
+										| Наличие
+									td.custom
+									td.margin
+							tbody
+								tr#21
+									td.margin
+									td.itemphoto
+										.bx_ordercart_photo_container
+											span.stickers
+												span.sticker.sticker_sale sale
+											a(href='#')
+												.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_1.jpg')")
+									td.item
+										h2.bx_ordercart_itemtitle
+											a(href='#') Valentino
+										.bx_ordercart_iteminfo
+											p.bx_ordercart_item__description
+												| Мини-платье с кружевным лифом и коротким рукавом
+											p.bx_ordercart_item__props
+												| Цвет: розовый   |   Размер: 42
+									td.price
+										#current_price_21.current_price 1 079 Р
+										#old_price_21.old_price 1 199 Р
+									td.custom
+										.availabale В наличие
+									td.control
+										a(href='#')
+											+use("shopping-cart")
+											sup.round__shopping-cart +
+											span
+												| В корзину
+										a(href='#')
+											+use("close")
+											span
+												| Удалить
+									td.margin
+								tr#23
+									td.margin
+									td.itemphoto
+										.bx_ordercart_photo_container
+											span.stickers
+												span.sticker.sticker_new новинка
+											a(href='#')
+												.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_2.jpg')")
+									td.item
+										h2.bx_ordercart_itemtitle
+											a(href='#') DKNY
+										.bx_ordercart_iteminfo
+											p.bx_ordercart_item__description
+												| Сумка Gansevoort на цепочке
+											p.bx_ordercart_item__props
+												| Цвет: зеленый
+									td.price
+										#current_price_23.current_price 1 259 Р
+										#old_price_23.old_price 1 399 Р
+									td.custom
+										.not_availabale Нет в наличие
+									td.control
+										a(href='#')
+											+use("close")
+											span
+												| Удалить
+									td.margin
+					.bx_ordercart_order_pay
+						a.show_all показать все
+.line
