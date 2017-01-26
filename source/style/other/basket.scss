@@ -1,24 +1,24 @@
 .bx_ordercart .bx_sort_container{
 	display: flex;
 	margin-bottom:55px;
-	& .current{
-		width: 155px;
-		padding: 6px 0;
-		border: 3px solid #adadad;
-		background: #fff;
-		color: #adadad;
-	    font-size: 16px;
-	    font-family: Proxima Nova Semibold;
-	    text-transform: uppercase;
-	    display: block;
-	    text-align: center;
-	    margin-right: 10px;
-		&.primary__button{
-			border: none;
-		    color: #ffffff;
-    		background: #ab885e;
-		    border: 3px solid #ab885e;
-		}
+}
+.current{
+	width: 155px;
+	padding: 6px 0;
+	border: 3px solid #adadad;
+	background: #fff;
+	color: #adadad;
+    font-size: 16px;
+    font-family: Proxima Nova Semibold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+	&.primary__button{
+		border: none;
+	    color: #ffffff;
+		background: #ab885e;
+	    border: 3px solid #ab885e;
 	}
 }
 .bx_ordercart .bx_ordercart_order_table_container{
@@ -378,5 +378,13 @@ table.counter td {
 	font-size: 16px;
 	& a {
 		text-decoration: underline;
+	}
+}
+.bx-content {
+	@include breakpoint(320px) {
+		padding: 0 15px;
+	}
+	@include breakpoint(750px) {
+		padding: 0;
 	}
 }

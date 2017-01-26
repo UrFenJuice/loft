@@ -44,4 +44,13 @@
 .contacts__select {
 	margin: 24px 0 49px;
 }
+.contacts,
+.contacts__select {
+	@include breakpoint(320px) {
+		padding: 0 15px;
+	}
+	@include breakpoint(750px) {
+		padding: 0;
+	}
+}
 /*!CONTACTS*/

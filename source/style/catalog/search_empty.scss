@@ -24,4 +24,13 @@
 		text-decoration: underline;
 	}
 }
+.catalog__search,
+.catalog__search_empty-text {
+	@include breakpoint(320px) {
+		padding: 0 15px;
+	}
+	@include breakpoint(750px) {
+		width: 0;
+	}
+}
 /*!SEARCH_EMPTY*/

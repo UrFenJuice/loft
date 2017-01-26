@@ -105,4 +105,15 @@
 	font-size: 16px;
 	padding: 13px 0 38px;
 }
+.faq,
+.accordeon,
+.faq__text,
+.faq__block_form {
+	@include breakpoint(320px) {
+		padding: 0 15px;
+	}
+	@include breakpoint(750px) {
+		padding: 0;
+	}
+}
 /*!FAQ*/

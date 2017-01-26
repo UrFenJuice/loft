@@ -2,11 +2,23 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	@include breakpoint(320px) {
+		padding: 0 15px;
+	}
+	@include breakpoint(750px) {
+		padding: 0;
+	}
 }
 .bx-authform {
 	flex: 1 1 535px;
 	max-width: 535px;
 	font-size: 16px;
+	@include breakpoint(320px) {
+		padding: 0 15px;
+	}
+	@include breakpoint(750px) {
+		padding: 0;
+	}
 }
 .my_registartion .bx-title {
 	font-size: 18px;

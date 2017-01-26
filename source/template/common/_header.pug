@@ -14,7 +14,13 @@ header.header
 			.header__info-menu
 				ul.header__info-menu__main
 					each item in top_items
-						li.header__info-menu__main-item: a(href="#").header__info-menu__main-item-link= item
+						li.header__info-menu__main-item
+							a(href="#").header__info-menu__main-item-link= item
+							- if(item == 'Помощь покупателю')
+								ul.header__info-menu__main-sec
+									each item in customer
+										li.header__info-menu__main-item
+											a(href="#").header__info-menu__main-item-link= item
 		.header__user
 			ul.header__user-nav
 				li.header__user-nav__item
@@ -42,7 +48,45 @@ header.header
 				i.fa.fa_search_new
 		ul.header__catalog_menu
 			each item in items
-				li.header__catalog_menu-item: a(href="#").header__catalog_menu-item-link= item
+				li.header__catalog_menu-item
+					a(href="#").header__catalog_menu-item-link= item
+					- if(item == 'Бренды')
+						.header__catalog_menu_sub_block
+							.header__catalog_menu_sub_block_item.menu_sub_block_item-first
+								h3 топ брендов
+								ul
+									each item in brands
+										li
+											a(href="")= item
+							.header__catalog_menu_sub_block_item.menu_sub_block_item-second
+								h3 общее
+								ul
+									li
+										a(href="#") Все бренды
+									li
+										a(href="#") 0-9
+									li
+										a(href="#") A-Z
+									li
+										a(href="#") А-Я
+							.header__catalog_menu_sub_block_item.menu_sub_block_item-third
+								img(src="/assets/img/menu_brand.jpg")
+					- if(item == 'Женское')
+						.header__catalog_menu_sub_block
+							.header__catalog_menu_sub_block_item.menu_sub_block_item-first
+								h3 Категории
+								ul
+									each item in menu
+										li
+											a(href="")= item
+							.header__catalog_menu_sub_block_item.menu_sub_block_item-second
+								h3 Топ брендов
+								ul
+									each item in top_brands
+										li
+											a(href="")= item
+							.header__catalog_menu_sub_block_item.menu_sub_block_item-third
+								img(src="/assets/img/menu_woman.jpg")
 					- if(item == 'Распродажа')
 						sup.sale до - 30%
 		//.header__shadow.js-header-shadow

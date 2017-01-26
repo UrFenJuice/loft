@@ -417,16 +417,10 @@ h4 {
 		float: left;
 		position: relative;
 	}
-}
-.header__info-menu__main-item {
-	@include breakpoint(320px) {
-		padding-right: 5px;
-		text-align: center;
-	}
 	@include breakpoint(640px) {
-		padding-right: 29px;
+		margin-right: 29px;
 		&:nth-last-child(1) {
-			padding-right: 0;
+			margin-right: 0;
 		}
 	}
 }
@@ -689,9 +683,11 @@ h4 {
 		text-align: center;
 		margin: auto;
 		border-right: none;
+		padding: 0 15px;
 	}
 	@include breakpoint(750px) {
 		width: 35%;
+		padding: 0;
 		border-right: 1px solid $line;
 		text-align: inherit;
 	}
@@ -852,6 +848,10 @@ h4 {
 		justify-content: space-around;
 		.catalog__sort-item {
 			padding-bottom: 5px;
+			&:nth-last-child(1){
+				width: 100%;
+				text-align: center;
+			}
 		}
 	}
 	@include breakpoint(640px) {
@@ -862,6 +862,10 @@ h4 {
 	}
 	@include breakpoint(1200px) {
 		justify-content: flex-start;
+		.catalog__sort-item:nth-last-child(1){
+			width: auto;
+			text-align: inherit;
+		} 
 	}
 }
 .catalog__sort-item {
@@ -881,6 +885,11 @@ h4 {
 		margin-right: 0px;
 	}
 	@include breakpoint(480px) {
+		display: block;
+		margin-left: 15px;
+		margin-right: 5px;
+	}
+	@include breakpoint(640px) {
 		display: block;
 		margin-right: 20px;
 	}
@@ -909,9 +918,11 @@ h4 {
 .catalog__detail {
 	@include breakpoint(320px) {
 		flex-flow: column nowrap;
+		padding: 0 15px;
 	}
 	@include breakpoint(940px) {
 		flex-flow: row nowrap;
+		padding: 0;
 	}
 }
 .asd_fav_button {

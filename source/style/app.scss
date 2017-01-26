@@ -13,7 +13,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box; 
-	zoom: 1; 
     line-height: initial;
 }
 
@@ -56,14 +55,15 @@ h1, h2, h3, h4, h5 {
     font-weight: 100;
 }
 .bx-title {
-	margin: 75px 0 57px;
 	@include breakpoint(320px) {
 		text-align: center;
 		padding: 0 15px;
+		margin: 20px 0 0;
 	}
 	@include breakpoint(640px) {
 		text-align: inherit;
 		padding: 0;
+		margin: 75px 0 57px;
 	}
 }
 button, hr, input {
@@ -116,6 +116,7 @@ main {
 }
 .catalog__content {
 	flex: 1 1 900px;
+	z-index: 1;
 }
 .error__page_head {
 	display: flex;

@@ -222,7 +222,7 @@ jQuery(function($){
                 items.removeClass('active');
                 item.addClass('active');
 
-                otherContent.stop(true, true).slideUp(duration);
+                //otherContent.stop(true, true).slideUp(duration);
                 content.stop(true, true).slideDown(duration);
             } else {
                 content.stop(true, true).slideUp(duration);

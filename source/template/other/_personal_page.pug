@@ -46,22 +46,26 @@
 				input.bx-auth-input(type='text', name='sms', maxlength='50', value='', autocomplete='off', placeholder="ХХХ-ХХХ-ХХХХ")
 			.profile__sms_info
 				p Карта лояльности - это уникальная возможность сделать ваш шоппинг еще приятнее!
-				p Что такое карта лояльности, как ее получить, как копить и использовать баллы на карте - всё это и многое другое Вы узнаете по ссылке
+				p Что такое карта лояльности, как ее получить, как копить и использовать баллы на карте - всё это и многое другое Вы узнаете по ссылке 
+					a(href="#") подробнее о карте лояльности
 			.profile__save
-				input(type='submit', name='save', value='Выслать смс').primary__button
+				input(type='submit', name='save', value='Выслать смс').primary__button.primary__button_sms
 		.profile-link.profile-user-div-link.active
 			a(title='Показать / Скрыть', href='javascript:void(0)', onclick="SectionClick('personal')") мои подписки
 		#user_div_personal.profile-block-shown
-			.profile__input-block
-				input(type='checkbox', name='PERSONAL_GENDER', value='M').gender
-				span
-					|  Новинки
-				input(type='checkbox', name='PERSONAL_GENDER', value='F').gender
-				span
-					|  События «Важная Персона»
-				input(type='checkbox', name='PERSONAL_GENDER', value='F').gender
-				span
-					|  Акции «Важная персона» 
+			.profile__input-block_subscribe
+				.profile__input-block_subscribe-item
+					input(type='checkbox', name='PERSONAL_GENDER', value='M').gender.checkbox_styler
+					span
+						|  Новинки
+				.profile__input-block_subscribe-item
+					input(type='checkbox', name='PERSONAL_GENDER', value='F').gender.checkbox_styler
+					span
+						|  События «Важная Персона»
+				.profile__input-block_subscribe-item
+					input(type='checkbox', name='PERSONAL_GENDER', value='F').gender.checkbox_styler
+					span
+						|  Акции «Важная персона»
 			.profile__save
 				input(type='submit', name='save', value='Сохранить').primary__button
 		.profile-link.profile-user-div-link.active
@@ -69,11 +73,331 @@
 		#user_div_personal.profile-block-shown
 			.profile__input-block
 				span.profile__input-name
-					| Новый пароль
-				input.bx-auth-input(type='password', name='NEW_PASSWORD', maxlength='50', value='', autocomplete='off')
+					| Новый пароль (не менее 6-ти символов)
+					span.bx-authform-starrequired *
+				input.bx-auth-input(type='password', name='NEW_PASSWORD', maxlength='50', value='', autocomplete='off')#password
+				.show_pass
+					input.checkPassword#check1(type='checkbox')
+					label(for="check1")
 			.profile__input-block
 				span.profile__input-name
 					| Подтверждение нового пароля
-				input(type='password', name='NEW_PASSWORD_CONFIRM', maxlength='50', value='', autocomplete='off')
+					span.bx-authform-starrequired *
+				input(type='password', name='NEW_PASSWORD_CONFIRM', maxlength='50', value='', autocomplete='off')#password
+				.show_pass
+					input.checkPassword#check2(type='checkbox')
+					label(for="check2")
 			.profile__save
 				input(type='submit', name='save', value='Сохранить').primary__button
+.line
+.personal__orders
+	h2.main_cat История заказов
+	.personal__orders_nav
+		a(href="#").current активные
+		a(href="#").current.primary__button все
+	.personal__order.status__accepted
+		.personal__order_head
+			.personal__order_head-name заказ №45453
+			.personal__order_head-status Текущий статус:  принят
+			.personal__order_head-links
+				a(href="#") 
+					+use("refresh")
+					span Повторить заказ
+				a(href="#") 
+					+use("close")
+					span Отменить заказ
+		.personal__order_body
+			.personal__order_body-left_area
+				.order_date Дата заказа 26.12.2016
+				ul.accordeon__list
+					li.accordeon__item
+						a.accordeon__trigger(href='#') Информация о доставке
+						.accordeon__inner
+							.accordeon__inner_block
+								span.accordeon__inner_name Индекс
+								span.accordeon__inner_content 170000
+							.accordeon__inner_block
+								span.accordeon__inner_name Месторасположение
+								span.accordeon__inner_content Россия, Центр, Тверская область, Тверь
+							.accordeon__inner_block
+								span.accordeon__inner_name Адрес доставки
+								span.accordeon__inner_content ул. Вольного Новгорода, д.15
+							.accordeon__inner_block
+								span.accordeon__inner_name Способ доставки
+								span.accordeon__inner_content Курьерская доставка (Тверь)
+					li.accordeon__item
+						a.accordeon__trigger(href='#') Информация о получателе
+						.accordeon__inner
+							.accordeon__inner_block
+								span.accordeon__inner_name Ф.И.О.
+								span.accordeon__inner_content Иванова Екатерина Александровна
+							.accordeon__inner_block
+								span.accordeon__inner_name E-mail
+								span.accordeon__inner_content 
+									a(href="#") ekaterina_ivanova@yandex.ru
+							.accordeon__inner_block
+								span.accordeon__inner_name Телефон
+								span.accordeon__inner_content +7 (904) 123-56-90
+					li.accordeon__item
+						a.accordeon__trigger(href='#') Информация об оплате
+						.accordeon__inner
+							.accordeon__inner_block
+								span.accordeon__inner_name Способ оплаты
+								span.accordeon__inner_content Оплата при получении
+							.accordeon__inner_block
+								span.accordeon__inner_name Статус оплаты
+								span.accordeon__inner_content Оплачено
+			.personal__order_body-right_area
+				table#personal__order_items
+					tbody
+						tr#21
+							td.margin
+							td.itemphoto
+								.bx_ordercart_photo_container
+									span.stickers
+										span.sticker.sticker_sale sale
+									a(href='#')
+										.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_1.jpg')")
+							td.item
+								h2.bx_ordercart_itemtitle
+									a(href='#') Valentino
+								.bx_ordercart_iteminfo
+									p.bx_ordercart_item__description Мини-платье с кружевным лифом и коротким рукавом
+									p.bx_ordercart_item__props Цвет: розовый   |   Размер: 42
+							td.custom
+								.quantyti 3 шт.
+							td.custom
+								#sum_21 2 158 Р
+							td.margin
+						tr#23
+							td.margin
+							td.itemphoto
+								.bx_ordercart_photo_container
+									span.stickers
+										span.sticker.sticker_new новинка
+									a(href='#')
+										.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_2.jpg')")
+							td.item
+								h2.bx_ordercart_itemtitle
+									a(href='#') DKNY
+								.bx_ordercart_iteminfo
+									p.bx_ordercart_item__description Сумка Gansevoort на цепочке
+									p.bx_ordercart_item__props Цвет: зеленый
+							td.custom
+								.quantyti 2 шт.
+							td.custom
+								#sum_23 1 259 Р
+							td.margin
+				table#personal__order_items_price
+					tbody
+						tr
+							td.summary
+								| Товаров на:
+							td.summary__price
+								| 577 200 р
+						tr
+							td.summary
+								| Стоимость доставки:
+							td.summary__price
+								| 500 р
+						tr
+							td.summary
+								| Скидка бонусами:
+							td.summary__price
+								| 1000 р
+							td.margin
+						tr
+							td.summary
+								| ИТОГО:
+							td.summary__price
+								| 576 700 р
+
+	.personal__order.status__end
+			.personal__order_head
+				.personal__order_head-name заказ №45453
+				.personal__order_head-status Текущий статус:  завершен
+				.personal__order_head-links
+					a(href="#") 
+						+use("close")
+						span Отменить заказ
+			.personal__order_body
+				.personal__order_body-left_area
+					.order_date Дата заказа 26.12.2016
+					ul.accordeon__list
+						li.accordeon__item
+							a.accordeon__trigger(href='#') Информация о доставке
+							.accordeon__inner
+								.accordeon__inner_block
+									span.accordeon__inner_name Индекс
+									span.accordeon__inner_content 170000
+								.accordeon__inner_block
+									span.accordeon__inner_name Месторасположение
+									span.accordeon__inner_content Россия, Центр, Тверская область, Тверь
+								.accordeon__inner_block
+									span.accordeon__inner_name Адрес доставки
+									span.accordeon__inner_content ул. Вольного Новгорода, д.15
+								.accordeon__inner_block
+									span.accordeon__inner_name Способ доставки
+									span.accordeon__inner_content Курьерская доставка (Тверь)
+						li.accordeon__item
+							a.accordeon__trigger(href='#') Информация о получателе
+							.accordeon__inner
+								.accordeon__inner_block
+									span.accordeon__inner_name Ф.И.О.
+									span.accordeon__inner_content Иванова Екатерина Александровна
+								.accordeon__inner_block
+									span.accordeon__inner_name E-mail
+									span.accordeon__inner_content 
+										a(href="#") ekaterina_ivanova@yandex.ru
+								.accordeon__inner_block
+									span.accordeon__inner_name Телефон
+									span.accordeon__inner_content +7 (904) 123-56-90
+						li.accordeon__item
+							a.accordeon__trigger(href='#') Информация об оплате
+							.accordeon__inner
+								.accordeon__inner_block
+									span.accordeon__inner_name Способ оплаты
+									span.accordeon__inner_content Оплата при получении
+								.accordeon__inner_block
+									span.accordeon__inner_name Статус оплаты
+									span.accordeon__inner_content Оплачено
+				.personal__order_body-right_area
+					table#personal__order_items
+						tbody
+							tr#21
+								td.margin
+								td.itemphoto
+									.bx_ordercart_photo_container
+										span.stickers
+											span.sticker.sticker_sale sale
+										a(href='#')
+											.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_1.jpg')")
+								td.item
+									h2.bx_ordercart_itemtitle
+										a(href='#') Valentino
+									.bx_ordercart_iteminfo
+										p.bx_ordercart_item__description Мини-платье с кружевным лифом и коротким рукавом
+										p.bx_ordercart_item__props Цвет: розовый   |   Размер: 42
+								td.custom
+									.quantyti 3 шт.
+								td.custom
+									#sum_21 2 158 Р
+								td.margin
+					table#personal__order_items_price
+						tbody
+							tr
+								td.summary
+									| Товаров на:
+								td.summary__price
+									| 577 200 р
+							tr
+								td.summary
+									| Стоимость доставки:
+								td.summary__price
+									| 500 р
+							tr
+								td.summary
+									| Скидка бонусами:
+								td.summary__price
+									| 1000 р
+								td.margin
+							tr
+								td.summary
+									| ИТОГО:
+								td.summary__price
+									| 576 700 р
+
+	.personal__order.status__canceled
+			.personal__order_head
+				.personal__order_head-name заказ №45453
+				.personal__order_head-status Текущий статус:  отменен
+				.personal__order_head-links
+					a(href="#") 
+						+use("close")
+						span Отменить заказ
+			.personal__order_body
+				.personal__order_body-left_area
+					.order_date Дата заказа 26.12.2016
+					ul.accordeon__list
+						li.accordeon__item
+							a.accordeon__trigger(href='#') Информация о доставке
+							.accordeon__inner
+								.accordeon__inner_block
+									span.accordeon__inner_name Индекс
+									span.accordeon__inner_content 170000
+								.accordeon__inner_block
+									span.accordeon__inner_name Месторасположение
+									span.accordeon__inner_content Россия, Центр, Тверская область, Тверь
+								.accordeon__inner_block
+									span.accordeon__inner_name Адрес доставки
+									span.accordeon__inner_content ул. Вольного Новгорода, д.15
+								.accordeon__inner_block
+									span.accordeon__inner_name Способ доставки
+									span.accordeon__inner_content Курьерская доставка (Тверь)
+						li.accordeon__item
+							a.accordeon__trigger(href='#') Информация о получателе
+							.accordeon__inner
+								.accordeon__inner_block
+									span.accordeon__inner_name Ф.И.О.
+									span.accordeon__inner_content Иванова Екатерина Александровна
+								.accordeon__inner_block
+									span.accordeon__inner_name E-mail
+									span.accordeon__inner_content 
+										a(href="#") ekaterina_ivanova@yandex.ru
+								.accordeon__inner_block
+									span.accordeon__inner_name Телефон
+									span.accordeon__inner_content +7 (904) 123-56-90
+						li.accordeon__item
+							a.accordeon__trigger(href='#') Информация об оплате
+							.accordeon__inner
+								.accordeon__inner_block
+									span.accordeon__inner_name Способ оплаты
+									span.accordeon__inner_content Оплата при получении
+								.accordeon__inner_block
+									span.accordeon__inner_name Статус оплаты
+									span.accordeon__inner_content Оплачено
+				.personal__order_body-right_area
+					table#personal__order_items
+						tbody
+							tr#21
+								td.margin
+								td.itemphoto
+									.bx_ordercart_photo_container
+										span.stickers
+											span.sticker.sticker_sale sale
+										a(href='#')
+											.bx_ordercart_photo(style="background-image:url('/assets/img/items/item_1.jpg')")
+								td.item
+									h2.bx_ordercart_itemtitle
+										a(href='#') Valentino
+									.bx_ordercart_iteminfo
+										p.bx_ordercart_item__description Мини-платье с кружевным лифом и коротким рукавом
+										p.bx_ordercart_item__props Цвет: розовый   |   Размер: 42
+								td.custom
+									.quantyti 3 шт.
+								td.custom
+									#sum_21 2 158 Р
+								td.margin
+					table#personal__order_items_price
+						tbody
+							tr
+								td.summary
+									| Товаров на:
+								td.summary__price
+									| 577 200 р
+							tr
+								td.summary
+									| Стоимость доставки:
+								td.summary__price
+									| 500 р
+							tr
+								td.summary
+									| Скидка бонусами:
+								td.summary__price
+									| 1000 р
+								td.margin
+							tr
+								td.summary
+									| ИТОГО:
+								td.summary__price
+									| 576 700 р

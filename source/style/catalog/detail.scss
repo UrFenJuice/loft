@@ -86,7 +86,12 @@
 .asd_fav_button {
 	cursor: pointer;
 	.add_to_fav {
-		border-bottom: 1px dashed #000;
+		@include breakpoint(320px) {
+			border-bottom: none;
+		}
+		@include breakpoint(480px) {
+			border-bottom: 1px dashed #000;
+		}
 	    margin-left: 11px;
 	}
 }
