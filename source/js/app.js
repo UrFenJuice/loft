@@ -341,6 +341,8 @@ jQuery(function($){
           verticalSwiping: true,
           focusOnSelect: true,
         });
+        /*ABOUTH*/
         $('.mask__loop').fancybox();
+        /*!ABOUTH*/
     });
 })
