@@ -17,7 +17,9 @@ footer.footer
 				a(href="mailto:tvervip@yandex.ru").footer__email tvervip@yandex.ru
 				ul.footer__sn
 					each icon in sn
-						li.footer__sn-icon: a(href="#"): i(aria-hidden="true").fa(class='fa-'+icon)
+						li.footer__sn-icon
+							a(href="#")
+								i.fa(aria-hidden="true", class='fa-'+icon)
 
 			.footer__top-right-block
 				.footer__subscribe

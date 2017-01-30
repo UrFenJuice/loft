@@ -79,5 +79,7 @@
 			| Поделится
 			ul.detail_soc
 				each icon in detail_soc
-					li.detail_soc-icon: a(href="#"): i(aria-hidden="true").fa(class='fa-'+icon)
+					li.detail_soc-icon
+						a(href="#")
+							i.fa(aria-hidden="true", class='fa-'+icon)
 //DETAIL

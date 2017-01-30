@@ -14,9 +14,9 @@ block variables
 - var menu_sec = ["Брюки", "Юбки", "Костюмы", "Комбинезоны", "Шорты", "Пляжные принадлежности", "Спорт", "Белье и домашняя одежда"]
 
 mixin use(name)
-  svg.my_svg(role="img")(id=name)
-    use(xlink:href=svg+"#"+name)
-      
+    svg.my_svg(role="img", id=name)
+        use(xlink:href=svg+"#"+name)
+
 
     
 doctype html

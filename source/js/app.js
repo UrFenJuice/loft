@@ -341,5 +341,6 @@ jQuery(function($){
           verticalSwiping: true,
           focusOnSelect: true,
         });
+        $('.mask__loop').fancybox();
     });
 })
