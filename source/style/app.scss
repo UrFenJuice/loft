@@ -245,6 +245,34 @@ main {
 		}
 	}
 }
+table {
+	@include breakpoint(320px) {
+		font-size: 13px;
+	}
+	@include breakpoint(640px) {
+		font-size: 14px;
+	}
+	@include breakpoint(940px) {
+		font-size: 15px;
+	}
+	@include breakpoint(1200px) {
+		font-size: 16px;
+	}
+	border-spacing: 0; 
+}
+table thead tr td,
+table tbody tr td {
+	border-bottom: 1px solid $new-line;
+    padding: 24px 0;
+}
+table tfoot tr td,
+table thead tr td {
+	color: $gray;
+}
+table tfoot tr td {
+	padding-top: 24px;
+	font-size: 14px;
+}
 @import 'common/sprite';
 
 @import 'common/header';
