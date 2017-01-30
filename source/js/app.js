@@ -324,5 +324,22 @@ jQuery(function($){
         });
         $("input[name='USER_PHONE']").inputmask("+7 (999) 999-9999");
         /*!AUTH*/
+         $('.slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for',
+          dots: false,
+          centerMode: false,
+          vertical: true,
+          verticalSwiping: true,
+          focusOnSelect: true,
+        });
     });
 })

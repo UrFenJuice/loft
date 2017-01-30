@@ -326,14 +326,15 @@ div.title-search-result {
 	font-size: 16px;
 	margin-bottom: 13px;
 }
-.menu_sub_block_item-first ul {
+.header__catalog_menu_sub_wrapper {
+	display: inline-block;
 	border-right: 1px solid $new-line;
 }
 .menu_sub_block_item-first ul {
-	column-count: 2;
+	float: left;
 	padding: 0;
 	& li {
-		margin-right: 53px;
+		margin-right: 60px;
 		margin-bottom: 6px;
 		&:nth-child(8n) {
 			margin-bottom: 0;
@@ -341,7 +342,7 @@ div.title-search-result {
 	}
 }
 .menu_sub_block_item-second {
-	margin-left: 60px;
+	//margin-left: 60px;
 	width: 19%;
 	& li {
 		margin-bottom: 6px;

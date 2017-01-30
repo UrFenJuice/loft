@@ -1,25 +1,32 @@
 .catalog__detail
 	.catalog__detail_left-bar
-
-		ul.catalog__detail_slider
-			li.catalog__detail_next.catalog__detail_arrow
-				+use('up-arrow')
-			li.catalog__detail_item.active
-				a(href="#").catalog__detail_link
+		.my_slider
+			.slider.slider-for
+				div
 					img(src="/assets/img/items/detail.jpg")
-			li.catalog__detail_item
-				a(href="#").catalog__detail_link
+				div
 					img(src="/assets/img/items/detail_1.jpg")
-			li.catalog__detail_item
-				a(href="#").catalog__detail_link
+				div
 					img(src="/assets/img/items/detail_2.jpg")
-			li.catalog__detail_item
-				a(href="#").catalog__detail_link
+				div
 					img(src="/assets/img/items/detail_3.jpg")
-			li.catalog__detail_prev.catalog__detail_arrow
-				+use('down-arrow')
-		.catalog__detail_image
-			img(src="/assets/img/items/detail.jpg").catalog__detail_img
+				div
+					img(src="/assets/img/items/detail_2.jpg")
+				div
+					img(src="/assets/img/items/detail_3.jpg")
+			.slider.slider-nav
+				div
+					img(src="/assets/img/items/detail.jpg")
+				div
+					img(src="/assets/img/items/detail_1.jpg")
+				div
+					img(src="/assets/img/items/detail_2.jpg")
+				div
+					img(src="/assets/img/items/detail_3.jpg")
+				div
+					img(src="/assets/img/items/detail_2.jpg")
+				div
+					img(src="/assets/img/items/detail_3.jpg")
 	.catalog__detail_right-bar
 		span.stickers
 			span.sticker.sticker_sale sale

@@ -53,11 +53,16 @@ header.header
 					- if(item == 'Бренды')
 						.header__catalog_menu_sub_block
 							.header__catalog_menu_sub_block_item.menu_sub_block_item-first
-								h3 топ брендов
-								ul
-									each item in brands
-										li
-											a(href="")= item
+								.header__catalog_menu_sub_wrapper
+									h3 топ брендов
+									ul
+										each item in brands
+											li
+												a(href="")= item
+									ul
+										each item in brands_sec
+											li
+												a(href="")= item
 							.header__catalog_menu_sub_block_item.menu_sub_block_item-second
 								h3 общее
 								ul
@@ -74,11 +79,16 @@ header.header
 					- if(item == 'Женское')
 						.header__catalog_menu_sub_block
 							.header__catalog_menu_sub_block_item.menu_sub_block_item-first
-								h3 Категории
-								ul
-									each item in menu
-										li
-											a(href="")= item
+								.header__catalog_menu_sub_wrapper
+									h3 Категории
+									ul
+										each item in menu
+											li
+												a(href="")= item
+									ul
+										each item in menu_sec
+											li
+												a(href="")= item
 							.header__catalog_menu_sub_block_item.menu_sub_block_item-second
 								h3 Топ брендов
 								ul

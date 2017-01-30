@@ -1,0 +1,60 @@
+.loyalty__card ol {
+	list-style-type: none;
+	counter-reset: item;
+	margin: 0;
+	padding: 0;
+}
+
+.loyalty__card ol > li {
+	display: table;
+	counter-increment: item;
+}
+
+.loyalty__card ol > li:before {
+	content: counters(item, ".") ". ";
+	display: table-cell;
+	width: 27px;  
+	color: #000;
+}
+
+.loyalty__card li ol > li {
+	margin: 0;
+    line-height: 24px;
+	margin-bottom: 11px;
+}
+
+.loyalty__card li ol > li:before {
+	content: counters(item, ".") " ";
+}
+.loyalty__card .accordeon__item.active {
+	padding-bottom: 25px;
+}
+.loyalty__card .accordeon__item:hover .accordeon__trigger, 
+.loyalty__card .accordeon__item.active .accordeon__trigger {
+	color: #000;
+	&:after {
+		background-position: -266px -281px;
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+}
+.loyalty__card .accordeon__inner {
+	background-color: transparent;
+	padding: 0;
+	margin-top: 15px;
+    margin-left: 20px;
+	&:before {
+		display: none;
+	}
+}
+.loyalty__card p {
+	margin: 45px 0;
+	font-size: 16px;
+	@include breakpoint(320px) {
+		padding: 0 15px; 
+	}
+	@include breakpoint(750px) {
+		padding: 0;
+	}
+}

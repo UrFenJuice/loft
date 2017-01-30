@@ -73,6 +73,28 @@ button, hr, input {
 .container {
 	margin: 0 auto;
 	position: relative;
+	& p {
+		font-size: 16px;
+		margin-bottom: 25px;
+		line-height: 23px;
+		& img {
+			float: left;
+			margin-right: 30px;
+			position: relative;
+			top: 5px;
+		}
+	}
+	& blockquote {
+		background: $new-line;
+		border-left: 8px solid $primary-color;
+		padding: 30px 45px 7px 45px;
+		margin-bottom: 25px;
+		& h3 {
+			text-transform: uppercase;
+			font-family: $second-font;
+			margin-bottom: 20px;
+		}
+	}
 }
 
 #none {
@@ -156,6 +178,44 @@ main {
     height: 44px;
     line-height: 2.4;
 }
+.block__image {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	margin-bottom: 25px;
+}
+.block__image_item {
+	width: 170px;
+	height: 255px;
+	position: relative;
+	& img {
+		max-width: 170px;
+	}
+	& .mask {
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	& .mask__loop {
+		@extend .icon-preview;
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	&:hover {
+		.mask {
+			display: block;
+		}
+	}
+}
 @import 'common/sprite';
 
 @import 'common/header';
@@ -205,3 +265,5 @@ main {
 @import 'other/news';
 
 @import 'other/personal_page';
+
+@import 'other/loyalty_card';
