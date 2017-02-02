@@ -332,14 +332,33 @@ jQuery(function($){
           asNavFor: '.slider-nav'
         });
         $('.slider-nav').slick({
-          slidesToShow: 4,
           slidesToScroll: 1,
+          slidesToShow: 4,
+          vertical: true,
+          verticalSwiping: true,
           asNavFor: '.slider-for',
           dots: false,
           centerMode: false,
-          vertical: true,
           verticalSwiping: true,
           focusOnSelect: true,
+          responsive: [
+/*            {
+              breakpoint: 625,
+              settings: {
+                slidesToShow: 4,
+                vertical: true,
+                verticalSwiping: true
+              }
+            },*/
+            {
+              breakpoint: 325,
+              settings: {
+                slidesToShow: 2,
+                vertical: false,
+                verticalSwiping: false
+              }
+            }
+          ]
         });
         /*ABOUTH*/
         $('.mask__loop').fancybox();

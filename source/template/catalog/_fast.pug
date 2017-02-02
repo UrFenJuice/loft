@@ -1,0 +1,99 @@
+.preview_detail
+	.catalog__detail
+		.catalog__detail_left-bar
+			.my_slider
+				.slider.slider-for
+					div
+						img(src="/assets/img/items/detail.jpg")
+					div
+						img(src="/assets/img/items/detail_1.jpg")
+					div
+						img(src="/assets/img/items/detail_2.jpg")
+					div
+						img(src="/assets/img/items/detail_3.jpg")
+					div
+						img(src="/assets/img/items/detail_2.jpg")
+					div
+						img(src="/assets/img/items/detail_3.jpg")
+				.slider.slider-nav
+					div
+						img(src="/assets/img/items/detail.jpg")
+					div
+						img(src="/assets/img/items/detail_1.jpg")
+					div
+						img(src="/assets/img/items/detail_2.jpg")
+					div
+						img(src="/assets/img/items/detail_3.jpg")
+					div
+						img(src="/assets/img/items/detail_2.jpg")
+					div
+						img(src="/assets/img/items/detail_3.jpg")
+		.catalog__detail_right-bar
+			a(href="#").close_popup
+				+use('close')
+			span.stickers
+				span.sticker.sticker_sale sale
+			.catalog__detail_name
+				a(href="#") 
+					| Valentino
+					span.catalog__detail_show-all Все товары бренда
+			.catalog__detail_small-description
+				| Женское розовое мини-платье с кружевным лифом
+			.catalog__detail_price
+				.catalog__detail_price-new 47 900 р  
+				.catalog__detail_price-old 51 000 Р
+			.catalog__detail_options
+				.catalog__detail_option 
+					span Цвeт
+					select(data-smart-positioning="false")
+						option(value='Розовый', selected='selected') Розовый
+						option(value='Красный') Красный
+				.catalog__detail_option 
+					span Размер
+						a(href="#") Таблица размеров
+					select(data-smart-positioning="false")
+						option(value='-- Выберите размер --', selected='selected') -- Выберите размер --
+						option(value='42') 42
+			.catalog__detail_buttons.item_buttons.vam
+				span#bx_117848907_16_basket_actions.item_buttons_counter_block
+					a#bx_117848907_16_add_basket_link.bx_big.bx_bt_button.bx_cart.primary__button(href='#')
+						| В корзину
+					#asd_fav_67601.asd_fav_button(data-skey='e8f16cc5eefb5635729c8c6baf2fd4d1', title='Нажмите для добавления в Список желаний')
+						+use('like')
+						span.add_to_fav Добавить в избранное
+			.catalog__detail_tab
+				ul.tabs__controls
+					li.tabs__controls-item.active(data-class='first')
+						a.tabs__controls-link(href='#')
+							| Описание
+					li.tabs__controls-item(data-class='second')
+						a.tabs__controls-link(href='#')
+							| Характеристики
+				ul.tabs__list
+					li.tabs__item.tabs__item_first.active
+						| Пьерпаоло Пиччоли включил короткое платье красного цвета в 
+						| весенне-летнюю коллекцию марки, основанной Валентино Гаравани. Для создания приталенной модели использована мягкая ткань Crepe Couture из шерсти и шелка. Лиф и короткие рукава выполнены из 
+						| кружева Heavy Lace с цветочным узором.
+								
+					li.tabs__item.tabs__item_second
+						.detail__page-detail-props
+							.detail__page-detail-props_outer
+								.detail__page-detail-props-name Артикул
+								.detail__page-detail-props-value 134813
+							.detail__page-detail-props_outer
+								.detail__page-detail-props-name Материал
+								.detail__page-detail-props-value Шелк
+							.detail__page-detail-props_outer
+								.detail__page-detail-props-name Страна производства
+								.detail__page-detail-props-value Италия
+							.detail__page-detail-props_outer
+								.detail__page-detail-props-name Рост модели
+								.detail__page-detail-props-value 178 см
+			.catalog__detail_soc
+				| Поделится
+				ul.detail_soc
+					each icon in detail_soc
+						li.detail_soc-icon
+							a(href="#")
+								i.fa(aria-hidden="true", class='fa-'+icon)
+//FAST_DETAIL

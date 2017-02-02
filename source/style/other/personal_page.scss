@@ -279,7 +279,7 @@
 }
 .personal__orders .accordeon__item:hover .accordeon__trigger:after, 
 .personal__orders .accordeon__item.active .accordeon__trigger:after {
-	background-position: -266px -281px;
+	@extend .icon-accordeon_down;
 	transform: rotate(180deg);
 }
 .personal__orders .accordeon__inner {
@@ -299,6 +299,7 @@
 	} 
 	& .accordeon__inner_content {
 		margin-bottom: 20px;
+		color: #000;
 	}
 }
 .personal__orders  .accordeon__item {
@@ -329,10 +330,12 @@
 }
 .personal__orders #personal__order_items {
 	width: 100%;
+	min-width: auto;
 }
 .personal__orders #personal__order_items_price {
 	margin-top: 40px;
 	float: right;
+	min-width: auto;
 }
 .personal__orders #personal__order_items td {
     padding: 4.5% 0;
@@ -405,6 +408,9 @@
 	text-align: right;
 	font-family: $second-font;
 	vertical-align: bottom;
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none;
 	@include breakpoint(320px) {
 		padding-right: 10px;
 	}
@@ -418,13 +424,7 @@
 	text-transform: uppercase;
 	vertical-align: bottom;
 	text-align: left;
-}
-.bx-auth-profile,
-.personal__orders {
-	@include breakpoint(320px) {
-		padding: 0 15px;
-	}
-	@include breakpoint(750px) {
-		padding: 0;
-	}
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none;
 }

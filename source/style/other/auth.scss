@@ -2,23 +2,17 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	@include breakpoint(320px) {
-		padding: 0 15px;
-	}
-	@include breakpoint(750px) {
-		padding: 0;
-	}
 }
 .bx-authform {
-	flex: 1 1 535px;
-	max-width: 535px;
-	font-size: 16px;
 	@include breakpoint(320px) {
-		padding: 0 15px;
+		width: 100%;
 	}
-	@include breakpoint(750px) {
-		padding: 0;
+	@include breakpoint(1100px) {
+		flex: 1 1 535px;
+		max-width: 535px;
+		width: auto;
 	}
+	font-size: 16px;
 }
 .my_registartion .bx-title {
 	font-size: 18px;
@@ -32,6 +26,7 @@
     margin-bottom: 45px;
 	p {
 		margin-right: 25px;
+		margin-bottom: 0;
 	}
 }
 .bx-authform-social ul li {

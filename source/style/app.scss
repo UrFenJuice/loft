@@ -57,8 +57,7 @@ h1, h2, h3, h4, h5 {
 .bx-title {
 	@include breakpoint(320px) {
 		text-align: center;
-		padding: 0 15px;
-		margin: 20px 0 0;
+		margin: 20px 0 10px;
 	}
 	@include breakpoint(640px) {
 		text-align: inherit;
@@ -73,16 +72,16 @@ button, hr, input {
 .container {
 	margin: 0 auto;
 	position: relative;
+	@include breakpoint(320px) {
+		padding: 0 15px;
+	}
+	@include breakpoint(750px) {
+		padding: 0;
+	}
 	& p {
 		font-size: 16px;
 		margin-bottom: 25px;
 		line-height: 23px;
-		@include breakpoint(320px) {
-			padding: 0 15px;
-		}
-		@include breakpoint(750px) {
-			padding: 0;
-		}
 		& img {
 			float: left;
 			position: relative;
@@ -155,8 +154,14 @@ main {
 	align-content: space-between;
 }
 .left_bar {
-	flex: 1 0 250px;
-	width: 250px;
+	@include breakpoint(480px) {
+		flex: 1 0 220px;
+		width: 220px;
+	}
+	@include breakpoint(640px) {
+		flex: 1 0 250px;
+		width: 250px;
+	}
 }
 .catalog__content {
 	flex: 1 1 900px;
@@ -248,6 +253,7 @@ main {
 table {
 	@include breakpoint(320px) {
 		font-size: 13px;
+		min-width: 430px
 	}
 	@include breakpoint(640px) {
 		font-size: 14px;
@@ -273,6 +279,105 @@ table tfoot tr td {
 	padding-top: 24px;
 	font-size: 14px;
 }
+.accordeon.accordeon__exchange .accordeon__trigger{
+	text-transform: uppercase;
+	font-family: $second-font;
+	font-size: 18px;
+}
+.accordeon.accordeon__exchange .accordeon__item:hover .accordeon__trigger,
+.accordeon.accordeon__exchange .accordeon__item.active .accordeon__trigger,
+.accordeon.accordeon__exchange .accordeon__item.active .accordeon__trigger {
+	color: #000;
+	&:after {
+		@extend .icon-accordeon_down;
+		transform: rotate(180deg);
+	}
+}
+.accordeon.accordeon__exchange .accordeon__trigger:after {
+	margin-bottom: 2px;
+}
+.accordeon.accordeon__exchange .accordeon__inner {
+	background: transparent;
+	padding: 0;
+	&:before {
+		display: none;
+	}
+}
+.exchange-list_style_decimal .exchange-list__item {
+	position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    &:before {
+		position: absolute;
+		top: 8px;
+		left: -20px;
+		width: 5px;
+		height: 5px;
+		content: '';
+		background-color: #000;
+		border-radius: 50%;	
+    }
+}
+.accordeon.accordeon__exchange .exchange-list__list {
+	margin-left: 45px;
+}
+.accordeon.accordeon__exchange h3 {
+	font-family: $second-font;
+	font-size: 16px;
+	padding: 20px 0;
+}
+ol .exchange-list__item {
+	list-style: inherit;
+    margin-bottom: 20px;
+}
+/*info*/
+.accordeon.info ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+.accordeon.info ol > li:nth-child(n + 2) {
+    display: table;
+    counter-increment: item;
+}
+.accordeon.info ol > li:nth-child(n + 2):before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    width: 27px;
+    color: #000;
+}
+.accordeon.info .accordeon__item.active {
+    padding-bottom: 25px;
+}
+.accordeon.info .accordeon__inner {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 15px;
+}
+.accordeon.info .accordeon__item:hover .accordeon__trigger, 
+.accordeon.info .accordeon__item.active .accordeon__trigger {
+    color: #000;
+}
+.accordeon.info .accordeon__item:hover .accordeon__trigger:after, 
+.accordeon.info .accordeon__item.active .accordeon__trigger:after {
+    @extend .icon-accordeon_down;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.accordeon.info .accordeon__inner:before {
+	display: none;
+}
+.accordeon.info ol ul li {
+	margin-bottom: 18px;
+} 
+span {
+	font-size: 14px;
+	color: $gray;
+}
+/*!info*/
 @import 'common/sprite';
 
 @import 'common/header';
@@ -306,6 +411,8 @@ table tfoot tr td {
 @import 'catalog/detail';
 
 @import 'catalog/search_empty';
+
+@import 'catalog/fast_detail';
 
 @import 'other/faq';
 

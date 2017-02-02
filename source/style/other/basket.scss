@@ -243,10 +243,13 @@
 }
 .bx_ordercart .bx_ordercart_order_pay .bx_ordercart_order_sum {
 	margin: 35px 0 28px 0;
+	min-width: auto;
 }
 .bx_ordercart .bx_ordercart_order_sum tr{ }
 .bx_ordercart .bx_ordercart_order_sum tr td{
 	text-align:right;
+	padding: 0;
+	border: none;
 }
 .bx_ordercart .bx_ordercart_order_sum tr td.fwb {
 	font-family: $second-font;
@@ -378,13 +381,5 @@ table.counter td {
 	font-size: 16px;
 	& a {
 		text-decoration: underline;
-	}
-}
-.bx-content {
-	@include breakpoint(320px) {
-		padding: 0 15px;
-	}
-	@include breakpoint(750px) {
-		padding: 0;
 	}
 }

@@ -502,7 +502,7 @@ h4 {
 .catalog__main_page .owl-item {
 	@include breakpoint(320px) {
 		width: auto!important;
-	    padding: 0 36px 0 12px;
+	    //padding: 0 36px 0 12px;
 		margin-left: 0;	}
 	@include breakpoint(940px) {
 		margin: auto;
@@ -538,36 +538,13 @@ h4 {
 	}
 }
 .tabs__item_news-item {
-	.tabs__item_news-item_date,
-	.tabs__item_news-item_name,
-	.tabs__item_news-item_description {
-		@include breakpoint(320px) {
-			padding-left: 30px;
-			padding-right: 30px;
-		}
-		@include breakpoint(750px) {
-			padding-left: 0px;
-			padding-right: 0px;
-		}
-	}
-	.primary__button {
-		@include breakpoint(320px) {
-			position: relative;
-			left: 30px;
-		}
-		@include breakpoint(750px) {
-			position: inherit;
-		}
-	}
-}
-.tabs__item_news-item {
 	@include breakpoint(320px) {
 		margin: 0 auto 89px auto;
 		&:nth-child(1) {
 			margin-right: auto;
 		}
 		& img {
-			width: 100vw;
+			width: 100%;
 		}
 	}
 	@include breakpoint(480px) {
@@ -628,10 +605,10 @@ h4 {
 }
 .bx-form-control {
 	@include breakpoint(320px) {
-		width: 33vw;
+		width: 32vw;
 	}
 	@include breakpoint(480px) {
-		width: 55vw;
+		width: 40vw;
 	}
 	@include breakpoint(750px) {
 		width: 30vw;
@@ -789,12 +766,12 @@ h4 {
 	@include breakpoint(320px) {
 		.owl-next {
 			&:after {
-				width: 20vw;
+				width: 19vw;
 			}
 		}
 		.owl-prev {
 			&:before {
-				width: 20vw;
+				width: 19vw;
 			}
 		}
 	}
@@ -837,7 +814,8 @@ h4 {
 		}
 	}
 	@include breakpoint(1200px) {
-		margin: 0 45px 55px 0;
+		//margin: 0 45px 55px 0;
+		margin: 0 37.5px 55px 0;
 		&:nth-child(3n) {
 			margin-right: 0;
 		}
@@ -886,7 +864,6 @@ h4 {
 	}
 	@include breakpoint(480px) {
 		display: block;
-		margin-left: 15px;
 		margin-right: 5px;
 	}
 	@include breakpoint(640px) {
@@ -918,7 +895,6 @@ h4 {
 .catalog__detail {
 	@include breakpoint(320px) {
 		flex-flow: column nowrap;
-		padding: 0 15px;
 	}
 	@include breakpoint(940px) {
 		flex-flow: row nowrap;
@@ -1001,8 +977,11 @@ h4 {
 }
 .error__page_title {
 	@include breakpoint(320px) {
-		font-size: 20px;
+		font-size: 17px;
 	    top: -185px;
+	}
+	@include breakpoint(480px) {
+		font-size: 20px;
 	}
 	@include breakpoint(640px) {
 		font-size: 41px;
@@ -1027,7 +1006,7 @@ h4 {
 }
 .container .contacts__select .jq-selectbox__select {
 	@include breakpoint(320px) {
-		width: 100vw;
+		width: 90vw;
 	}
 	@include breakpoint(480px) {
 		width: 100%;

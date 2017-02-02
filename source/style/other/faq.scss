@@ -29,6 +29,14 @@
 		left: 14px;
 		top: -24px;
 	}
+	@include breakpoint(320px) {
+		max-width: 260px;
+		overflow: scroll;
+	}
+	@include breakpoint(480px) {
+		max-width: 100%;
+		overflow: hidden;
+	}
 }
 .accordeon__list {
     list-style-position: inside;
@@ -104,16 +112,5 @@
 .faq__text {
 	font-size: 16px;
 	padding: 13px 0 38px;
-}
-.faq,
-.accordeon,
-.faq__text,
-.faq__block_form {
-	@include breakpoint(320px) {
-		padding: 0 15px;
-	}
-	@include breakpoint(750px) {
-		padding: 0;
-	}
 }
 /*!FAQ*/

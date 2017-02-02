@@ -205,42 +205,67 @@
 	}
 }
 .my_slider {
-	//width: 625px;
 	display: flex;
 	height: 620px;
+	@include breakpoint(320px) {
+		flex-direction: column;
+	}
+	@include breakpoint(480px) {
+		flex-direction: row;
+	}
 	.slider-nav {
-	    flex-direction: column;
-		width: 75px;
+		display: flex;
 		& img {
 			margin: auto;
 			max-width: 73px;
 			max-height: 123px;
 		}
-		& button {
-			margin: auto;
-		}
 		@include breakpoint(320px) {
-			display: none;
+			flex-direction: row;
+			width: 290px;
+			& button {
+				margin: auto;
+				display: none!important;
+			}
 		}
-		@include breakpoint(640px) {
-			display: flex;
+		@include breakpoint(480px) {
+			flex-direction: column;
+			width: 75px;
+			& button {
+				display: inherit!important;
+			}
 		}
 	}
 	.slider-for {
 		display: flex;
-		order: 2;
 		@include breakpoint(320px) {
 			width: 100%;
+			& img {
+				margin: auto;
+				max-width: 290px;
+				outline: none;
+				&:hover,
+				&:active {
+					outline: none;
+				}
+			}
+		}
+		@include breakpoint(480px) {
+			order: 2;
+			& img {
+				max-width: 310px;
+			}
+		}
+		@include breakpoint(640px) {
+			& img {
+				max-width: 100%;
+			}
 		}
 		@include breakpoint(940px) {
 			width: 400px;
 		}
 		@include breakpoint(1200px) {
 			width: 550px;
-		}
-		& img {
-			margin: auto;
-			outline: none;
 		}
 	}
 }
@@ -263,5 +288,27 @@
 }
 .slick-next {
 	@extend .icon-down;
+}
+.detail__page-detail-props_outer {
+    width: 100%;
+    border-bottom: 1px dotted #333;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.detail__page-detail-props-name {
+    float: left;
+    position: relative;
+    top: 0.2em;
+    background: #fff;
+}
+.detail__page-detail-props-value {
+    float: right;
+    position: relative;
+    top: 0.2em;
+    text-align: right;
+    background: #fff;
+}
+.detail__page-detail-props_outer {
+	@extend .clearfix;
 }
 /*!DETAIL_PAGE*/

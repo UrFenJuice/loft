@@ -46,5 +46,7 @@
 }
 .news__container .tabs__item_news-item_image {
 	float: left;
-    margin-right: 50px;
+    @include breakpoint(750px) {
+		margin-right: 50px;
+    }
 }

@@ -1,0 +1,14 @@
+extends ../_template
+
+block variables
+	- var title = 'Home page'
+
+block content
+	main.content
+		include ../common/_breadcrumbs
+		.container
+			h1.bx-title Обмен и возврат
+			include ../other/_exchange&returns
+
+		include ../main/_main_middle_block
+		include ../common/_slider
