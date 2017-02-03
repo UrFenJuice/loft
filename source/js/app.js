@@ -363,5 +363,16 @@ jQuery(function($){
         /*ABOUTH*/
         $('.mask__loop').fancybox();
         /*!ABOUTH*/
+        $(".show__table").fancybox({
+            maxWidth    : 930,
+            maxHeight   : 525,
+            fitToView   : false,
+            width       : '100%',
+            height      : '100%',
+            autoSize    : true,
+            closeClick  : true,
+            openEffect  : 'none',
+            closeEffect : 'none'
+        });
     });
 })

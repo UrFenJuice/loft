@@ -378,6 +378,42 @@ span {
 	color: $gray;
 }
 /*!info*/
+/*table_size*/
+.table_size {
+	overflow: hidden;
+	padding: 15px 30px 30px 30px;
+	& .faq {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.primary__button_close {
+	    padding: 10px 24px;
+        display: inline-block;
+        width: auto;
+	}
+}
+.table_size table {
+	font-size: 16px;
+	font-family: $primary-font;
+	& th {
+		padding: 10px 11px;
+		font-weight: 100;
+		border-bottom: 1px solid $new-line;
+		border-right: 1px solid $new-line;
+		&:nth-last-child(1) {
+			border-right: none;
+		}
+	}
+	& td {
+		padding: 15px 0;
+		text-align: center;
+		border-right: 1px solid $new-line;
+		&:nth-last-child(1) {
+			border-right: none;
+		}
+	}
+}
+/*!table_size*/
 @import 'common/sprite';
 
 @import 'common/header';
