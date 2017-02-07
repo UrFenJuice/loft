@@ -53,9 +53,9 @@
 					option(value='42') 42
 		.catalog__detail_buttons.item_buttons.vam
 			span#bx_117848907_16_basket_actions.item_buttons_counter_block
-				a#bx_117848907_16_add_basket_link.bx_big.bx_bt_button.bx_cart.primary__button(href='#')
+				a#bx_117848907_16_add_basket_link.bx_big.bx_bt_button.bx_cart.primary__button(href="/add.html", data-fancybox-type="iframe").show__add
 					| В корзину
-				#asd_fav_67601.asd_fav_button(data-skey='e8f16cc5eefb5635729c8c6baf2fd4d1', title='Нажмите для добавления в Список желаний')
+				a.asd_fav_button.show__add(href="/fav.html", data-fancybox-type="iframe")
 					+use('like')
 					span.add_to_fav Добавить в избранное
 		.catalog__detail_tab

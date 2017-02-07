@@ -36,8 +36,6 @@ h1 {
 h2 {
 	@include breakpoint(320px) {
 		font-size: 34px;
-		/*new*/
-		margin: 0 10px;
     	text-align: center;
 	}
 	@include breakpoint(750px) {
@@ -54,6 +52,8 @@ h2 {
 h3 {
 	@include breakpoint(320px) {
 		font-size: 15px;
+		text-transform: uppercase;
+		font-family: $second-font;
 	}
 	@include breakpoint(750px) {
 		font-size: 16px;
@@ -68,6 +68,7 @@ h3 {
 h4 {
 	@include breakpoint(320px) {
 		font-size: 13px;
+		font-family: $second-font;
 	}
 	@include breakpoint(750px) {
 		font-size: 14px;

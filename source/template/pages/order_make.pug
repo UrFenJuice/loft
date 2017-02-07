@@ -1,0 +1,20 @@
+extends ../_template
+
+block variables
+	- var title = 'Home page'
+
+block content
+	main.content
+		include ../common/_breadcrumbs
+		.container
+			h1.bx-title Оформление заказа
+			include ../other/_order_make
+
+			h2.main_cat Мы рекомендуем
+			include ../main/_main_catalog
+			h2.main_cat Вы недавно смотрели
+			include ../catalog/_slider
+
+		include ../main/_main_middle_block
+		include ../main/_main_news
+		include ../common/_slider

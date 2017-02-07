@@ -374,5 +374,16 @@ jQuery(function($){
             openEffect  : 'none',
             closeEffect : 'none'
         });
+        $(".show__add").fancybox({
+            maxWidth    : 420,
+            maxHeight   : 280,
+            fitToView   : false,
+            width       : '100%',
+            height      : '100%',
+            autoSize    : true,
+            closeClick  : true,
+            openEffect  : 'none',
+            closeEffect : 'none'
+        });
     });
 })

@@ -40,11 +40,52 @@ footer {
 }
 ul {
 	padding: 0;
-	margin: 0;
+    margin: 0;
 
 	li {
 		list-style: none;
 	}
+}
+.default_list {
+	padding: 0;
+    margin-left: 22px;
+	list-style-position: outside;
+	li ul {
+		margin-left: 45px;	
+		& > li {
+			margin-bottom: 11px;
+			margin-top: 11px;
+		}
+	}
+	li {
+		list-style: inherit;
+	}
+}
+ol {
+	list-style-type: none;
+	counter-reset: item;
+	margin: 0;
+	padding: 0;
+}
+ol > li {
+	display: table;
+	counter-increment: item;
+}
+li ol > li {
+	margin: 0;
+	line-height: 24px;
+	margin-bottom: 11px;
+	margin-top: 11px;
+	margin-left: 25px;
+}
+li ol > li:before {
+	content: counters(item, ".") " ";
+}
+ol > li:before {
+	content: counters(item, ".") ". ";
+	display: table-cell;
+	width: 22px;
+	color: #000;
 }
 a {
 	text-decoration: none;
@@ -253,7 +294,8 @@ main {
 table {
 	@include breakpoint(320px) {
 		font-size: 13px;
-		min-width: 430px
+		min-width: 430px;
+		width: 100%;
 	}
 	@include breakpoint(640px) {
 		font-size: 14px;
@@ -266,10 +308,23 @@ table {
 	}
 	border-spacing: 0; 
 }
-table thead tr td,
-table tbody tr td {
+.default_table thead tr:nth-child(1) td {
+	border-top: 1px solid $new-line;
+	color: #000;
+	min-width: 45px;
+}
+.default_table thead tr td,
+.default_table tbody tr td {
 	border-bottom: 1px solid $new-line;
-    padding: 24px 0;
+	border-right: 1px solid $new-line;
+    padding: 24px 0 24px 25px;
+    &:nth-child(1) {
+    	text-align: center;
+    	padding-left: 0;
+    }
+    &:nth-last-child(1) {
+    	border-right: none;
+    }
 }
 table tfoot tr td,
 table thead tr td {
@@ -467,3 +522,5 @@ span {
 @import 'other/personal_page';
 
 @import 'other/loyalty_card';
+
+@import 'other/order_make';

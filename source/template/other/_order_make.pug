@@ -1,0 +1,369 @@
+.bx-content
+	form#bx-soa-order-form(action='', method='POST', name='ORDER_FORM', enctype='multipart/form-data')
+		#bx-soa-order.bx-red
+			// MAIN BLOCK
+			.bx-soa
+				#bx-soa-main-notifications
+					.alert.alert-danger(style='display:none')
+				// DUPLICATE MOBILE ORDER SAVE BLOCK
+				#bx-soa-total-mobile(style='margin-bottom: 6px')
+					.bx-soa-cart-total
+						.bx-soa-cart-total-line
+							span.bx-soa-cart-t Товаров на:
+							span.bx-soa-cart-d 4 275 руб.
+						.bx-soa-cart-total-line
+							span.bx-soa-cart-t Доставка:
+							span.bx-soa-cart-d 500 руб.
+						.bx-soa-cart-total-line.bx-soa-cart-total-line-total
+							span.bx-soa-cart-t Итого:
+							span.bx-soa-cart-d 4 775 руб.
+						.bx-soa-cart-total-button-container
+							a.btn.btn-default.btn-lg.btn-order-save(href='javascript:void(0)') Оформить заказ
+				// BASKET ITEMS BLOCK
+				#bx-soa-basket.bx-soa-section.bx-active.bx-selected(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Товары в заказе
+						.text-right
+							a.bx-soa-editstep(href='javascript:void(0)') изменить
+					.bx-soa-section-content.container-fluid
+						.bx-soa-table-fade
+							div(style='overflow-x: auto; overflow-y: hidden')
+								.bx-soa-item-table
+									.bx-soa-item-tr.bx-soa-basket-info.bx-soa-item-tr-first
+										.bx-soa-item-td(style='min-width: 300px')
+											.bx-soa-item-block
+												.bx-soa-item-img-block
+													a(href='#')
+														.bx-soa-item-imgcontainer(style='background-image: url(/assets/img/items/detail.jpg)')
+												.bx-soa-item-content
+													.bx-soa-item-title
+														a(href='#') Пантолеты Кости на Пляже
+													.bx-scu-container
+														| Цвет: розовый   |   Размер: 42
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Цена
+											.bx-soa-item-td-text
+												strong.bx-price 899 руб.
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Количество
+											.bx-soa-item-td-text
+												span 3 шт
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Сумма
+											.bx-soa-item-td-text
+												strong.bx-price.all 2 697 руб.
+									.bx-soa-item-tr.bx-soa-basket-info
+										.bx-soa-item-td(style='min-width: 300px')
+											.bx-soa-item-block
+												.bx-soa-item-img-block
+													a(href='#')
+														.bx-soa-item-imgcontainer(style='background-image: url(/assets/img/items/detail.jpg)')
+												.bx-soa-item-content
+													.bx-soa-item-title
+														a(href='#') Футболка Мужская Чистота
+													.bx-scu-container
+														| Цвет: розовый   |   Размер: 42
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Цена
+											.bx-soa-item-td-text
+												strong.bx-price 799 Р
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Количество
+											.bx-soa-item-td-text
+												span 1 шт
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Сумма
+											.bx-soa-item-td-text
+												strong.bx-price.all 799 Р
+									.bx-soa-item-tr.bx-soa-basket-info
+										.bx-soa-item-td(style='min-width: 300px')
+											.bx-soa-item-block
+												.bx-soa-item-img-block
+													a(href='#')
+														.bx-soa-item-imgcontainer(style='background-image: url(/assets/img/items/detail.jpg)')
+												.bx-soa-item-content
+													.bx-soa-item-title
+														a(href='#') Футболка Мужской Огонь
+													.bx-scu-container
+														| Цвет: розовый   |   Размер: 42
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Цена
+											.bx-soa-item-td-text
+												strong.bx-price 779 Р
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Количество
+											.bx-soa-item-td-text
+												span 1 шт
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Сумма
+											.bx-soa-item-td-text
+												strong.bx-price.all 779 Р
+						.bx-soa-more
+							.bx-soa-more-btn
+								a.pull-right.btn.btn-default.btn-md(href='') Далее
+				// REGION BLOCK
+				#bx-soa-region.bx-soa-section.bx-active.bx-selected(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Регион доставки
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content.container-fluid
+						.alert.alert-danger(style='display: none')
+						.bx_soa_location
+							div
+								.form-group
+									label.bx-soa-custom-label Тип плательщика
+									br
+									.radio-inline
+										label
+											input(checked='true', type='radio', name='PERSON_TYPE', value='1')
+											| Физическое лицо
+									br
+									.radio-inline
+										label
+											input(type='radio', name='PERSON_TYPE', value='2')
+											| Юридическое лицо
+									input(type='hidden', name='PERSON_TYPE_OLD', value='1')
+								input(name='PROFILE_ID', type='hidden', value='1')
+								.form-group.bx-soa-location-input-container(data-property-id-='6')
+									label.bx-soa-custom-label(for='soa-property-6')
+										span.bx-authform-starrequired *
+										|  Местоположение
+									#sls-73494.bx-sls
+										.dropdown-block.bx-ui-sls-input-block.form-control
+											span.dropdown-icon
+											input.dropdown-field(type='text', autocomplete='off', name='ORDER_PROP_6', value='0000073738', placeholder='Введите название ...', style='display: none')
+											.bx-ui-sls-container(style='margin: 0px; padding: 0px; border: none; position: relative')
+												input.bx-ui-sls-route(type='text', disabled='disabled', autocomplete='off', style='padding: 0px; margin: 0px')
+												input.bx-ui-sls-fake(type='text', autocomplete='off', value='0000073738', placeholder='Введите название ...', title='Москва, Московская область, Центр, Россия')
+											.dropdown-fade2white
+											.bx-ui-sls-loader
+											.bx-ui-sls-clear(title='Отменить выбор', style='display: block')
+											.bx-ui-sls-pane(style='overflow-y: auto; overflow-x: hidden; display: none')
+												.bx-ui-sls-variants
+										.bx-ui-sls-error-message
+								input(type='hidden', name='RECENT_DELIVERY_VALUE', value='0000073738')
+								.form-group.bx-soa-location-input-container(data-property-id-='4')
+									label.bx-soa-custom-label(for='zipProperty')
+										span.bx-authform-starrequired *
+										|  Индекс
+									input#zipProperty.form-control.bx-soa-customer-input.bx-ios-fix(type='text', placeholder='', autocomplete='zip', name='ORDER_PROP_4')
+								.bx-soa-reference
+									| Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"
+						.bx-soa-more
+							.bx-soa-more-btn
+								a.pull-left.btn.btn-default.btn-md(href='') Назад
+								a.pull-right.btn.btn-default.btn-md(href='') Далее
+				// DELIVERY BLOCK
+				#bx-soa-delivery.bx-soa-section.bx-active.bx-selected(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Доставка
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content.container-fluid
+						.alert.alert-danger(style='display: none')
+						.bx-soa-pp
+							.bx-soa-pp-item-container
+								.bx-soa-pp-company.bx-selected
+									.bx-soa-pp-company-graf-container
+										input#ID_DELIVERY_ID_2.bx-soa-pp-company-checkbox(name='DELIVERY_ID', type='checkbox', value='2')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/8cb/300_300_1/8cb114e3bd4ab83c337fd4ab5fca8050.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/8cb/300_300_1/8cb114e3bd4ab83c337fd4ab5fca8050.png) 1x, url(/upload/sale/delivery/logotip/8cb/8cb114e3bd4ab83c337fd4ab5fca8050.png) 2x)')
+										.bx-soa-pp-delivery-cost 500 Р
+									.bx-soa-pp-company-smalltitle Доставка курьером
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_DELIVERY_ID_18.bx-soa-pp-company-checkbox(name='DELIVERY_ID', type='checkbox', value='18')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/f1e/300_300_1/f1e61eb261f2be5d8b01dec1c8b3899b.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/f1e/300_300_1/f1e61eb261f2be5d8b01dec1c8b3899b.png) 1x, url(/upload/sale/delivery/logotip/f1e/f1e61eb261f2be5d8b01dec1c8b3899b.png) 2x)')
+									.bx-soa-pp-company-smalltitle Почта России (авиапочта)
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_DELIVERY_ID_17.bx-soa-pp-company-checkbox(name='DELIVERY_ID', type='checkbox', value='17')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/f1e/300_300_1/f1e61eb261f2be5d8b01dec1c8b3899b.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/f1e/300_300_1/f1e61eb261f2be5d8b01dec1c8b3899b.png) 1x, url(/upload/sale/delivery/logotip/f1e/f1e61eb261f2be5d8b01dec1c8b3899b.png) 2x)')
+									.bx-soa-pp-company-smalltitle Почта России (наземная доставка)
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_DELIVERY_ID_3.bx-soa-pp-company-checkbox(name='DELIVERY_ID', type='checkbox', value='3')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/a80/300_300_1/a80904114078d69dd964652e08b5b1aa.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/a80/300_300_1/a80904114078d69dd964652e08b5b1aa.png) 1x, url(/upload/sale/delivery/logotip/a80/a80904114078d69dd964652e08b5b1aa.png) 2x)')
+										.bx-soa-pp-delivery-cost 0 Р
+									.bx-soa-pp-company-smalltitle Самовывоз
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_DELIVERY_ID_21.bx-soa-pp-company-checkbox(name='DELIVERY_ID', type='checkbox', value='21')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/bed/300_300_1/bed95d34d164c005ecf067967f3886b0.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/bed/300_300_1/bed95d34d164c005ecf067967f3886b0.png) 1x, url(/upload/sale/delivery/logotip/bed/bed95d34d164c005ecf067967f3886b0.png) 2x)')
+									.bx-soa-pp-company-smalltitle Почта России (Воздушный транспорт)
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_DELIVERY_ID_20.bx-soa-pp-company-checkbox(name='DELIVERY_ID', type='checkbox', value='20')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/bed/300_300_1/bed95d34d164c005ecf067967f3886b0.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/bed/300_300_1/bed95d34d164c005ecf067967f3886b0.png) 1x, url(/upload/sale/delivery/logotip/bed/bed95d34d164c005ecf067967f3886b0.png) 2x)')
+									.bx-soa-pp-company-smalltitle Почта России (Наземный транспорт)
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_DELIVERY_ID_23.bx-soa-pp-company-checkbox(name='DELIVERY_ID', type='checkbox', value='23')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/6ae/300_300_1/6ae56f09d8e4fb017045151da0808780.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/6ae/300_300_1/6ae56f09d8e4fb017045151da0808780.png) 1x, url(/upload/sale/delivery/logotip/6ae/6ae56f09d8e4fb017045151da0808780.png) 2x)')
+									.bx-soa-pp-company-smalltitle Отправления 1 класса (Бандероль)
+							.bx-soa-pp-desc-container
+								.bx-soa-pp-company
+									.bx-soa-pp-company-subTitle Доставка курьером
+									.bx-soa-pp-company-logo
+										.bx-soa-pp-company-graf-container
+											.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/delivery/logotip/8cb/300_300_1/8cb114e3bd4ab83c337fd4ab5fca8050.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/8cb/300_300_1/8cb114e3bd4ab83c337fd4ab5fca8050.png) 1x, url(/upload/sale/delivery/logotip/8cb/8cb114e3bd4ab83c337fd4ab5fca8050.png) 2x)')
+									.bx-soa-pp-company-block
+										.bx-soa-pp-company-desc Доставка осуществляется в течение дня в удобное для вас время.
+									div(style='clear: both')
+									ul.bx-soa-pp-list
+										li
+											.bx-soa-pp-list-termin Стоимость:
+											.bx-soa-pp-list-description 500 Р
+						.bx-soa-coupon
+							.bx-soa-coupon-label
+								label Применить купон:
+							.bx-soa-coupon-block
+								.bx-soa-coupon-input
+									input#coupon.form-control.bx-ios-fix(type='text')
+								span.bx-soa-coupon-item
+						.bx-soa-more
+							.bx-soa-more-btn
+								a.pull-left.btn.btn-default.btn-md(href='') Назад
+								a.pull-right.btn.btn-default.btn-md(href='') Далее
+				// PAY SYSTEMS BLOCK
+				#bx-soa-paysystem.bx-soa-section.bx-active.bx-selected(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Оплата
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content.container-fluid
+						.alert.alert-danger(style='display: none')
+						.bx-soa-pp
+							.bx-soa-pp-item-container
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_PAY_SYSTEM_ID_3.bx-soa-pp-company-checkbox(name='PAY_SYSTEM_ID', type='checkbox', value='3')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/2b5/300_300_1/2b5448b102357112c43291622772921d.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/2b5/300_300_1/2b5448b102357112c43291622772921d.png) 1x, url(/upload/sale/paysystem/logotip/2b5/2b5448b102357112c43291622772921d.png) 2x)')
+									.bx-soa-pp-company-smalltitle Яндекс.Деньги
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_PAY_SYSTEM_ID_4.bx-soa-pp-company-checkbox(name='PAY_SYSTEM_ID', type='checkbox', value='4')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/533/300_300_1/5339ee3ce8c619a9f95cff7bddec5c48.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/533/300_300_1/5339ee3ce8c619a9f95cff7bddec5c48.png) 1x, url(/upload/sale/paysystem/logotip/533/5339ee3ce8c619a9f95cff7bddec5c48.png) 2x)')
+									.bx-soa-pp-company-smalltitle Банковские карты
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_PAY_SYSTEM_ID_5.bx-soa-pp-company-checkbox(name='PAY_SYSTEM_ID', type='checkbox', value='5')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/b21/300_300_1/b21ae014b2310c543a0655ed3f420bb2.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/b21/300_300_1/b21ae014b2310c543a0655ed3f420bb2.png) 1x, url(/upload/sale/paysystem/logotip/b21/b21ae014b2310c543a0655ed3f420bb2.png) 2x)')
+									.bx-soa-pp-company-smalltitle Терминалы
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_PAY_SYSTEM_ID_1.bx-soa-pp-company-checkbox(name='PAY_SYSTEM_ID', type='checkbox', value='1')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/0f0/300_300_1/0f0af94de15388906c9c76609db8ff3c.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/0f0/300_300_1/0f0af94de15388906c9c76609db8ff3c.png) 1x, url(/upload/sale/paysystem/logotip/0f0/0f0af94de15388906c9c76609db8ff3c.png) 2x)')
+									.bx-soa-pp-company-smalltitle Наличные курьеру
+								.bx-soa-pp-company.bx-selected
+									.bx-soa-pp-company-graf-container
+										input#ID_PAY_SYSTEM_ID_2.bx-soa-pp-company-checkbox(name='PAY_SYSTEM_ID', type='checkbox', value='2')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/f32/300_300_1/f32261edf75302f20c9044a685349a07.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/f32/300_300_1/f32261edf75302f20c9044a685349a07.png) 1x, url(/upload/sale/paysystem/logotip/f32/f32261edf75302f20c9044a685349a07.png) 2x)')
+									.bx-soa-pp-company-smalltitle Наложенный платеж
+								.bx-soa-pp-company
+									.bx-soa-pp-company-graf-container
+										input#ID_PAY_SYSTEM_ID_7.bx-soa-pp-company-checkbox(name='PAY_SYSTEM_ID', type='checkbox', value='7')
+										.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/ecc/300_300_1/ecc12acff1125727e9a37173344b62f8.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/ecc/300_300_1/ecc12acff1125727e9a37173344b62f8.png) 1x, url(/upload/sale/paysystem/logotip/ecc/ecc12acff1125727e9a37173344b62f8.png) 2x)')
+									.bx-soa-pp-company-smalltitle Сбербанк
+							.bx-soa-pp-desc-container
+								.bx-soa-pp-company
+									.bx-soa-pp-inner-ps
+										input(type='hidden', name='PAY_CURRENT_ACCOUNT', value='N')
+										.bx-soa-pp-company-subTitle Внутренний счет
+										.bx-soa-pp-company-logo
+											.bx-soa-pp-company-graf-container
+												input.bx-soa-pp-company-checkbox(type='checkbox', name='PAY_CURRENT_ACCOUNT', value='Y')
+												.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/804/300_300_1/80434cee9068759dba315c299dc49d6f.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/804/300_300_1/80434cee9068759dba315c299dc49d6f.png) 1x, url(/upload/sale/paysystem/logotip/804/80434cee9068759dba315c299dc49d6f.png) 2x)')
+										.bx-soa-pp-company-desc
+											| На вашем пользовательском счете: 
+											b.wsnw 500 Р
+											br
+									hr.bxe-light
+									div
+										.bx-soa-pp-company-subTitle Наложенный платеж
+										.bx-soa-pp-company-logo
+											.bx-soa-pp-company-graf-container
+												.bx-soa-pp-company-image(style='background-image: url(/upload/resize_cache/sale/paysystem/logotip/f32/300_300_1/f32261edf75302f20c9044a685349a07.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/f32/300_300_1/f32261edf75302f20c9044a685349a07.png) 1x, url(/upload/sale/paysystem/logotip/f32/f32261edf75302f20c9044a685349a07.png) 2x)')
+										.bx-soa-pp-company-block
+											.bx-soa-pp-company-desc
+												| Оплата производится в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.
+						.bx-soa-coupon
+							.bx-soa-coupon-label
+								label Применить купон:
+							.bx-soa-coupon-block
+								.bx-soa-coupon-input
+									input#coupon.form-control.bx-ios-fix(type='text')
+								span.bx-soa-coupon-item
+						.bx-soa-more
+							.bx-soa-more-btn
+								a.pull-left.btn.btn-default.btn-md(href='') Назад
+								a.pull-right.btn.btn-default.btn-md(href='') Далее
+				// BUYER PROPS BLOCK
+				#bx-soa-properties.bx-soa-section.bx-active.bx-selected(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Покупатель
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content.container-fluid
+						.alert.alert-danger(style='display: none')
+						div
+							.bx-soa-customer
+								.form-group.bx-soa-customer-field(data-property-id-='1')
+									label.bx-soa-custom-label(for='soa-property-1')
+										span.bx-authform-starrequired *
+										|  Ф.И.О.
+									.soa-property-container
+										input#soa-property-1.form-control.bx-soa-customer-input.bx-ios-fix(type='text', size='40', name='ORDER_PROP_1', autocomplete='name', placeholder='')
+								.form-group.bx-soa-customer-field(data-property-id-='2')
+									label.bx-soa-custom-label(for='soa-property-2')
+										span.bx-authform-starrequired *
+										|  E-Mail
+									.soa-property-container
+										input#soa-property-2.form-control.bx-soa-customer-input.bx-ios-fix(type='text', size='40', name='ORDER_PROP_2', autocomplete='email', placeholder='')
+								.form-group.bx-soa-customer-field(data-property-id-='3')
+									label.bx-soa-custom-label(for='soa-property-3')
+										span.bx-authform-starrequired *
+										|  Телефон
+									.soa-property-container
+										input#soa-property-3.form-control.bx-soa-customer-input.bx-ios-fix(type='text', size='30', name='ORDER_PROP_3', autocomplete='tel', placeholder='')
+								.form-group.bx-soa-customer-field(data-property-id-='7')
+									label.bx-soa-custom-label(for='soa-property-7')
+										span.bx-authform-starrequired *
+										|  Адрес доставки
+									.soa-property-container
+										textarea#soa-property-7.form-control.bx-ios-fix(cols='30', s='3', name='ORDER_PROP_7', placeholder='')
+							div
+								.form-group.bx-soa-customer-field
+									label.bx-soa-customer-label(for='orderDescription') Комментарии к заказу:
+									textarea#orderDescription.form-control.bx-soa-customer-textarea.bx-ios-fix(cols='4', name='ORDER_DESCRIPTION')
+						.bx-soa-more
+							.bx-soa-more-btn
+								a.pull-left.btn.btn-default.btn-md(href='') Назад
+				// ORDER SAVE BLOCK
+				#bx-soa-orderSave
+					a.pull-right.btn.btn-default.btn-lg(href='javascript:void(0)', style='margin: 10px 0') Оформить заказ
+			// SIDEBAR BLOCK
+			#bx-soa-total.bx-soa-sidebar
+				.bx-soa-cart-total-ghost(style='padding-top: 0px')
+				.bx-soa-cart-total
+					.bx-soa-cart-total-line
+						span.bx-soa-cart-t Товаров на:
+						span.bx-soa-cart-d 4 275 Р
+					.bx-soa-cart-total-line
+						span.bx-soa-cart-t Доставка:
+						span.bx-soa-cart-d 500 Р
+					.bx-soa-cart-total-line.bx-soa-cart-total-line-total
+						span.bx-soa-cart-t Итого:
+						span.bx-soa-cart-d(style='font-size: 28px') 4 775 Р
+					.bx-soa-cart-total-button-container
+						a.btn.btn-default.btn-lg.btn-order-save(href='javascript:void(0)') Оформить заказ
