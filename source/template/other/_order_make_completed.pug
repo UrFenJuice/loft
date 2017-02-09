@@ -1,0 +1,194 @@
+.bx-content
+	form#bx-soa-order-form(action='', method='POST', name='ORDER_FORM', enctype='multipart/form-data')
+		#bx-soa-order.bx-red
+			// MAIN BLOCK
+			.bx-soa
+				// BASKET ITEMS BLOCK
+				#bx-soa-basket.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Товары в заказе
+						.text-right
+							a.bx-soa-editstep(href='javascript:void(0)') изменить
+					.bx-soa-section-content.container-fluid
+						.bx-soa-table-fade
+							div(style='overflow-x: auto; overflow-y: hidden')
+								.bx-soa-item-table
+									.bx-soa-item-tr.bx-soa-basket-info.bx-soa-item-tr-first
+										.bx-soa-item-td(style='min-width: 300px')
+											.bx-soa-item-block
+												.bx-soa-item-img-block
+													a(href='#')
+														.bx-soa-item-imgcontainer(style='background-image: url(/assets/img/items/detail.jpg)')
+												.bx-soa-item-content
+													.bx-soa-item-title
+														a(href='#') Пантолеты Кости на Пляже
+													.bx-soa-item-description
+														| Мини-платье с кружевным лифом и коротким рукавом
+													.bx-scu-container
+														| Цвет: розовый   |   Размер: 42
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Цена
+											.bx-soa-item-td-text
+												strong.bx-price 899 руб.
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Количество
+											.bx-soa-item-td-text
+												span 3 шт
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Сумма
+											.bx-soa-item-td-text
+												strong.bx-price.all 2 697 руб.
+									.bx-soa-item-tr.bx-soa-basket-info
+										.bx-soa-item-td(style='min-width: 300px')
+											.bx-soa-item-block
+												.bx-soa-item-img-block
+													a(href='#')
+														.bx-soa-item-imgcontainer(style='background-image: url(/assets/img/items/detail.jpg)')
+												.bx-soa-item-content
+													.bx-soa-item-title
+														a(href='#') Футболка Мужская Чистота
+													.bx-soa-item-description
+														| Мини-платье с кружевным лифом и коротким рукавом
+													.bx-scu-container
+														| Цвет: розовый   |   Размер: 42
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Цена
+											.bx-soa-item-td-text
+												strong.bx-price 799 Р
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Количество
+											.bx-soa-item-td-text
+												span 1 шт
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Сумма
+											.bx-soa-item-td-text
+												strong.bx-price.all 799 Р
+									.bx-soa-item-tr.bx-soa-basket-info
+										.bx-soa-item-td(style='min-width: 300px')
+											.bx-soa-item-block
+												.bx-soa-item-img-block
+													a(href='#')
+														.bx-soa-item-imgcontainer(style='background-image: url(/assets/img/items/detail.jpg)')
+												.bx-soa-item-content
+													.bx-soa-item-title
+														a(href='#') Футболка Мужской Огонь
+													.bx-soa-item-description
+														| Мини-платье с кружевным лифом и коротким рукавом
+													.bx-scu-container
+														| Цвет: розовый   |   Размер: 42
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Цена
+											.bx-soa-item-td-text
+												strong.bx-price 779 Р
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Количество
+											.bx-soa-item-td-text
+												span 1 шт
+										.bx-soa-item-td.bx-soa-item-properties.bx-text-right
+											.bx-soa-item-td-title Сумма
+											.bx-soa-item-td-text
+												strong.bx-price.all 779 Р
+						.bx-soa-more
+							.bx-soa-more-btn
+								a.pull-left.btn.btn-default.btn-md(href="") показать все
+								a.pull-right.btn.btn-default.btn-md(href='') Далее
+				// REGION BLOCK
+				#bx-soa-region.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Регион доставки
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content
+						.alert.alert-danger(style='display: none;')
+						strong Местоположение:
+						|  Тверь, Тверская область, Центр,  Россия
+				// DELIVERY BLOCK
+				#bx-soa-delivery.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Доставка
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content
+						.alert.alert-danger(style='display: none;')
+						.bx-soa-pp-company-selected
+							img(src='/assets/img/post/a80904114078d69dd964652e08b5b1aa.png', alt='')
+							strong Самовывоз
+				//PICKUP BLOCK
+				#bx-soa-pickup.bx-soa-section.bx-active.bx-step-completed(data-visited='true', style='')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Самовывоз
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content.container-fluid
+						strong Склад
+						br
+						strong Адрес:
+						|  пр. Московский д. 51
+						br
+						strong Телефон:
+						|  8 (495) 212 85 06
+						br
+						strong График работы:
+						|  Пн.-Пт. с 9:00 до 20:00, Сб.-Вс. с 11:00 до 18:00
+				// PAY SYSTEMS BLOCK
+				#bx-soa-paysystem.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Оплата
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content
+						.alert.alert-danger(style='display: none;')
+						.bx-soa-pp-company-selected
+							img(src='/assets/img/post/2b5448b102357112c43291622772921d.png', style='height:18px;', alt='')
+							strong Яндекс.Деньги
+				// BUYER PROPS BLOCK
+				#bx-soa-properties.bx-soa-section.bx-active.bx-step-completed(data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Покупатель
+						.text-right
+							a.bx-soa-editstep(href='') изменить
+					.bx-soa-section-content.container-fluid
+						.alert.alert-danger(style='display: none;')
+						div
+							strong Ф.И.О.:
+							|  Иванова Екатерина Александровна
+						div
+							strong E-mail:
+							|  ekaterina_ivanova@yandex.ru
+						div
+							strong Телефон:
+							|  +7 (904) 123-56-90
+						div
+							strong Адрес доставки:
+							|  г.Тверь, ул. Вагжанова, 25
+						div
+							strong Комментарий к заказу:
+							|  -
+				// ORDER SAVE BLOCK
+				#bx-soa-orderSave
+					a.pull-right.btn.btn-default.btn-lg(href='javascript:void(0)', style='margin: 10px 0') Оформить заказ
+			// SIDEBAR BLOCK
+			#bx-soa-total.bx-soa-sidebar
+				.bx-soa-cart-total-ghost(style='padding-top: 0px')
+				.bx-soa-cart-total
+					.bx-soa-cart-total-line
+						span.bx-soa-cart-t Товаров на:
+						span.bx-soa-cart-d 4 275 Р
+					.bx-soa-cart-total-line
+						span.bx-soa-cart-t Доставка:
+						span.bx-soa-cart-d 500 Р
+					.bx-soa-cart-total-line.bx-soa-cart-total-line-total
+						span.bx-soa-cart-t Итого:
+						span.bx-soa-cart-d(style='font-size: 28px') 4 775 Р

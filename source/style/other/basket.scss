@@ -38,6 +38,7 @@
 	border-collapse:collapse;
 }
 .bx_ordercart .bx_ordercart_order_table_container .counter {
+	width: auto;
 	@include breakpoint(940px) {
 		position: relative;
     	left: 32px;
@@ -308,7 +309,7 @@ table.counter td {
     text-align: center;
     width: 32px;
 	position: absolute;
-    top: -22px;
+    top: -21px;
     font-size: 16px;
 	&.plus {
 		left: -2px;

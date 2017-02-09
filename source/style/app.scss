@@ -393,6 +393,13 @@ ol .exchange-list__item {
     margin: 0;
     padding: 0;
 }
+.accordeon.info ol > li:nth-child(1) {
+    counter-increment: inherit;
+}
+.accordeon.info ol > li:nth-child(1):before {
+    content: "";
+    display: none;
+}
 .accordeon.info ol > li:nth-child(n + 2) {
     display: table;
     counter-increment: item;

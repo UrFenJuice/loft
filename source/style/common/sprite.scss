@@ -24,7 +24,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-accordeon_up {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -195px;
+  background-position: -383px -197px;
   width: 11px;
   height: 7px;
 }
@@ -36,7 +36,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-check {
   background-image: url(/assets/img/sprite.png);
-  background-position: -64px -364px;
+  background-position: 0px -364px;
   width: 14px;
   height: 10px;
 }
@@ -84,13 +84,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-left {
   background-image: url(/assets/img/sprite.png);
-  background-position: -446px 0px;
+  background-position: -383px -136px;
   width: 7px;
   height: 11px;
 }
 .icon-left_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -252px;
+  background-position: -446px -61px;
   width: 7px;
   height: 11px;
 }
@@ -100,6 +100,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 18px;
   height: 18px;
 }
+.icon-loop_gray {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -383px -73px;
+  width: 13px;
+  height: 13px;
+}
 .icon-map-marker {
   background-image: url(/assets/img/sprite.png);
   background-position: -305px 0px;
@@ -108,7 +114,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-ok {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -364px;
+  background-position: -64px -364px;
   width: 14px;
   height: 10px;
 }
@@ -138,13 +144,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-right {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -73px;
+  background-position: -383px -254px;
   width: 7px;
   height: 11px;
 }
 .icon-right_c {
   background-image: url(/assets/img/sprite.png);
-  background-position: -383px -134px;
+  background-position: -446px 0px;
   width: 7px;
   height: 11px;
 }
