@@ -3,6 +3,101 @@
 		#bx-soa-order.bx-red
 			// MAIN BLOCK
 			.bx-soa
+				#bx-soa-auth.bx-soa-section.bx-soa-auth.bx-active.bx-selected(style='', data-visited='true')
+					.bx-soa-section-title-container
+						h2.bx-soa-section-title
+							span.bx-soa-section-title-count
+							| Авторизация
+					.bx-soa-section-content.container-fluid
+						.alert.alert-danger(style='display: none;')
+						div
+							.bx-authform
+								h3.bx-title Пожалуйста, авторизуйтесь
+								.bx-authform-formgroup-container
+									.bx-authform-label-container Логин
+									.bx-authform-input-container
+										input(data-next='USER_PASSWORD', name='USER_LOGIN', type='text')
+								.bx-authform-formgroup-container
+									.bx-authform-label-container Пароль
+									.bx-authform-input-container
+										input(data-send='true', name='USER_PASSWORD', type='password')
+								.bx-authform-formgroup-container
+									input#do_authorize(type='hidden', name='do_authorize', value='N')
+									input.btn.btn-lg.btn-default(type='submit', value='Войти')
+								a(href='/auth/?forgot_password=yes&back_url=http%3A%2F%2Fclients.wizard-c.ru%2Fpersonal%2Forder%2Fmake%2F') Забыли пароль?
+						div
+							.bx-authform-social
+								h3.bx-title Войти с помощью соцсетей
+								.bx-authform-social
+									ul
+										li
+											a#bx_socserv_icon_Livejournal.livejournal.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('Livejournal')", title='Livejournal')
+											#bx_socserv_form_Livejournal.bx-authform-social-popup
+												form(action='/personal/order/make/index.php', method='post')
+													span.bx-ss-icon.livejournal
+													input(type='text', name='OPENID_IDENTITY_LIVEJOURNAL', value='', size='20')
+													span .livejournal.com
+													input#sessid_6(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
+													input(type='hidden', name='auth_service_error', value='')
+													input.button(type='submit', name='', value='Войти')
+													input(type='hidden', name='auth_service_id', value='Livejournal')
+										li
+											a#bx_socserv_icon_MailRuOpenID.openid-mail-ru.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('MailRuOpenID')", title='Mail.Ru')
+											#bx_socserv_form_MailRuOpenID.bx-authform-social-popup
+												form(action='/personal/order/make/index.php', method='post')
+													span.bx-ss-icon.openid-mail-ru
+													input(type='text', name='OPENID_IDENTITY_MAILRU', value='', size='20')
+													span @mail.ru
+													input#sessid_7(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
+													input(type='hidden', name='auth_service_error', value='')
+													input.button(type='submit', name='', value='Войти')
+													input(type='hidden', name='auth_service_id', value='MailRuOpenID')
+										li
+											a#bx_socserv_icon_Liveinternet.liveinternet.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('Liveinternet')", title='Liveinternet')
+											#bx_socserv_form_Liveinternet.bx-authform-social-popup
+												form(action='/personal/order/make/index.php', method='post')
+													span.bx-ss-icon.liveinternet
+													span liveinternet.ru/users/
+													input(type='text', name='OPENID_IDENTITY_LIVEINTERNET', value='', size='15')
+													input#sessid_8(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
+													input(type='hidden', name='auth_service_error', value='')
+													input.button(type='submit', name='', value='Войти')
+													input(type='hidden', name='auth_service_id', value='Liveinternet')
+										li
+											a#bx_socserv_icon_Blogger.blogger.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('Blogger')", title='Blogger')
+											#bx_socserv_form_Blogger.bx-authform-social-popup
+												form(action='/personal/order/make/index.php', method='post')
+													span.bx-ss-icon.blogger
+													input(type='text', name='OPENID_IDENTITY_BLOGGER', value='', size='20')
+													span .blogspot.com
+													input#sessid_9(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
+													input(type='hidden', name='auth_service_error', value='')
+													input.button(type='submit', name='', value='Войти')
+													input(type='hidden', name='auth_service_id', value='Blogger')
+										li
+											a#bx_socserv_icon_OpenID.openid.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('OpenID')", title='OpenID')
+											#bx_socserv_form_OpenID.bx-authform-social-popup
+												form(action='/personal/order/make/index.php', method='post')
+													span.bx-ss-icon.openid
+													span OpenID:
+													input(type='text', name='OPENID_IDENTITY_OPENID', value='', size='30')
+													input#sessid_10(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
+													input(type='hidden', name='auth_service_error', value='')
+													input.button(type='submit', name='', value='Войти')
+													input(type='hidden', name='auth_service_id', value='OpenID')
+							hr.bxe-light
+							.bx-soa-reg-block
+								p
+									| Если вы впервые на сайте, и хотите что бы мы вас помнили и все ваши заказы сохранялись, заполните регистрационную форму.
+								a.btn.btn-default.btn-lg Зарегистрироваться
+						div
+							.bx-soa-reference
+								| Символом "звездочка" (*) отмечены обязательные для заполнения поля.
+								br
+								| После регистрации вы получите информационное письмо.
+								br
+								| Личные сведения, полученные в распоряжение интернет-магазина при регистрации или каким-либо иным образом, не будут без разрешения пользователей передаваться третьим организациям и лицам за исключением ситуаций, когда этого требует закон или судебное решение.
+
 				// BASKET ITEMS BLOCK
 				#bx-soa-basket.bx-soa-section.bx-active.bx-selected(data-visited='true')
 					.bx-soa-section-title-container
