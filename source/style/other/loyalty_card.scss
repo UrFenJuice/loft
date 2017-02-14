@@ -50,7 +50,24 @@
 		margin-left: 20px;
 	}
 }
+.loyalty__card.deliver .accordeon__inner {
+	@include breakpoint(750px) {
+		margin-left: -27px;
+	}
+}
 .loyalty__card p {
 	margin: 45px 0;
 	font-size: 16px;
+}
+.loyalty__card .accordeon__inner table {
+	& td {
+		font-size: 16px;
+		color: #231f20;
+		border-top: 1px solid $new-line;
+		padding: 24px 0;
+	}
+	& tfoot td {
+		color: $gray;
+		font-size: 14px;
+	}
 }

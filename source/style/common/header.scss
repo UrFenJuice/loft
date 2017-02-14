@@ -5,8 +5,8 @@
 	max-height: 90px;
 }
 .header__info {
-	@extend .clearfix;
 	padding-top: 12px;
+	flex: 1 1 626px;
 }
 .header__info-block {
 	position: relative;
@@ -214,7 +214,7 @@ div.title-search-result {
 	}
 	&:before {
 		left: -100%;
-		box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent, -1px 9px 15px 0px rgba(35, 31, 32, 0.7), 0 0 0 0 transparent;
+		box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent, 2px 9px 15px 0px rgba(35, 31, 32, 0.7), 0 0 0 0 transparent;
 	}
 }
 .title-search-result .bx_searche {
@@ -312,7 +312,7 @@ div.title-search-result {
 	}
 	&:before {
 		left: -100%;
-		box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent, -1px 9px 15px 0px rgba(35, 31, 32, 0.7), 0 0 0 0 transparent;
+		box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent, 2px 9px 15px 0px rgba(35, 31, 32, 0.7), 0 0 0 0 transparent;
 	}
 }
 .header__catalog_menu_sub_block_item {

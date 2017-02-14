@@ -1,5 +1,6 @@
 jQuery(function($){
     $(document).ready(function(){
+        svg4everybody();
         var owl = $("#owl-slider-main").owlCarousel({
             items: 1,
             slideSpeed: 5000,
@@ -385,5 +386,6 @@ jQuery(function($){
             openEffect  : 'none',
             closeEffect : 'none'
         });
+        $("a.detail_gallery, a.iframe").fancybox();
     });
 })

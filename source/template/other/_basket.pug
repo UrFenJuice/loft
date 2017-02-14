@@ -65,11 +65,11 @@
 										span Сумма:
 										#sum_21 2 158 Р
 									td.control
-										a(href='#')
+										a(href='#', title="В избранное")
 											+use("like")
 											span
 												| В избранное
-										a(href='#')
+										a(href='#', title="Удалить")
 											+use("close")
 											span
 												| Удалить
@@ -111,11 +111,11 @@
 										span Сумма:
 										#sum_23 1 259 Р
 									td.control
-										a(href='#')
+										a(href='#', title="В избранное")
 											+use("like")
 											span
 												| В избранное
-										a(href='#')
+										a(href='#', title="Удалить")
 											+use("close")
 											span
 												| Удалить
@@ -155,16 +155,21 @@
 										span Сумма:
 										#sum_24 2 630 Р
 									td.control
-										a(href='#')
+										a(href='#', title="В избранное")
 											+use("like")
 											span
 												| В избранное
-										a(href='#')
+										a(href='#', title="Удалить")
 											+use("close")
 											span
 												| Удалить
 									td.margin
 					.bx_ordercart_order_pay
+						#coupons_block.bx_ordercart_order_pay_left
+							.bx_ordercart_coupon
+								span Введите код купона для скидки:
+								input#coupon(type='text', name='COUPON', value='', onchange='enterCoupon();')
+								a.bx_bt_button.bx_big(href='javascript:void(0)', onclick='enterCoupon();', title='Нажмите для применения нового купона') Ок
 						.bx_ordercart_order_pay_right
 							table.bx_ordercart_order_sum
 								tbody
@@ -176,4 +181,5 @@
 										td#PRICE_WITHOUT_DISCOUNT.custom_t2(style='text-decoration:line-through; color:#828282;') 6 427 Р
 						.bx_ordercart_order_pay_center
 							a.checkout.primary__button(href='javascript:void(0)', onclick='checkOut();') Оформить заказ
+						br
 .line

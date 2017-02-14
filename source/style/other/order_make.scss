@@ -330,7 +330,7 @@
     position:absolute;
     right:10px;
     top:50%;
-    margin-top:-4px;
+    margin-top:-15px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -339,8 +339,6 @@
     cursor:pointer;
 }
 .bx-soa-coupon-input input[type=text].form-control {
-    border: 1px solid #CCD5DB;
-    background-color: #f8fafc;
     background-image: none;
     outline: none;
     display: block;
@@ -664,13 +662,13 @@
     font-size: 15px;
 }
 .bx-soa-reg-block {
-    background: #f8fafc;
-    padding: 25px 20px;
+    background: #f4f4f4;
+    padding: 25px;
 }
 .bx-soa-reg-block p {
-    color: #595a5b;
-    font-size: 13px;
-    margin: 0 0 10px;
+    color: #999999;
+    font-size: 14px;
+    margin: 0 0 25px;
     padding: 0;
 }
 
@@ -975,8 +973,8 @@ ymaps h3{
 }
 .bx-authform-content-container,
 .bx-authform-label-container{
-    font-size:13px;
-    color: #5a6c77;
+    font-size:16px;
+    color: #231f20;
     padding-bottom: 2px;
 }
 .bx-authform-input-container{
@@ -1018,10 +1016,15 @@ ymaps h3{
     display: block;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAOCAYAAAAxDQxDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjIzNzExNDdGRkJFMTFFNDg4RDM4NEY3NjNFRDYwRDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjIzNzExNDhGRkJFMTFFNDg4RDM4NEY3NjNFRDYwRDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGMjM3MTE0NUZGQkUxMUU0ODhEMzg0Rjc2M0VENjBENSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGMjM3MTE0NkZGQkUxMUU0ODhEMzg0Rjc2M0VENjBENSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PodxyuQAAAFASURBVHjarJS/SgNBEMZ3x00glj6DL2Fn5UtYi7WdlYUIYhGwCYgPYBeIjbUvIYikCxaCGk/wZvf2n98dCiEm521y2xwzOzO/m5tvTn5knyrG+LLZ6211ux3R5rHWCtZGhBBOCbaTUu7kzM9FYVuDeO+FNsWjD+EQ9S/px/8EY7ctmHVO5KwzwM5Iymu4pjRzP24D5tAJs34D7Bzm3a+f5uLWgpWfCzMZY+YHG0QXqDVdBloZZp0VXzmXAriCOZq/pyV5STB0Eo0pHqCufXQygCs2BTWCxUrC5eDZO+f7iL+BSy+KpX9ethZWSVibCSDHiLutK0QNPv9CGIpDXWaCPTkioj5c7+uC/sBctSccMfjBrITrjsQvKEXB25DufUepDPtyAnvYNFElrkrVGZZxD89hSqJaYflL2Gtq0rcAAwDa/ePzqfelnAAAAABJRU5ErkJggg==) no-repeat center bottom;
 }
-.bx-authform-input-container input[type="text"],
-.bx-authform-input-container input[type="password"] {
+.bx-soa-auth .bx-authform-input-container input[type="text"],
+.bx-soa-auth .bx-authform-input-container input[type="password"] {
     display: block;
-    width: 100%;
+    @include breakpoint(320px) {
+        width: 100%;
+    }
+    @include breakpoint(1200px) {
+        width: 360px;
+    }
     font-size: 18px;
     height: 38px;
     margin: 0;
@@ -1465,4 +1468,37 @@ textarea[name="ORDER_DESCRIPTION"].form-control {
 }
 #bx-soa-properties.bx-step-completed .bx-soa-section-content div {
     margin-bottom: 5px;
+}
+.bx-soa-auth .bx-title {
+    text-transform: inherit;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.bx-authform-formgroup-container a {
+    font-size: 16px;
+    margin-left: 20px;
+    border-bottom: 1px dashed;
+}
+.bx-soa-auth .bx-soa-section-content{
+    display: flex;
+    @include breakpoint(320px) {
+        flex-direction: column;
+    }
+    @include breakpoint(1200px) {
+        flex-direction: row;
+    }
+}
+.bx-soa-auth .bx-authform-social {
+    margin: 0 0 25px;
+}
+.bx-soa-auth .bx-authform {
+    margin-right: 57px;
+}
+.bx-soa-auth .bx-authform-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bx-soa-auth .bx-soa-reg-block {
+    margin-bottom: 35px;
 }

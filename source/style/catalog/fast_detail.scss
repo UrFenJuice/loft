@@ -66,8 +66,9 @@
 	margin-bottom: 20px;
 }
 .preview_mask .tabs__item.active {
-	max-height: 92px;
-	overflow: hidden;
+	max-height: 96px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 .close_popup #close {
 	width: 16px;

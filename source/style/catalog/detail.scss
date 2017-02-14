@@ -258,7 +258,7 @@
 		}
 		@include breakpoint(640px) {
 			& img {
-				max-width: 100%;
+				max-width: 400px;
 			}
 		}
 		@include breakpoint(940px) {

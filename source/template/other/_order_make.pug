@@ -12,91 +12,41 @@
 						.alert.alert-danger(style='display: none;')
 						div
 							.bx-authform
-								h3.bx-title Пожалуйста, авторизуйтесь
+								h3.bx-title Авторизуйтесь, пожалуйста
 								.bx-authform-formgroup-container
-									.bx-authform-label-container Логин
+									.bx-authform-label-container
+										| E-mail
+										span.bx-authform-starrequired *
 									.bx-authform-input-container
 										input(data-next='USER_PASSWORD', name='USER_LOGIN', type='text')
 								.bx-authform-formgroup-container
-									.bx-authform-label-container Пароль
+									.bx-authform-label-container
+										| Пароль
+										span.bx-authform-starrequired *
 									.bx-authform-input-container
 										input(data-send='true', name='USER_PASSWORD', type='password')
 								.bx-authform-formgroup-container
 									input#do_authorize(type='hidden', name='do_authorize', value='N')
 									input.btn.btn-lg.btn-default(type='submit', value='Войти')
-								a(href='/auth/?forgot_password=yes&back_url=http%3A%2F%2Fclients.wizard-c.ru%2Fpersonal%2Forder%2Fmake%2F') Забыли пароль?
+									a(href='/auth/?forgot_password=yes&back_url=http%3A%2F%2Fclients.wizard-c.ru%2Fpersonal%2Forder%2Fmake%2F') Забыли пароль?
 						div
 							.bx-authform-social
-								h3.bx-title Войти с помощью соцсетей
-								.bx-authform-social
-									ul
-										li
-											a#bx_socserv_icon_Livejournal.livejournal.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('Livejournal')", title='Livejournal')
-											#bx_socserv_form_Livejournal.bx-authform-social-popup
-												form(action='/personal/order/make/index.php', method='post')
-													span.bx-ss-icon.livejournal
-													input(type='text', name='OPENID_IDENTITY_LIVEJOURNAL', value='', size='20')
-													span .livejournal.com
-													input#sessid_6(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
-													input(type='hidden', name='auth_service_error', value='')
-													input.button(type='submit', name='', value='Войти')
-													input(type='hidden', name='auth_service_id', value='Livejournal')
-										li
-											a#bx_socserv_icon_MailRuOpenID.openid-mail-ru.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('MailRuOpenID')", title='Mail.Ru')
-											#bx_socserv_form_MailRuOpenID.bx-authform-social-popup
-												form(action='/personal/order/make/index.php', method='post')
-													span.bx-ss-icon.openid-mail-ru
-													input(type='text', name='OPENID_IDENTITY_MAILRU', value='', size='20')
-													span @mail.ru
-													input#sessid_7(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
-													input(type='hidden', name='auth_service_error', value='')
-													input.button(type='submit', name='', value='Войти')
-													input(type='hidden', name='auth_service_id', value='MailRuOpenID')
-										li
-											a#bx_socserv_icon_Liveinternet.liveinternet.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('Liveinternet')", title='Liveinternet')
-											#bx_socserv_form_Liveinternet.bx-authform-social-popup
-												form(action='/personal/order/make/index.php', method='post')
-													span.bx-ss-icon.liveinternet
-													span liveinternet.ru/users/
-													input(type='text', name='OPENID_IDENTITY_LIVEINTERNET', value='', size='15')
-													input#sessid_8(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
-													input(type='hidden', name='auth_service_error', value='')
-													input.button(type='submit', name='', value='Войти')
-													input(type='hidden', name='auth_service_id', value='Liveinternet')
-										li
-											a#bx_socserv_icon_Blogger.blogger.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('Blogger')", title='Blogger')
-											#bx_socserv_form_Blogger.bx-authform-social-popup
-												form(action='/personal/order/make/index.php', method='post')
-													span.bx-ss-icon.blogger
-													input(type='text', name='OPENID_IDENTITY_BLOGGER', value='', size='20')
-													span .blogspot.com
-													input#sessid_9(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
-													input(type='hidden', name='auth_service_error', value='')
-													input.button(type='submit', name='', value='Войти')
-													input(type='hidden', name='auth_service_id', value='Blogger')
-										li
-											a#bx_socserv_icon_OpenID.openid.bx-authform-social-icon(href='javascript:void(0)', onclick="BxSocServPopup('OpenID')", title='OpenID')
-											#bx_socserv_form_OpenID.bx-authform-social-popup
-												form(action='/personal/order/make/index.php', method='post')
-													span.bx-ss-icon.openid
-													span OpenID:
-													input(type='text', name='OPENID_IDENTITY_OPENID', value='', size='30')
-													input#sessid_10(type='hidden', name='sessid', value='0d63e32e56e53ca330a11fcc358bc3bf')
-													input(type='hidden', name='auth_service_error', value='')
-													input.button(type='submit', name='', value='Войти')
-													input(type='hidden', name='auth_service_id', value='OpenID')
-							hr.bxe-light
+								h3.bx-title Войти через
+								ul
+									li
+										a#bx_socserv_icon_Vk.vk.bx-authform-social-icon(href='javascript:void(0)')
+									li
+										a#bx_socserv_icon_Tw.tw.bx-authform-social-icon(href='javascript:void(0)')
+									li
+										a#bx_socserv_icon_Ok.ok.bx-authform-social-icon(href='javascript:void(0)')
+									li
+										a#bx_socserv_icon_Fb.fb.bx-authform-social-icon(href='javascript:void(0)')
+									li
+										a#bx_socserv_icon_G.g.bx-authform-social-icon(href='javascript:void(0)')
 							.bx-soa-reg-block
 								p
 									| Если вы впервые на сайте, и хотите что бы мы вас помнили и все ваши заказы сохранялись, заполните регистрационную форму.
 								a.btn.btn-default.btn-lg Зарегистрироваться
-						div
-							.bx-soa-reference
-								| Символом "звездочка" (*) отмечены обязательные для заполнения поля.
-								br
-								| После регистрации вы получите информационное письмо.
-								br
-								| Личные сведения, полученные в распоряжение интернет-магазина при регистрации или каким-либо иным образом, не будут без разрешения пользователей передаваться третьим организациям и лицам за исключением ситуаций, когда этого требует закон или судебное решение.
 
 				// BASKET ITEMS BLOCK
 				#bx-soa-basket.bx-soa-section.bx-active.bx-selected(data-visited='true')
@@ -185,6 +135,13 @@
 											.bx-soa-item-td-title Сумма
 											.bx-soa-item-td-text
 												strong.bx-price.all 779 Р
+						.bx-soa-coupon
+							.bx-soa-coupon-label
+								label Применить купон:
+							.bx-soa-coupon-block
+								.bx-soa-coupon-input
+									input#coupon.form-control.bx-ios-fix(type='text')
+								span.bx-soa-coupon-item
 						.bx-soa-more
 							.bx-soa-more-btn
 								a.pull-left.btn.btn-default.btn-md(href="") показать все
@@ -285,7 +242,7 @@
 									.bx-soa-pp-company-subTitle Доставка курьером
 									.bx-soa-pp-company-logo
 										.bx-soa-pp-company-graf-container
-											.bx-soa-pp-company-image(style='background-image: url(/assets/img/post/8cb114e3bd4ab83c337fd4ab5fca8050.png);background-image: -webkit-image-set(url(/uassets/img/post/8cb114e3bd4ab83c337fd4ab5fca8050.png) 1x, url(/assets/img/post/8cb114e3bd4ab83c337fd4ab5fca8050.png) 2x)')
+											.bx-soa-pp-company-image(style='background-image: url(/assets/img/post/8cb114e3bd4ab83c337fd4ab5fca8050.png);background-image: -webkit-image-set(url(/assets/img/post/8cb114e3bd4ab83c337fd4ab5fca8050.png) 1x, url(/assets/img/post/8cb114e3bd4ab83c337fd4ab5fca8050.png) 2x)')
 									.bx-soa-pp-company-block
 										.bx-soa-pp-company-desc Доставка осуществляется в течение дня в удобное для вас время.
 									div(style='clear: both')
@@ -293,6 +250,13 @@
 										li
 											.bx-soa-pp-list-termin Стоимость:
 											.bx-soa-pp-list-description 500 Р
+						.bx-soa-coupon
+							.bx-soa-coupon-label
+								label Применить купон:
+							.bx-soa-coupon-block
+								.bx-soa-coupon-input
+									input#coupon.form-control.bx-ios-fix(type='text')
+								span.bx-soa-coupon-item
 						.bx-soa-more
 							.bx-soa-more-btn
 								a.pull-left.btn.btn-default.btn-md(href='') Назад
@@ -393,8 +357,8 @@
 										.bx-soa-pp-company-block
 											.bx-soa-pp-company-desc
 												| Оплата производится в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.
-									hr.bxe-light
-									div
+									//hr.bxe-light
+									//div
 										.bx-soa-pp-company-subTitle Карта лояльности
 										.bx-soa-pp-company-block
 											.bx-soa-pp-company-loyalti
@@ -405,6 +369,13 @@
 													| баллов
 											.bx-soa-pp-company-desc
 												| С помощью карты можете оплатить часть покупки, но не более 50%
+						.bx-soa-coupon
+							.bx-soa-coupon-label
+								label Применить купон:
+							.bx-soa-coupon-block
+								.bx-soa-coupon-input
+									input#coupon.form-control.bx-ios-fix(type='text')
+								span.bx-soa-coupon-item
 						.bx-soa-more
 							.bx-soa-more-btn
 								a.pull-left.btn.btn-default.btn-md(href='') Назад

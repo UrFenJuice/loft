@@ -29,13 +29,20 @@
 .contacts__block_address-item {
 	display: flex;
 }
-.contacts__block_name {
+.container .contacts__block_name {
 	font-size: 16px;
 	font-family: $second-font;
     margin-bottom: 6px;
+    line-height: inherit;
 }
-.contacts__block_description {
+.container .contacts__block_description {
 	font-size: 16px;
+	line-height: inherit;
+	margin-bottom: 0;
+}
+.container .contacts__block_info p {
+	line-height: inherit;
+	margin-bottom: 0;
 }
 .contacts__block_address-item {
 	font-size: 16px;

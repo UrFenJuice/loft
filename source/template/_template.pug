@@ -14,7 +14,7 @@ block variables
 - var menu_sec = ["Брюки", "Юбки", "Костюмы", "Комбинезоны", "Шорты", "Пляжные принадлежности", "Спорт", "Белье и домашняя одежда"]
 
 mixin use(name)
-    svg.my_svg(role="img", id=name)
+    svg.my_svg(role="img", id=name, preserveAspectRatio="xMinYMax")
         use(xlink:href=svg+"#"+name)
 
 
@@ -60,4 +60,5 @@ html
         script(src='assets/js/jquery.dlmenu.js')
         script(src='assets/js/slick.min.js')
         script(src='assets/js/jquery.fancybox.pack.js')
+        script(src='assets/js/svg4everybody.legacy.min.js')
         script(src='assets/js/app.js')

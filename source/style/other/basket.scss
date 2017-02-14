@@ -130,6 +130,7 @@
 	}
 	@include breakpoint(380px) {
 		display: table-cell;
+		padding-right: 5px;
 	}
 }
 .bx_ordercart .bx_ordercart_order_table_container tbody td {
@@ -147,16 +148,28 @@
 	}
 	&:nth-child(6) {
 		width: 13.3%;
+		@include breakpoint(320px) {
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+		@include breakpoint(480px) {
+			padding-right: 0px;
+			padding-left: 0px;
+		}
 	}
 }
 .bx_ordercart .bx_ordercart_order_table_container tbody td.control a{
 	position: relative;
 	@include breakpoint(320px) {
-		font-size: 0;
+		& span {
+			font-size: 0;
+		}
 	}
 	@include breakpoint(940px) {
-		font-size:14px;
-		border-bottom: 1px dashed $gray;
+		& span {
+			font-size:14px;
+			border-bottom: 1px dashed $gray;
+		}
 	}
 	font-family: sans-serif;
 	color: $gray;
@@ -207,7 +220,12 @@
 	white-space:normal;
 	line-height:18px;
 	font-size:14px;
-	margin-bottom: 10px;
+	@include breakpoint(320px) {
+		margin-bottom: 0px;
+	}
+	@include breakpoint(480px) {
+		margin-bottom: 10px;
+	}
 }
 .bx_ordercart .bx_ordercart_order_table_container .bx_ordercart_item__description {
 	font-size: 16px;
@@ -383,4 +401,26 @@ table.counter td {
 	& a {
 		text-decoration: underline;
 	}
+}
+#coupons_block .bx_ordercart_coupon {
+	padding-top: 10px;
+	display: flex;
+	align-items: center;
+	& span {
+		margin-right: 5px;
+	}
+}
+#coupons_block #coupon {
+	border: 1px solid #e7e7e7;
+	background: #ffffff;
+	background-image: none;
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 38px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	max-width: 200px;
 }
